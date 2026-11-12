@@ -19,7 +19,7 @@
  * @package elivation
  */
 
-$elivation_reviews = elivation_reviews( array( 'r1', 'r2', 'r5' ) );
+$elivation_reviews = elivation_reviews( array( 'r1', 'r3', 'r5' ) );
 if ( ! $elivation_reviews ) {
 	return;
 }
@@ -35,7 +35,7 @@ if ( ! $elivation_reviews ) {
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"eh-h2"} -->
-<h2 class="wp-block-heading eh-h2">What clients say <em>about their visits.</em></h2>
+<h2 class="wp-block-heading eh-h2">Care people <em>tell their friends about.</em></h2>
 <!-- /wp:heading -->
 </div>
 <!-- /wp:group -->

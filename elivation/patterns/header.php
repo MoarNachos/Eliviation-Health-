@@ -21,10 +21,10 @@
 		<button class="eh-nav__toggle" type="button" aria-expanded="false" aria-controls="eh-site-nav" data-eh-nav-toggle>Menu</button>
 		<nav class="eh-nav__links" id="eh-site-nav" aria-label="Primary">
 			<a href="<?php echo esc_url( home_url( '/#treatments' ) ); ?>">Treatments</a>
-			<a href="<?php echo esc_url( home_url( '/#events' ) ); ?>">Events &amp; groups</a>
-			<a href="<?php echo esc_url( home_url( '/#team' ) ); ?>">Care team</a>
+			<a href="<?php echo esc_url( home_url( '/#events' ) ); ?>">Events &amp; Groups</a>
+			<a href="<?php echo esc_url( home_url( '/#team' ) ); ?>">Our Nurses</a>
 			<a href="<?php echo esc_url( home_url( '/#reviews' ) ); ?>">Reviews</a>
-			<a href="<?php echo esc_url( home_url( '/#areas' ) ); ?>">Service area</a>
+			<a href="<?php echo esc_url( home_url( '/#areas' ) ); ?>">Areas</a>
 		</nav>
 		<a class="eh-nav__phone" href="tel:<?php echo esc_attr( ELIVATION_PHONE_TEL ); ?>"><?php echo esc_html( ELIVATION_PHONE_DISPLAY ); ?></a>
 		<a class="eh-btn eh-btn--primary eh-btn--sm eh-nav__book" href="<?php echo esc_url( ELIVATION_BOOKING_URL ); ?>">Book a visit</a>

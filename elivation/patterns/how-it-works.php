@@ -5,7 +5,7 @@
  * Categories: elivation
  * Description: Three numbered steps from booking to the visit.
  *
- * Visit lengths correspond to the full appointments listed on the treatment pages.
+ * TODO(client): verify the "45–60 minutes" visit length and the "about two minutes" booking time.
  *
  * @package elivation
  */
@@ -26,11 +26,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"className":"eh-step__title"} -->
-<h3 class="wp-block-heading eh-step__title">Choose a visit</h3>
+<h3 class="wp-block-heading eh-step__title">Pick a drip &amp; a time</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Choose your treatment and a time online, or call if you’d like help picking an option.</p>
+<p>Book online in about two minutes, or call and talk to a real person.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -42,11 +42,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"className":"eh-step__title"} -->
-<h3 class="wp-block-heading eh-step__title">Meet your nurse</h3>
+<h3 class="wp-block-heading eh-step__title">A nurse comes to you</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>At your home, office or hotel, your nurse reviews your health history, checks your vitals and talks you through the visit.</p>
+<p>Home, office, hotel or venue. A short health screening comes first — always.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -58,11 +58,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"className":"eh-step__title"} -->
-<h3 class="wp-block-heading eh-step__title">Settle in at home</h3>
+<h3 class="wp-block-heading eh-step__title">Relax for 45–60 minutes</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Your nurse stays with you. Allow about 75 minutes for most visits, including screening, or up to 2½ hours for NAD+.</p>
+<p>Stay on the couch, take a call, or nap. We clean up when we leave.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->

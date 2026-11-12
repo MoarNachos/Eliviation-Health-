@@ -6,7 +6,7 @@
  * Inserter: no
  * Description: Footer with four columns and the medical disclaimer, plus the sticky mobile booking bar.
  *
- * TODO(client): Privacy and Terms pages do not exist yet.
+ * TODO(client): Pricing, FAQ, Careers, Privacy and Terms pages do not exist yet. Pricing points at the booking site; the others are left out or shown as plain text.
  * TODO(client): have the medical disclaimer line reviewed.
  * TODO(client): swap the PNG logo (assets/images/logo-white.png) for an SVG when supplied.
  *
@@ -20,21 +20,21 @@
 		<div class="eh-footer__grid">
 			<div class="eh-footer__brand">
 				<img class="eh-logo__img eh-logo__img--footer" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/logo-white.png' ) ); ?>" alt="Elivation Health" width="407" height="103" loading="lazy">
-				<span>Mobile IV hydration at home, at work and at events.</span>
+				<span>Expert care. A personal touch. Wherever you are.</span>
 			</div>
 			<nav class="eh-footer__col" aria-label="Treatments">
 				<span class="eh-footer__heading">Treatments</span>
 				<a href="<?php echo esc_url( elivation_treatment_url( 'recovery' ) ); ?>">Recovery</a>
 				<a href="<?php echo esc_url( elivation_treatment_url( 'relief' ) ); ?>">Relief</a>
 				<a href="<?php echo esc_url( elivation_treatment_url( 'rejuvenation' ) ); ?>">Rejuvenation</a>
-				<a href="<?php echo esc_url( home_url( '/#treatments' ) ); ?>">Compare starting prices</a>
+				<a href="<?php echo esc_url( ELIVATION_BOOKING_URL ); ?>">Pricing</a>
 			</nav>
 			<nav class="eh-footer__col" aria-label="Company">
 				<span class="eh-footer__heading">Company</span>
-				<a href="<?php echo esc_url( home_url( '/#team' ) ); ?>">Care team</a>
+				<a href="<?php echo esc_url( home_url( '/#team' ) ); ?>">Our nurses</a>
 				<a href="<?php echo esc_url( home_url( '/#events' ) ); ?>">Events &amp; groups</a>
 				<a href="<?php echo esc_url( home_url( '/#reviews' ) ); ?>">Reviews</a>
-				<a href="<?php echo esc_url( home_url( '/#areas' ) ); ?>">Service area</a>
+				<a href="<?php echo esc_url( home_url( '/#areas' ) ); ?>">Areas</a>
 			</nav>
 			<nav class="eh-footer__col" aria-label="Contact">
 				<span class="eh-footer__heading">Contact</span>

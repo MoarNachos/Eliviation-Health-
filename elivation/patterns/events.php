@@ -3,7 +3,7 @@
  * Title: Events and groups
  * Slug: elivation/events
  * Categories: elivation, call-to-action
- * Description: A group visit, illustrated by a documented local event, with the inquiry form.
+ * Description: Coral section pitching group events, with the inquiry form.
  *
  * TODO(client): verify "Groups of 4 to 100+", "Onsite nurse team" and "Custom menus".
  * TODO(client): verify the "reply within one business day" promise (also used in the success message in theme.js).
@@ -24,20 +24,16 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"eh-events__title"} -->
-<h2 class="wp-block-heading eh-events__title">An IV lounge <em>at your event.</em></h2>
+<h2 class="wp-block-heading eh-events__title">Bring the IV lounge <em>to your people.</em></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"eh-lede"} -->
-<p class="eh-lede">Planning a golf tournament, a company wellness day or a wedding weekend? We bring the nurses, chairs and supplies. Each guest meets with a nurse for a health screening before treatment.</p>
+<p class="eh-lede">Bachelorette weekends, corporate wellness days, races, conferences and film sets. We bring the nurses, chairs and setup — you bring the guests.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"eh-events__photo"} -->
-<figure class="wp-block-image size-full eh-events__photo"><img src="<?php echo esc_url( elivation_photo_url( 'event-2' ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( 'event-2' ) ); ?>"/></figure>
+<figure class="wp-block-image size-full eh-events__photo"><img src="<?php echo esc_url( elivation_photo_url( 'event-1' ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( 'event-1' ) ); ?>"/></figure>
 <!-- /wp:image -->
-
-<!-- wp:paragraph {"className":"eh-events__caption"} -->
-<p class="eh-events__caption">Guests check in at the Elivation tent on the golf course, March 2026.</p>
-<!-- /wp:paragraph -->
 
 <!-- wp:list {"className":"eh-events__facts"} -->
 <ul class="wp-block-list eh-events__facts">
@@ -46,11 +42,11 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>On-site nursing team</li>
+<li>Onsite nurse team</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Menus tailored to your event</li>
+<li>Custom menus</li>
 <!-- /wp:list-item -->
 </ul>
 <!-- /wp:list -->

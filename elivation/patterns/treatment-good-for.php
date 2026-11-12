@@ -10,7 +10,6 @@
  */
 
 $elivation_tx = elivation_treatment( elivation_current_treatment( true ) );
-$elivation_fit_heading = $elivation_tx['fit_heading'] ?? array( 'Is this visit ', 'right for you?' );
 ?>
 <!-- wp:group {"tagName":"section","className":"eh-scope eh-section eh-section--tight eh-goodfor"} -->
 <section class="wp-block-group eh-scope eh-section eh-section--tight eh-goodfor">
@@ -23,17 +22,15 @@ $elivation_fit_heading = $elivation_tx['fit_heading'] ?? array( 'Is this visit '
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"eh-h2"} -->
-<h2 class="wp-block-heading eh-h2"><?php echo esc_html( $elivation_fit_heading[0] ); ?><em><?php echo esc_html( $elivation_fit_heading[1] ); ?></em></h2>
+<h2 class="wp-block-heading eh-h2">Sound familiar? <em>We can help.</em></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"eh-lede"} -->
-<p class="eh-lede">Have a question before you choose? Call <a href="tel:<?php echo esc_attr( ELIVATION_PHONE_TEL ); ?>"><?php echo esc_html( ELIVATION_PHONE_DISPLAY ); ?></a> to talk through the options with our team.</p>
+<p class="eh-lede">Not sure <?php echo esc_html( $elivation_tx['name'] ); ?> is the right fit? Call <a href="tel:<?php echo esc_attr( ELIVATION_PHONE_TEL ); ?>"><?php echo esc_html( ELIVATION_PHONE_DISPLAY ); ?></a> and a nurse will tell you straight.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"eh-stack-24"} -->
-<div class="wp-block-group eh-stack-24">
 <!-- wp:list {"className":"eh-goodfor__list"} -->
 <ul class="wp-block-list eh-goodfor__list">
 <?php foreach ( $elivation_tx['good_for'] as $elivation_line ) : ?>
@@ -43,10 +40,6 @@ $elivation_fit_heading = $elivation_tx['fit_heading'] ?? array( 'Is this visit '
 <?php endforeach; ?>
 </ul>
 <!-- /wp:list -->
-
-<!-- wp:pattern {"slug":"elivation/treatment-reviews"} /-->
-</div>
-<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 </section>

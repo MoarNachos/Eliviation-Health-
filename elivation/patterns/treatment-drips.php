@@ -7,7 +7,7 @@
  * Description: One card per drip with name, price, duration, description, optional tag and a Book this drip button.
  *
  * TODO(client): verify every drip name, price, duration and description (from the current site, Aug 2026).
- * TODO(client): verify "Your price includes the nurse visit, health screening and supplies. Travel fees may apply outside our core area."
+ * TODO(client): verify "Prices include the nurse visit, health screening and supplies. Travel fees may apply outside our core area."
  *
  * @package elivation
  */
@@ -27,13 +27,13 @@ $elivation_tx = elivation_treatment( elivation_current_treatment( true ) );
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"eh-h2"} -->
-<h2 class="wp-block-heading eh-h2">Compare <em><?php echo esc_html( $elivation_tx['name'] ); ?> options.</em></h2>
+<h2 class="wp-block-heading eh-h2">Clear prices. <em>No surprises at the door.</em></h2>
 <!-- /wp:heading -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"className":"eh-drips__note"} -->
-<p class="eh-drips__note">Your price includes the nurse visit, health screening and supplies. Travel fees may apply outside our core area.</p>
+<p class="eh-drips__note">Prices include the nurse visit, health screening and supplies. Travel fees may apply outside our core area.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->

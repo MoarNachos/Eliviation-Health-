@@ -25,7 +25,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"eh-h2"} -->
-<h2 class="wp-block-heading eh-h2">Who looks after you <em>during a visit?</em></h2>
+<h2 class="wp-block-heading eh-h2">Real nurses. Real screening. <em>Every single drip.</em></h2>
 <!-- /wp:heading -->
 </div>
 <!-- /wp:group -->
@@ -35,11 +35,11 @@
 <!-- wp:group {"className":"eh-safety__item"} -->
 <div class="wp-block-group eh-safety__item">
 <!-- wp:heading {"level":3,"className":"eh-safety__title"} -->
-<h3 class="wp-block-heading eh-safety__title">Your registered nurse</h3>
+<h3 class="wp-block-heading eh-safety__title">Registered Nurses</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Your registered nurse places the IV, monitors the infusion and stays with you throughout your visit.</p>
+<p>Every drip is started and watched by a licensed Registered Nurse. They stay with you for the whole session.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -51,7 +51,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Our medical director sets the protocols for each infusion, including which ingredients and doses your nurse can offer.</p>
+<p>Our drips and add-ons follow protocols set by our medical director. Nurses don't improvise ingredients or doses.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -63,7 +63,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Your nurse reviews your medical history and medications, checks your vitals and explains whether an infusion is appropriate for you.</p>
+<p>Before anything starts, your nurse reviews your health history and medications and checks your vitals. If a drip isn't right for you, we'll say so — and suggest what is.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -77,7 +77,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>You have heart failure, kidney disease, another condition that limits fluids, or an allergy to an ingredient. Pregnancy or breastfeeding may also affect your options. Tell us when you book and we may ask you to check with your doctor first.</p>
+<p>You have heart failure, kidney disease or another condition that limits fluids; you're pregnant or breastfeeding; or you have allergies to any ingredient. Tell us when you book and we may ask you to check with your doctor first.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"eh-safety__small"} -->

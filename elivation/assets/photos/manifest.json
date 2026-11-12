@@ -230,27 +230,6 @@
       }
     ]
   },
-  "mobile-iv-home": {
-    "width": 1122,
-    "height": 1402,
-    "sizes": [
-      {
-        "width": 800,
-        "height": 1000,
-        "file": "mobile-iv-home-800.webp"
-      },
-      {
-        "width": 1122,
-        "height": 1402,
-        "file": "mobile-iv-home-1400.webp"
-      },
-      {
-        "width": 1122,
-        "height": 1402,
-        "file": "mobile-iv-home-2000.webp"
-      }
-    ]
-  },
   "team-1": {
     "width": 2000,
     "height": 1500,
