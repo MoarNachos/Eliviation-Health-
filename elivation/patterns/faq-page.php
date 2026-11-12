@@ -76,6 +76,9 @@ $elivation_groups = elivation_faq_groups();
 	<details class="eh-faq__item"<?php echo 0 === $elivation_index ? ' open' : ''; ?>>
 		<summary><h3 class="eh-faq__q"><?php echo esc_html( $elivation_item['q'] ); ?></h3></summary>
 		<p><?php echo esc_html( $elivation_item['a'] ); ?></p>
+		<?php foreach ( $elivation_item['link'] ?? array() as $elivation_label => $elivation_url ) : ?>
+		<p class="eh-more"><a href="<?php echo esc_url( $elivation_url ); ?>"><?php echo esc_html( $elivation_label ); ?> →</a></p>
+		<?php endforeach; ?>
 	</details>
 	<?php endforeach; ?>
 </div>

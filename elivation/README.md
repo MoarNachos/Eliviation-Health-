@@ -47,6 +47,7 @@ Add `?debug=1` to any URL for an on-page debug panel (tokens, fonts, heading cou
 | `assets/reviews.json` | **Generated** copy of `content/reviews.json` (verbatim client reviews) |
 | `functions.php` | Fonts, styles, photo `srcset`, hero preload, `MedicalBusiness` JSON-LD |
 | `patterns/` | One pattern per homepage section, plus header and footer. `treatment-*.php` are the treatment page sections |
+| `inc/team.php` | Team profiles (homepage and /about-us/), the medical director slot, and the About, Testimonials and Privacy pages |
 | `inc/treatments.php` | Treatment data (drips, prices, FAQs), page creation, title, meta description, `MedicalBusiness` + `Service` + `FAQPage` JSON-LD |
 | `templates/treatment.html` | Treatment landing page: hero, who it's for, drip menu, how a visit works, safety, FAQ, cross-sell, closing band (shared service-areas pattern), booking drawer |
 | `templates/front-page.html` | Assembles the section patterns |
@@ -83,6 +84,8 @@ Each section is a pattern in `patterns/`. Edit the PHP file to change it everywh
 ## FAQ and organic search
 
 The theme creates a published WordPress page at `/faq/` on activation. For an existing installation, open wp-admin once as a user with permission to publish pages after updating the theme. An existing FAQ record keeps its ID and publication status. The answers rendered by `patterns/faq-page.php` and the FAQ structured data both use `elivation_faq_groups()` in `inc/faq.php`. The source for individual treatment prices and durations is `inc/treatments.php`.
+
+**About, Testimonials and Privacy.** The theme also links to `/about-us/`, `/testimonials/` and `/privacy-policy/`. On activation (or the first wp-admin visit) it creates any of these pages that don't exist yet. An existing page with the same slug is never changed, so editor-managed content stays in place. The one exception is WordPress's own unpublished "Privacy Policy" draft: if it's still untouched, it is filled with the notice in `content/privacy-policy.html` (a verbatim copy of the live notice) and published. `/about-us/` and `/testimonials/` render from `templates/page-about-us.html` and `templates/page-testimonials.html`. The privacy page renders its own page content. Profiles have stable anchors, for example `/about-us/#richard-ladines`, and each review has one, for example `/testimonials/#review-r4`.
 
 The canonical production site is `https://www.elivationhealth.com/`. For a static copy of the Viacopia preview, set `WP_ENVIRONMENT_TYPE` to `staging` **when rendering the export** so the saved HTML includes `noindex`. The same directive is applied when WordPress is served from the Viacopia preview URL. Use the production environment and the real site URL for the live deployment. Production respects WordPress and SEO-plugin indexing settings.
 

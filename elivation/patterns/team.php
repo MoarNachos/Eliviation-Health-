@@ -3,37 +3,25 @@
  * Title: Team
  * Slug: elivation/team
  * Categories: elivation
- * Description: Dark section introducing the nurses, with three portrait cards and a group photo.
+ * Description: Dark section introducing the clinical team: Richard Ladines's profile with a client quote, the physician-oversight explanation, a link to the full team and a group photo.
  *
- * TODO(client): Kathy's and Jon's portraits still load from the old site's uploads folder. They need new photos, and those URLs will break when the old site is replaced.
- * TODO(client): verify every name, credential and title (RN, BSN, "Critical Care RN, 10+ years").
+ * Profiles come from elivation_team() in inc/team.php. The medical director appears next to
+ * Richard only once elivation_medical_director() returns an approved profile.
+ *
+ * TODO(client): verify every name, credential and title.
  * TODO(client): verify the description of the medical director's oversight.
- * TODO(client): supply the medical director's verified name and credentials if they should appear.
- * TODO(client): "Meet the full team" is left out until a team page exists.
+ * TODO(client): supply the medical director's verified name, credentials, portrait and role description (see inc/team.php).
  *
  * @package elivation
  */
 
-$elivation_people = array(
-	array(
-		'name'  => 'Richard Ladines, RN, BSN',
-		'role'  => 'Chief Nursing Officer · Critical Care RN, 10+ years',
-		'photo' => get_theme_file_uri( 'assets/images/richard-ladines.webp' ),
-		'alt'   => 'Richard Ladines, Chief Nursing Officer at Elivation Health',
-	),
-	array(
-		'name'  => 'Kathy Tran',
-		'role'  => 'Clinical Operations Lead',
-		'photo' => 'https://www.elivationhealth.com/wp-content/uploads/2026/03/Kathy-Tran.png',
-		'alt'   => 'Kathy Tran',
-	),
-	array(
-		'name'  => 'Jon Lai',
-		'role'  => 'Co-founder · Chief Operating Officer',
-		'photo' => 'https://www.elivationhealth.com/wp-content/uploads/2026/03/Jon-Lai.png',
-		'alt'   => 'Jon Lai',
-	),
-);
+$elivation_team     = elivation_team();
+$elivation_lead     = $elivation_team['richard-ladines'];
+$elivation_director = elivation_medical_director();
+// Verbatim passage from Jackie G.'s review (r4 in content/reviews.json); shown only if it still matches.
+$elivation_quote    = 'Richard arrived right on time, fully equipped, and made me feel comfortable from the moment he walked in.';
+$elivation_client   = elivation_reviews( array( 'r4' ) );
+$elivation_client   = $elivation_client && false !== strpos( $elivation_client[0]['text'], $elivation_quote ) ? $elivation_client[0] : null;
 ?>
 <!-- wp:group {"tagName":"section","anchor":"team","className":"eh-scope eh-section eh-section--inverse"} -->
 <section id="team" class="wp-block-group eh-scope eh-section eh-section--inverse">
@@ -59,27 +47,23 @@ $elivation_people = array(
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"eh-team"} -->
-<div class="wp-block-group eh-team">
-<?php foreach ( $elivation_people as $elivation_person ) : ?>
-<!-- wp:group {"className":"eh-person"} -->
-<div class="wp-block-group eh-person">
-<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"eh-person__photo"} -->
-<figure class="wp-block-image size-full eh-person__photo"><img src="<?php echo esc_url( $elivation_person['photo'] ); ?>" alt="<?php echo esc_attr( $elivation_person['alt'] ); ?>"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"level":3,"className":"eh-person__name"} -->
-<h3 class="wp-block-heading eh-person__name"><?php echo esc_html( $elivation_person['name'] ); ?></h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"className":"eh-person__role"} -->
-<p class="eh-person__role"><?php echo esc_html( $elivation_person['role'] ); ?></p>
-<!-- /wp:paragraph -->
+<!-- wp:html -->
+<div class="eh-clinicians<?php echo $elivation_director ? ' eh-clinicians--pair' : ''; ?>">
+	<div class="eh-clinicians__lead">
+		<?php echo elivation_profile( 'richard-ladines', $elivation_lead, 'summary' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside. ?>
+		<?php if ( $elivation_client ) : ?>
+		<blockquote class="eh-clinicians__quote">
+			<p>“<?php echo esc_html( $elivation_quote ); ?>”</p>
+			<cite><?php echo esc_html( $elivation_client['author'] ); ?> · Elivation client · <a href="<?php echo esc_url( elivation_reviews_url( $elivation_client['id'] ) ); ?>">Read the full review</a></cite>
+		</blockquote>
+		<?php endif; ?>
+	</div>
+	<?php if ( $elivation_director ) : ?>
+	<?php echo elivation_profile( 'medical-director', $elivation_director, 'summary' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside. ?>
+	<?php endif; ?>
 </div>
-<!-- /wp:group -->
-<?php endforeach; ?>
-</div>
-<!-- /wp:group -->
+<p class="eh-more eh-clinicians__more"><a href="<?php echo esc_url( elivation_page_url( 'about-us' ) ); ?>">Meet the full team →</a></p>
+<!-- /wp:html -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"eh-team__group"} -->
 <figure class="wp-block-image size-full eh-team__group"><img src="<?php echo esc_url( elivation_photo_url( 'team-2' ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( 'team-2' ) ); ?>"/></figure>

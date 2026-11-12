@@ -62,6 +62,22 @@ function elivation_search_metadata() {
 			'image' => elivation_photo_url( 'hero-2' ),
 		);
 	}
+	if ( elivation_is_page( 'about-us' ) ) {
+		return array(
+			'title'       => 'About Elivation Health: Our Nurses & Leadership Team',
+			'description' => 'Meet the clinical team behind Elivation Health’s mobile IV visits, led by Chief Nursing Officer Richard Ladines, RN, BSN, and the Orange County leadership team.',
+			'url'         => get_permalink( get_queried_object_id() ),
+			'image'       => get_theme_file_uri( 'assets/images/richard-ladines.webp' ),
+		);
+	}
+	if ( elivation_is_page( 'testimonials' ) ) {
+		return array(
+			'title'       => 'Client Reviews | Elivation Health Mobile IV Therapy',
+			'description' => 'Read full reviews from Elivation Health clients about their at-home IV hydration visits with our registered nurses.',
+			'url'         => get_permalink( get_queried_object_id() ),
+			'image'       => elivation_photo_url( 'hero-2' ),
+		);
+	}
 	$key = elivation_current_treatment();
 	if ( ! $key ) {
 		return array();

@@ -6,7 +6,7 @@
  * Inserter: no
  * Description: Footer with four columns and the medical disclaimer, plus the sticky mobile booking bar.
  *
- * TODO(client): Careers, Privacy and Terms pages do not exist yet.
+ * TODO(client): Careers and Terms pages do not exist yet. Privacy links to the existing notice (elivation_privacy_url()).
  * TODO(client): have the medical disclaimer line reviewed.
  * TODO(client): swap the PNG logo (assets/images/logo-white.png) for an SVG when supplied.
  *
@@ -48,7 +48,7 @@
 		</div>
 		<div class="eh-footer__legal">
 			<span>© <?php echo esc_html( gmdate( 'Y' ) ); ?> Elivation Health. IV therapy is provided under physician direction after a health screening. Not a substitute for emergency care.</span>
-			<span>Privacy · Terms</span>
+			<span><a href="<?php echo esc_url( elivation_privacy_url() ); ?>">Privacy</a> · Terms</span>
 		</div>
 	</div>
 </div>

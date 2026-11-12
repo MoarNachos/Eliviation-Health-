@@ -13,11 +13,11 @@ Nothing below has been invented. Where the design had placeholder content, the p
 | 3 | Appointment lengths: about 75 minutes for most visits and up to 2½ hours for NAD+ | `patterns/how-it-works.php` |
 | 4 | Drip names, prices, durations and descriptions (taken from the current site, Aug 2026) | `inc/treatments.php`, `patterns/treatments.php` |
 | 5 | Team names, credentials and titles | `patterns/team.php` |
-| 6 | New portraits for Kathy Tran and Jon Lai. They still load from the old site's uploads folder and will break when that site is replaced (Richard's is now in `assets/images/`). Also the medical director's name and credentials, if they should appear | `patterns/team.php` |
-| 7 | Description of the registered nurse’s visit and the medical director’s oversight | `patterns/team.php` |
+| 6 | **Medical director profile.** Not shown anywhere until the founders supply an approved name, credentials, portrait and role description. Add it to `elivation_medical_director()` and it appears beside Richard on the homepage and at the top of About. Do not use a corporate filing or a matching physician name | `inc/team.php` |
+| 7 | Description of the registered nurse’s visit and the medical director’s oversight, and the five bios on /about-us/ (lightly edited from the live site: verify titles, degrees, awards and family details) | `patterns/team.php`, `inc/team.php` |
 | 8 | Event facts: "Groups of 4 to 100+ · Onsite nurse team · Custom menus" | `patterns/events.php` |
 | 9 | "We reply within one business day" | `patterns/events.php`, `assets/js/theme.js` |
-| 10 | **Reviews are real but self-published.** The homepage hero quotes an excerpt from r3, and the reviews section has cards for r1, r2 and r5 from `content/reviews.json`, copied verbatim from elivationhealth.com/testimonials/. None is tied to Google or Yelp, so they're labelled "Elivation client" and there is no review JSON-LD. Swap in Google Business Profile reviews if you want stars in search. The "Read the full review" link still points at the old /testimonials/ page | `patterns/reviews.php`, `content/reviews.json` |
+| 10 | **Reviews are real but self-published.** The homepage hero quotes an excerpt from r3, and the reviews section has cards for r1, r2 and r5 from `content/reviews.json`, copied verbatim from elivationhealth.com/testimonials/. None is tied to Google or Yelp, so they're labelled "Elivation client" and there is no review JSON-LD. Swap in Google Business Profile reviews if you want stars in search. "Read the full review" links go to the theme's /testimonials/ page (`elivation_reviews_url()`), which shows every review in full | `patterns/reviews.php`, `content/reviews.json` |
 | 11 | City list, and "Same-day visits are often available" | `functions.php` (`elivation_service_cities()`), `patterns/service-areas.php` |
 | 12 | Opening hours and (optionally) a postal address for the JSON-LD | `functions.php` (`elivation_json_ld()`) |
 | 13 | Medical disclaimer wording in the footer | `patterns/footer.php` |
@@ -53,7 +53,7 @@ Nothing below has been invented. Where the design had placeholder content, the p
 | 15 | Event inquiry form sends nothing. It checks the fields, then asks the visitor to call. Decide on email or CRM and connect it | `patterns/events.php`, `assets/js/theme.js` |
 | 16 | ZIP card passes `?zip=` to the booking site. Confirm the booking platform reads it | `patterns/hero.php` |
 | 17 | Out-of-area ZIP message is off until a list of covered ZIP codes is supplied | `functions.php` (`elivation_service_zips()`) |
-| 18 | Pages that do not exist yet: pricing comparison, full team, Careers, Privacy, Terms. (`/treatments/` itself redirects to the homepage section.) Links point at the booking site or a page section, or are left out | `patterns/treatments.php`, `patterns/team.php`, `patterns/footer.php` |
+| 18 | Pages that do not exist yet (About, Testimonials and Privacy now exist; see `inc/team.php`): pricing comparison, Careers, Terms. (`/treatments/` itself redirects to the homepage section.) Links point at the booking site or a page section, or are left out | `patterns/treatments.php`, `patterns/team.php`, `patterns/footer.php` |
 
 ## Palette
 

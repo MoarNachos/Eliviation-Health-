@@ -21,12 +21,12 @@ define( 'ELIVATION_BOOKING_URL', 'https://book.elivationhealth.com/' );
 define( 'ELIVATION_PHONE_DISPLAY', '(949) 561-0590' );
 define( 'ELIVATION_PHONE_TEL', '+19495610590' );
 define( 'ELIVATION_INSTAGRAM_URL', 'https://www.instagram.com/elivation.health' );
-define( 'ELIVATION_REVIEWS_URL', 'https://www.elivationhealth.com/testimonials/' ); // TODO(build): new reviews page.
 
 require_once __DIR__ . '/inc/treatments.php';
 require_once __DIR__ . '/inc/faq.php';
 require_once __DIR__ . '/inc/search.php';
 require_once __DIR__ . '/inc/legacy-treatment-urls.php';
+require_once __DIR__ . '/inc/team.php';
 
 /* -------------------------------------------------------------------------
  * Content that is shared between patterns and structured data
@@ -430,7 +430,7 @@ function elivation_review_card( $review, $selected_excerpt = '' ) {
 	}
 	$ellipsis = $excerpt['cut'] && ! preg_match( '/[.!?…]$/u', $excerpt['text'] ) ? '…' : '';
 	$more     = $excerpt['cut']
-		? ' · <a class="eh-review__more" href="' . esc_url( ELIVATION_REVIEWS_URL ) . '">Read the full review</a>'
+		? ' · <a class="eh-review__more" href="' . esc_url( elivation_reviews_url( $review['id'] ) ) . '">Read the full review</a>'
 		: '';
 	return '<!-- wp:quote {"className":"eh-review"} -->' . "\n"
 		. '<blockquote class="wp-block-quote eh-review"><!-- wp:paragraph -->' . "\n"
