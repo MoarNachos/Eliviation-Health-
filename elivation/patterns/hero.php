@@ -66,7 +66,7 @@ $elivation_quote  = 'He came right to my home, made the process easy and comfort
 <!-- wp:quote {"className":"eh-hero__review"} -->
 <blockquote class="wp-block-quote eh-hero__review"><!-- wp:paragraph -->
 <p>“<?php echo esc_html( $elivation_quote ); ?>…”</p>
-<!-- /wp:paragraph --><cite><a href="<?php echo esc_url( ELIVATION_REVIEWS_URL ); ?>"><?php echo esc_html( $elivation_client[0]['author'] ); ?> · Elivation client</a></cite></blockquote>
+<!-- /wp:paragraph --><cite><a href="<?php echo esc_url( elivation_reviews_url( 'r3' ) ); ?>"><?php echo esc_html( $elivation_client[0]['author'] ); ?> · Elivation client</a></cite></blockquote>
 <!-- /wp:quote -->
 <?php endif; ?>
 

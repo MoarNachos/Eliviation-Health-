@@ -111,6 +111,8 @@ function elivation_faq_groups() {
 				array(
 					'q' => 'Who comes to my home, and what does physician-directed care mean?',
 					'a' => 'A registered nurse comes to you. Elivation’s medical director sets the protocols for the infusions, and Richard Ladines, RN, BSN, leads the nursing team. The nurse who visits screens you, explains your options, places the IV if appropriate and monitors you throughout the infusion.',
+					// Shown after the answer on the FAQ page; the FAQPage JSON-LD keeps the plain answer.
+					'link' => array( 'Meet Richard and the clinical team' => elivation_profile_url( 'richard-ladines' ) ),
 				),
 				array(
 					'q' => 'What should I have ready when my nurse arrives?',

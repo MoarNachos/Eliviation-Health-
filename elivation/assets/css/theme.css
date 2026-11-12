@@ -809,6 +809,185 @@ header.wp-block-template-part {
 	background: var(--navy-700);
 }
 
+/* ---------- Profiles (homepage care team, About page) ---------- */
+.eh-profile {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 20px;
+	scroll-margin-top: 96px;
+}
+
+@media (min-width: 720px) {
+	.eh-profile { grid-template-columns: 220px minmax(0, 1fr); gap: 32px; align-items: start; }
+	.eh-profile--summary { grid-template-columns: 280px minmax(0, 1fr); gap: 40px; align-items: center; }
+}
+
+.eh-scope .eh-profile__photo {
+	margin: 0;
+	max-width: 240px;
+	aspect-ratio: 1;
+	overflow: hidden;
+	border-radius: 24px;
+	background: var(--navy-700);
+}
+
+.eh-scope .eh-profile__photo img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.eh-profile__body {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	min-width: 0;
+}
+
+.eh-scope .eh-profile__name {
+	font-family: var(--font-display);
+	font-size: clamp(1.375rem, 1.2rem + .6vw, 1.75rem);
+	font-weight: 600;
+	letter-spacing: -.01em;
+	line-height: 1.2;
+	color: var(--text-strong);
+}
+
+.eh-scope .eh-profile__role {
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--text-trust);
+}
+
+.eh-profile__bio {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-top: 10px;
+	max-width: 68ch;
+	line-height: 1.6;
+	color: var(--text-body);
+}
+
+.eh-profile--summary .eh-profile__bio { font-size: clamp(1.0625rem, 1rem + .3vw, 1.25rem); }
+
+.eh-section--inverse .eh-profile__name { color: var(--text-on-inverse); }
+.eh-section--inverse .eh-profile__role { color: var(--sky-300); }
+.eh-section--inverse .eh-profile__bio { color: var(--navy-100); }
+
+/* Homepage: Richard (and the medical director, once approved), a client quote and the team link. */
+.eh-clinicians {
+	display: grid;
+	gap: 40px;
+}
+
+@media (min-width: 1000px) {
+	.eh-clinicians--pair { grid-template-columns: 1fr 1fr; }
+	.eh-clinicians--pair .eh-profile--summary { grid-template-columns: 1fr; }
+}
+
+.eh-clinicians__lead {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+
+.eh-scope .eh-clinicians__quote {
+	margin: 0;
+	padding: 4px 0 4px 20px;
+	border: 0;
+	border-inline-start: 2px solid var(--sky-300);
+	max-width: 720px;
+}
+
+@media (min-width: 720px) {
+	.eh-scope .eh-profile__photo { max-width: none; }
+	.eh-scope .eh-clinicians__quote,
+	.eh-scope .eh-clinicians__more { margin-inline-start: 320px; }
+}
+
+.eh-clinicians__quote p {
+	font-family: var(--font-serif);
+	font-size: clamp(1.375rem, 1.1rem + .8vw, 1.875rem);
+	line-height: 1.2;
+	color: var(--text-on-inverse);
+}
+
+.eh-clinicians__quote cite {
+	display: block;
+	margin-top: 10px;
+	font: 600 14px/1.5 var(--font-body);
+	font-style: normal;
+	color: var(--navy-200);
+}
+
+.eh-clinicians__quote cite a,
+.eh-section--inverse .eh-clinicians__more a {
+	color: var(--sky-300);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.eh-clinicians__quote cite a:hover,
+.eh-section--inverse .eh-clinicians__more a:hover { color: var(--white); }
+
+.eh-scope .eh-clinicians__more { font-size: 17px; }
+
+/* About page: one profile per row, separated by hairlines. */
+.eh-profiles {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+
+.eh-profiles .eh-profile + .eh-profile {
+	padding-top: 48px;
+	border-top: 1px solid var(--border-subtle);
+}
+
+.eh-section--inverse .eh-profiles .eh-profile + .eh-profile { border-top-color: var(--navy-700); }
+
+/* ---------- Testimonials page ---------- */
+.eh-review-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+	gap: 20px;
+	align-items: start;
+}
+
+.eh-review-full {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	padding: clamp(24px, 3vw, 36px);
+	border-radius: 24px;
+	background: var(--surface-card);
+	box-shadow: var(--shadow-1);
+	scroll-margin-top: 96px;
+}
+
+.eh-review-full:target { box-shadow: 0 0 0 3px var(--sky-300), var(--shadow-1); }
+
+.eh-scope .eh-review-full blockquote {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 17px;
+	line-height: 1.6;
+	color: var(--text-body);
+}
+
+.eh-scope .eh-review-full__by {
+	font-size: 14px;
+	color: var(--text-muted);
+}
+
+.eh-review-full__by strong { color: var(--text-strong); }
+
 /* ---------- Community gallery ---------- */
 .eh-gallery {
 	display: grid;
@@ -1121,6 +1300,14 @@ header.wp-block-template-part {
 	font-size: 13px;
 	color: var(--navy-300);
 }
+
+.eh-footer__legal a {
+	color: inherit;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.eh-footer__legal a:hover { color: var(--coral-300); }
 
 /* ---------- Sticky mobile booking bar ---------- */
 .eh-bookbar {
