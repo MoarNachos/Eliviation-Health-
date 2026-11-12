@@ -594,5 +594,13 @@
 			"area": "footer"
 		}
 	],
-	"customTemplates": []
+	"customTemplates": [
+		{
+			"name": "treatment",
+			"title": "Treatment landing page",
+			"postTypes": [
+				"page"
+			]
+		}
+	]
 }

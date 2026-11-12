@@ -31,6 +31,8 @@ Copy or symlink the `elivation/` folder into `wp-content/themes/`, then activate
 
 The homepage shows as soon as the theme is active: `templates/front-page.html` is used for the site front page.
 
+**Treatment pages.** Activating the theme creates three pages: `/treatments/recovery`, `/treatments/relief` and `/treatments/rejuvenation`. If the theme was already active, they are created the first time an administrator opens wp-admin. They use `templates/treatment.html`. Permalinks must be set to anything other than "Plain" (Settings > Permalinks, for example "Post name"). On a treatment page, every Book button opens the in-page booking drawer.
+
 Add `?debug=1` to any URL for an on-page debug panel (tokens, fonts, heading count, alt text, JSON-LD, photo failures, form payloads).
 
 ## How it is put together
@@ -43,7 +45,9 @@ Add `?debug=1` to any URL for an on-page debug panel (tokens, fonts, heading cou
 | `assets/js/theme.js` | Mobile menu, scroll reveal, ZIP check, event form check, debug panel |
 | `assets/photos/` | **Generated** WebP files (800, 1400, 2000px) plus `picks.txt` and `manifest.json` |
 | `functions.php` | Fonts, styles, photo `srcset`, hero preload, `MedicalBusiness` JSON-LD |
-| `patterns/` | One pattern per homepage section, plus header and footer |
+| `patterns/` | One pattern per homepage section, plus header and footer. `treatment-*.php` are the treatment page sections |
+| `inc/treatments.php` | Treatment data (drips, prices, FAQs), page creation, title, meta description, `MedicalBusiness` + `Service` + `FAQPage` JSON-LD |
+| `templates/treatment.html` | Treatment landing page: hero, who it's for, drip menu, how a visit works, safety, FAQ, cross-sell, closing band (shared service-areas pattern), booking drawer |
 | `templates/front-page.html` | Assembles the section patterns |
 | `parts/` | Header and footer template parts |
 | `TODO.md` | Every open item: content to verify, consent flags, things not wired up |
@@ -60,6 +64,8 @@ npm run photos   # assets/photos/*.jpg -> elivation/assets/photos/*.webp
 Edit the values in `tokens/colors.css`, run `npm run tokens`, and reload. `theme.css` has no color literals, so nothing else needs to change.
 
 ## Editing content
+
+Drips, prices, "good for" lines and FAQs for the treatment pages live in one place: `elivation_treatments()` in `inc/treatments.php`.
 
 Each section is a pattern in `patterns/`. Edit the PHP file to change it everywhere, or open Appearance > Editor to change it in WordPress. The header, footer, ZIP card and event form are Custom HTML blocks; everything else is standard blocks (group, heading, paragraph, image, list, buttons, quote).
 
