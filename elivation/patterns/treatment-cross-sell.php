@@ -11,9 +11,9 @@
 
 $elivation_key   = elivation_current_treatment( true );
 $elivation_blurb = array(
-	'recovery'     => 'Bounce back from training, travel or a big night.',
-	'relief'       => 'Cold and flu, nausea, migraines and food poisoning.',
-	'rejuvenation' => 'NAD+ and wellness drips for energy, focus and skin.',
+	'recovery'     => 'Hydration after a race, a long flight or a late night.',
+	'relief'       => 'At-home hydration when illness makes it hard to drink fluids.',
+	'rejuvenation' => 'Compare shorter wellness visits and longer NAD+ infusions.',
 );
 ?>
 <!-- wp:group {"tagName":"section","className":"eh-scope eh-section eh-section--sunken eh-section--tight"} -->

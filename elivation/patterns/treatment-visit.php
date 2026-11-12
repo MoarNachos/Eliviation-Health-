@@ -24,7 +24,7 @@ $elivation_tx = elivation_treatment( elivation_current_treatment( true ) );
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"eh-h2"} -->
-<h2 class="wp-block-heading eh-h2">Three steps. <em>All of them at your place.</em></h2>
+<h2 class="wp-block-heading eh-h2">What to expect <em>at home.</em></h2>
 <!-- /wp:heading -->
 </div>
 <!-- /wp:group -->
@@ -42,7 +42,7 @@ $elivation_tx = elivation_treatment( elivation_current_treatment( true ) );
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Pick a drip, your ZIP and a time here, or call and talk to a real person.</p>
+<p>Choose a visit online, or call us for help deciding which option to book.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -54,11 +54,11 @@ $elivation_tx = elivation_treatment( elivation_current_treatment( true ) );
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"className":"eh-step__title"} -->
-<h3 class="wp-block-heading eh-step__title">A Registered Nurse arrives and screens you</h3>
+<h3 class="wp-block-heading eh-step__title">Meet your registered nurse</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Your nurse texts you before arriving, reviews your health history and checks your vitals. Nothing starts until they're happy it's right for you.</p>
+<p>Your nurse reviews your health history, checks your vitals and explains your options before starting an infusion.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -70,11 +70,11 @@ $elivation_tx = elivation_treatment( elivation_current_treatment( true ) );
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"className":"eh-step__title"} -->
-<h3 class="wp-block-heading eh-step__title">Relax for <?php echo esc_html( $elivation_tx['session'] ); ?></h3>
+<h3 class="wp-block-heading eh-step__title">Allow <?php echo esc_html( $elivation_tx['session'] ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Stay on the couch, take a call, or nap. Your nurse stays with you and cleans up when they leave.</p>
+<p>Settle in with a book, take a call or rest. Your nurse stays with you, removes the IV and takes care of cleanup.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
