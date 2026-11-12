@@ -61,7 +61,9 @@ npm run photos   # assets/photos/*.jpg -> elivation/assets/photos/*.webp
 npm run reviews  # content/reviews.json -> elivation/assets/reviews.json
 ```
 
-## Changing the palette (for example, to navy)
+## Changing the palette
+
+The palette is navy + sky (from the logo) with coral for primary buttons.
 
 Edit the values in `tokens/colors.css`, run `npm run tokens`, and reload. `theme.css` has no color literals, so nothing else needs to change.
 

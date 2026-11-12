@@ -66,7 +66,7 @@
 	/* ---------- Checks shown in the debug panel ---------- */
 	function checkTokens() {
 		var cs = getComputedStyle(root);
-		var names = ['--coral-500', '--pine-800', '--paper', '--surface-page', '--action-primary', '--font-display', '--shadow-2'];
+		var names = ['--coral-500', '--navy-800', '--paper', '--surface-page', '--action-primary', '--font-display', '--shadow-2'];
 		var missing = names.filter(function (n) { return !cs.getPropertyValue(n).trim(); });
 		if (missing.length) {
 			log('error', 'Design tokens missing: ' + missing.join(', ') + '. Is assets/css/tokens.css loading?');

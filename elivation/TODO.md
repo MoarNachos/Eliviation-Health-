@@ -21,7 +21,7 @@ Nothing below has been invented. Where the design had placeholder content, the p
 | 11 | City list, and "Same-day visits are often available" | `functions.php` (`elivation_service_cities()`), `patterns/service-areas.php` |
 | 12 | Opening hours and (optionally) a postal address for the JSON-LD | `functions.php` (`elivation_json_ld()`) |
 | 13 | Medical disclaimer wording in the footer | `patterns/footer.php` |
-| 14 | Official logo SVG. The wordmark is set in type until it arrives | `patterns/header.php`, `patterns/footer.php` |
+| 14 | Official logo as SVG. The PNGs in `assets/images/` (navy for light backgrounds, white for dark) are used until it arrives | `patterns/header.php`, `patterns/footer.php` |
 
 ## Treatment pages (`/treatments/recovery`, `/relief`, `/rejuvenation`)
 
@@ -55,6 +55,6 @@ Nothing below has been invented. Where the design had placeholder content, the p
 | 17 | Out-of-area ZIP message is off until a list of covered ZIP codes is supplied | `functions.php` (`elivation_service_zips()`) |
 | 18 | Pages that do not exist yet: pricing comparison, full team, FAQ, Careers, Privacy, Terms. (`/treatments/` itself redirects to the homepage section.) Links point at the booking site or a page section, or are left out | `patterns/treatments.php`, `patterns/team.php`, `patterns/footer.php` |
 
-## Open design question
+## Palette
 
-The real brand (tent, scrubs, logo) is navy, and the client may switch the primary palette. Every color in the theme comes from `tokens/colors.css`. To switch: edit that file, run `npm run tokens`, done.
+Navy + sky, taken from the official logo, with coral kept for primary buttons (see `design_handoff_homepage/BRAND_GUIDE.md`). Every color in the theme comes from `tokens/colors.css`. To change it: edit that file, run `npm run tokens`, done.

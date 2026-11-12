@@ -64,11 +64,11 @@ Container max-width is 1280px. Page margin is `clamp(20px,5vw,72px)`. Section ve
 ## Design tokens
 Source of truth: `design/tokens/` (`colors.css`, `typography.css`, `spacing.css`, `effects.css`, `base.css`).
 - Fonts are Google Fonts: Bricolage Grotesque, Instrument Serif, Figtree and DM Mono.
-- ⚠ **Open palette question:** the real brand (tent, scrubs, logo) is navy. The client may switch the primary palette to navy. Keep every color behind tokens so that is a one-file change.
+- Palette is **navy + sky (from the logo) with coral CTAs**. See BRAND_GUIDE.md.
 
 ## Assets
 - `design/assets/photos/`: 15 curated event and team photos, 2000px on the long edge. `picks.txt` has a description and consent notes for each. ⚠ team-3 and community-2 have consent flags.
-- No logo file has been supplied yet. Use the text wordmark until the SVG arrives.
+- Logo: `design/assets/logo-navy.png` (light bg) and `logo-white.png` (dark bg). SVG still to come.
 
 ## Files
 - `design/templates/homepage/Homepage.dc.html`: the homepage reference
@@ -76,3 +76,5 @@ Source of truth: `design/tokens/` (`colors.css`, `typography.css`, `spacing.css`
 - `BRAND_GUIDE.md`: voice, visual rules, photography and iconography (Lucide)
 - `SKILL.md`: Agent Skill for brand-consistent work
 - `CLAUDE_CODE_PROMPT.md`: the kickoff prompt
+- `PROMPT_BRAND_UPDATE.md`: apply the logo + navy palette to work already built
+- `PROMPT_TREATMENT_PAGES.md`: treatment landing pages

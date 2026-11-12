@@ -8,6 +8,7 @@
  *
  * TODO(client): Pricing, FAQ, Careers, Privacy and Terms pages do not exist yet. Pricing points at the booking site; the others are left out or shown as plain text.
  * TODO(client): have the medical disclaimer line reviewed.
+ * TODO(client): swap the PNG logo (assets/images/logo-white.png) for an SVG when supplied.
  *
  * @package elivation
  */
@@ -18,7 +19,7 @@
 	<div class="eh-container eh-stack-48">
 		<div class="eh-footer__grid">
 			<div class="eh-footer__brand">
-				<span class="eh-wordmark eh-wordmark--inverse">elivation<span class="eh-wordmark__dot">.</span></span>
+				<img class="eh-logo__img eh-logo__img--footer" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/logo-white.png' ) ); ?>" alt="Elivation Health" width="407" height="103" loading="lazy">
 				<span>Expert care. A personal touch. Wherever you are.</span>
 			</div>
 			<nav class="eh-footer__col" aria-label="Treatments">

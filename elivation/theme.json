@@ -61,54 +61,54 @@
 					"color": "#6F2414"
 				},
 				{
-					"slug": "pine-50",
-					"name": "Pine 50",
-					"color": "#ECF4F2"
+					"slug": "navy-50",
+					"name": "Navy 50",
+					"color": "#EEF3F9"
 				},
 				{
-					"slug": "pine-100",
-					"name": "Pine 100",
-					"color": "#D2E6E1"
+					"slug": "navy-100",
+					"name": "Navy 100",
+					"color": "#D6E2EF"
 				},
 				{
-					"slug": "pine-200",
-					"name": "Pine 200",
-					"color": "#A6CDC3"
+					"slug": "navy-200",
+					"name": "Navy 200",
+					"color": "#ADC4DE"
 				},
 				{
-					"slug": "pine-300",
-					"name": "Pine 300",
-					"color": "#73AFA1"
+					"slug": "navy-300",
+					"name": "Navy 300",
+					"color": "#8FB0D6"
 				},
 				{
-					"slug": "pine-400",
-					"name": "Pine 400",
-					"color": "#3F8C7D"
+					"slug": "navy-400",
+					"name": "Navy 400",
+					"color": "#4F78A6"
 				},
 				{
-					"slug": "pine-500",
-					"name": "Pine 500",
-					"color": "#1F6F62"
+					"slug": "navy-500",
+					"name": "Navy 500",
+					"color": "#2C5A8C"
 				},
 				{
-					"slug": "pine-600",
-					"name": "Pine 600",
-					"color": "#165A50"
+					"slug": "navy-600",
+					"name": "Navy 600",
+					"color": "#1F4673"
 				},
 				{
-					"slug": "pine-700",
-					"name": "Pine 700",
-					"color": "#10463F"
+					"slug": "navy-700",
+					"name": "Navy 700",
+					"color": "#16355A"
 				},
 				{
-					"slug": "pine-800",
-					"name": "Pine 800",
-					"color": "#0C3530"
+					"slug": "navy-800",
+					"name": "Navy 800",
+					"color": "#0F2846"
 				},
 				{
-					"slug": "pine-900",
-					"name": "Pine 900",
-					"color": "#082522"
+					"slug": "navy-900",
+					"name": "Navy 900",
+					"color": "#0A1C33"
 				},
 				{
 					"slug": "sun-100",
@@ -131,19 +131,24 @@
 					"color": "#B5821A"
 				},
 				{
-					"slug": "glass-100",
-					"name": "Glass 100",
-					"color": "#E3F2EE"
+					"slug": "sky-100",
+					"name": "Sky 100",
+					"color": "#E3F4FB"
 				},
 				{
-					"slug": "glass-300",
-					"name": "Glass 300",
-					"color": "#B7DDD3"
+					"slug": "sky-300",
+					"name": "Sky 300",
+					"color": "#A3D3F1"
 				},
 				{
-					"slug": "glass-500",
-					"name": "Glass 500",
-					"color": "#86C3B4"
+					"slug": "sky-500",
+					"name": "Sky 500",
+					"color": "#20AEE0"
+				},
+				{
+					"slug": "sky-700",
+					"name": "Sky 700",
+					"color": "#0F7FAE"
 				},
 				{
 					"slug": "paper",
@@ -446,7 +451,7 @@
 				"action-primary-press": "var(--action-primary-press)",
 				"action-secondary": "var(--action-secondary)",
 				"action-secondary-hover": "var(--action-secondary-hover)",
-				"action-ghost-hover": "rgba(31,111,98,.08)"
+				"action-ghost-hover": "rgba(44,90,140,.08)"
 			},
 			"radius": {
 				"xs": "6px",

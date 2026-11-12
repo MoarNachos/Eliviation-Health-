@@ -31,7 +31,7 @@ This is a full creative reset of elivationhealth.com, not a refresh of the old s
 - **Examples:** "A nurse comes to you." · "Relax for 45–60 minutes." · "Not sure we cover you? Call and we'll tell you straight."
 
 ## Visual foundations
-- **Color, Golden Hour palette:** warm paper (#FBF6EE) page background; Coral (#E2532E) for actions and accents; Pine (#10463F–#0C3530) for trust, dark sections and the footer; Sun and Glass as supporting tints; warm sand neutrals. Coral is reserved for primary CTAs and one hero accent per view.
+- **Color — navy + sky, from the logo:** warm paper (#FBF6EE) page; **Navy** (#16355A–#0A1C33) for trust, dark sections, footer, secondary buttons (matches tent, scrubs, logo text); **Sky** (#20AEE0, light #A3D3F1) = the logo's "iv" blue, used for highlights, links on dark, small accents — never body text on white; **Coral** (#E2532E) stays as the single warm action color for primary CTAs; Sun tints for warmth. Neutrals are warm sand.
 - **Type:**
   - Bricolage Grotesque for display and headings: bold, tight tracking (−0.035em).
   - Instrument Serif Italic for the emotional second phrase in headlines.
@@ -57,7 +57,7 @@ This is a full creative reset of elivationhealth.com, not a refresh of the old s
 No icon set has been supplied. Use **Lucide** from CDN (1.5–2px stroke, rounded caps), which matches the friendly geometric type. Keep icons small and functional; they are not illustrations. No emoji. The ✓ character is acceptable for trust lines. The current site's PNG trust badges (HIPAA, Doctor-Owned) should be replaced with plain text claims once verified.
 
 ## Logo
-No logo file is in this project yet. Until one is supplied, the wordmark is set in type: "elivation" in Bricolage Grotesque Bold, pine color, followed by a coral period. Upload the official logo to `assets/logo.svg` to replace it.
+Official logo supplied as PNG (407×103): `assets/logo-white.png` (original, white wordmark + sky "iv") for dark/photo backgrounds; `assets/logo-navy.png` (same artwork, white recolored to navy #0F2846) for light backgrounds. Tagline lockup: "Elite Level IV Health For Everyone". Min height 32px; clear space = height of the "e". Never recolor the "iv" mark, stretch, or place on busy photo areas without a scrim. Ask the client for an SVG master.
 
 ## Index
 - `styles.css`: global entry point (@imports only)

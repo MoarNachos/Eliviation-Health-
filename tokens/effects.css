@@ -15,5 +15,5 @@
 --dur-base:220ms; /* @kind other */
 --dur-slow:420ms; /* @kind other */
 --blur-nav:saturate(1.4) blur(14px); /* @kind other */
---scrim-photo:linear-gradient(180deg,rgba(12,53,48,0) 40%,rgba(12,53,48,.72) 100%); /* @kind color */
+--scrim-photo:linear-gradient(180deg,rgba(15,40,70,0) 40%,rgba(15,40,70,.72) 100%); /* @kind color */
 }
