@@ -1,0 +1,25 @@
+:root{
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:24px;
+--space-6:32px;
+--space-7:48px;
+--space-8:64px;
+--space-9:96px;
+--space-10:144px;
+--section-y:clamp(64px,8vw,128px); /* @kind spacing */
+--gutter:clamp(20px,3vw,32px); /* @kind spacing */
+--page-margin:clamp(20px,5vw,72px); /* @kind spacing */
+--container-max:1280px; /* @kind spacing */
+--container-text:680px; /* @kind spacing */
+--grid-cols-desktop:12; /* @kind other */
+--grid-cols-tablet:8; /* @kind other */
+--grid-cols-mobile:4; /* @kind other */
+--bp-sm:480px; /* @kind spacing */
+--bp-md:768px; /* @kind spacing */
+--bp-lg:1024px; /* @kind spacing */
+--bp-xl:1280px; /* @kind spacing */
+--tap-min:48px; /* @kind spacing */
+}

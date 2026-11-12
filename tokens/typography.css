@@ -1,0 +1,28 @@
+:root{
+--font-display:'Bricolage Grotesque','Figtree',system-ui,sans-serif;
+--font-serif:'Instrument Serif',Georgia,serif;
+--font-body:'Figtree',system-ui,-apple-system,sans-serif;
+--font-mono:'DM Mono',ui-monospace,monospace;
+--fs-display-xl:clamp(3.25rem,2rem + 5vw,6.5rem); /* @kind other */
+--fs-display-l:clamp(2.5rem,1.6rem + 3.6vw,4.5rem); /* @kind other */
+--fs-h1:clamp(2.125rem,1.6rem + 2vw,3.25rem); /* @kind other */
+--fs-h2:clamp(1.75rem,1.4rem + 1.4vw,2.5rem); /* @kind other */
+--fs-h3:1.5rem; /* @kind other */
+--fs-h4:1.25rem; /* @kind other */
+--fs-body-l:1.1875rem; /* @kind other */
+--fs-body:1.0625rem; /* @kind other */
+--fs-body-s:.9375rem; /* @kind other */
+--fs-caption:.8125rem; /* @kind other */
+--fs-eyebrow:.75rem; /* @kind other */
+--lh-tight:1.02; /* @kind font */
+--lh-snug:1.15; /* @kind font */
+--lh-body:1.55; /* @kind font */
+--ls-display:-.035em; /* @kind font */
+--ls-heading:-.02em; /* @kind font */
+--ls-eyebrow:.14em; /* @kind font */
+--fw-regular:400; /* @kind font */
+--fw-medium:500; /* @kind font */
+--fw-semibold:600; /* @kind font */
+--fw-bold:700; /* @kind font */
+--fw-black:800; /* @kind font */
+}
