@@ -46,6 +46,8 @@ function elivation_treatments() {
 			// TODO(client): community-2 has a consent flag (one golfer visible in profile). Confirm, crop or swap.
 			'photo'       => 'community-2',
 			'session'     => '1h 15m',
+			// Review ids from content/reviews.json; mentions "hangover remedies".
+			'reviews'     => array( 'r5' ),
 			'good_for'    => array(
 				'After a race, game or hard training block',
 				'Long-haul travel and jet lag',
@@ -97,6 +99,8 @@ function elivation_treatments() {
 			'meta'        => 'Relief IV drips for cold and flu, nausea, migraines and food poisoning, brought to you by a Registered Nurse in Orange County and LA. From $185.',
 			'photo'       => 'event-4',
 			'session'     => '1h 15m',
+			// Review ids from content/reviews.json; no review on the live site mentions a Relief drip.
+			'reviews'     => array(),
 			'good_for'    => array(
 				'Cold and flu symptoms',
 				'Food poisoning or stomach bugs',
@@ -145,6 +149,8 @@ function elivation_treatments() {
 			'meta'        => 'Rejuvenation IV drips with NAD+, glutathione and skin-supporting nutrients, given at home by a Registered Nurse in Orange County and LA. From $239.',
 			'photo'       => 'community-3',
 			'session'     => '1h 15m – 2h 30m',
+			// Review ids from content/reviews.json; mentions "IV + NAD treatment".
+			'reviews'     => array( 'r3' ),
 			'good_for'    => array(
 				'Steady energy and mental focus',
 				'Skin, hair and nail support',

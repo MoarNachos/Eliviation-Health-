@@ -44,6 +44,7 @@ Add `?debug=1` to any URL for an on-page debug panel (tokens, fonts, heading cou
 | `assets/css/theme.css` | Layout and components. Colors come from tokens only |
 | `assets/js/theme.js` | Mobile menu, scroll reveal, ZIP check, event form check, debug panel |
 | `assets/photos/` | **Generated** WebP files (800, 1400, 2000px) plus `picks.txt` and `manifest.json` |
+| `assets/reviews.json` | **Generated** copy of `content/reviews.json` (verbatim client reviews) |
 | `functions.php` | Fonts, styles, photo `srcset`, hero preload, `MedicalBusiness` JSON-LD |
 | `patterns/` | One pattern per homepage section, plus header and footer. `treatment-*.php` are the treatment page sections |
 | `inc/treatments.php` | Treatment data (drips, prices, FAQs), page creation, title, meta description, `MedicalBusiness` + `Service` + `FAQPage` JSON-LD |
@@ -57,6 +58,7 @@ Add `?debug=1` to any URL for an on-page debug panel (tokens, fonts, heading cou
 ```bash
 npm run tokens   # tokens/*.css -> theme.json and assets/css/tokens.css
 npm run photos   # assets/photos/*.jpg -> elivation/assets/photos/*.webp
+npm run reviews  # content/reviews.json -> elivation/assets/reviews.json
 ```
 
 ## Changing the palette (for example, to navy)

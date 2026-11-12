@@ -3,20 +3,26 @@
  * Title: Reviews
  * Slug: elivation/reviews
  * Categories: elivation, testimonials
- * Description: Three review cards.
+ * Description: Three review cards with real client reviews.
  *
- * TODO(client): ALL THREE QUOTES ARE PLACEHOLDERS. Replace them with real, verified
- * Google reviews (under 40 words each, first name and initial, city) before launch.
- * Do not publish this section with the placeholder text.
+ * Reviews come from content/reviews.json (copied into assets/reviews.json by
+ * `npm run reviews`). The text is never edited: a long review shows its opening
+ * sentences word for word, then "…" and a link to the full review.
+ *
+ * These reviews are published on the business's own site and are not tied to
+ * Google or Yelp, so the cards say "Elivation client" and no Review or
+ * AggregateRating JSON-LD is output.
+ *
+ * TODO(build): the full-review link points at the current site's /testimonials/ page.
+ * Point it at the new reviews page once that exists.
  *
  * @package elivation
  */
 
-$elivation_reviews = array(
-	'Paste a verified Google review here — keep it under 40 words.',
-	'A second verified review, ideally mentioning a nurse by name.',
-	'A third verified review, ideally from an event or corporate client.',
-);
+$elivation_reviews = elivation_reviews( array( 'r1', 'r3', 'r5' ) );
+if ( ! $elivation_reviews ) {
+	return;
+}
 ?>
 <!-- wp:group {"tagName":"section","anchor":"reviews","className":"eh-scope eh-section"} -->
 <section id="reviews" class="wp-block-group eh-scope eh-section">
@@ -36,13 +42,11 @@ $elivation_reviews = array(
 
 <!-- wp:group {"className":"eh-reviews"} -->
 <div class="wp-block-group eh-reviews">
-<?php foreach ( $elivation_reviews as $elivation_review ) : ?>
-<!-- wp:quote {"className":"eh-review"} -->
-<blockquote class="wp-block-quote eh-review"><!-- wp:paragraph -->
-<p>“<?php echo esc_html( $elivation_review ); ?>”</p>
-<!-- /wp:paragraph --><cite><strong>First name, initial</strong> · City · Google</cite></blockquote>
-<!-- /wp:quote -->
-<?php endforeach; ?>
+<?php
+foreach ( $elivation_reviews as $elivation_review ) {
+	echo elivation_review_card( $elivation_review ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped inside.
+}
+?>
 </div>
 <!-- /wp:group -->
 </div>

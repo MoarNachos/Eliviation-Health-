@@ -17,7 +17,7 @@ Nothing below has been invented. Where the design had placeholder content, the p
 | 7 | "certified Registered Nurse under physician direction" | `patterns/team.php` |
 | 8 | Event facts: "Groups of 4 to 100+ · Onsite nurse team · Custom menus" | `patterns/events.php` |
 | 9 | "We reply within one business day" | `patterns/events.php`, `assets/js/theme.js` |
-| 10 | **Reviews are placeholders.** Replace all three with real Google reviews before launch | `patterns/reviews.php` |
+| 10 | **Reviews are real but self-published.** The homepage shows r1, r3 and r5 from `content/reviews.json`, copied verbatim from elivationhealth.com/testimonials/. None is tied to Google or Yelp, so they're labelled "Elivation client" and there is no review JSON-LD. Swap in Google Business Profile reviews if you want stars in search. The "Read the full review" link still points at the old /testimonials/ page | `patterns/reviews.php`, `content/reviews.json` |
 | 11 | City list, and "Same-day visits are often available" | `functions.php` (`elivation_service_cities()`), `patterns/service-areas.php` |
 | 12 | Opening hours and (optionally) a postal address for the JSON-LD | `functions.php` (`elivation_json_ld()`) |
 | 13 | Medical disclaimer wording in the footer | `patterns/footer.php` |
