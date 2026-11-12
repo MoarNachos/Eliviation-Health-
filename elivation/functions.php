@@ -24,6 +24,9 @@ define( 'ELIVATION_INSTAGRAM_URL', 'https://www.instagram.com/elivation.health' 
 define( 'ELIVATION_REVIEWS_URL', 'https://www.elivationhealth.com/testimonials/' ); // TODO(build): new reviews page.
 
 require_once __DIR__ . '/inc/treatments.php';
+require_once __DIR__ . '/inc/faq.php';
+require_once __DIR__ . '/inc/search.php';
+require_once __DIR__ . '/inc/legacy-treatment-urls.php';
 
 /* -------------------------------------------------------------------------
  * Content that is shared between patterns and structured data
@@ -444,7 +447,7 @@ function elivation_review_card( $review ) {
  * @return array
  */
 function elivation_business_node() {
-	$area_served = array();
+	$area_served = array( array( '@type' => 'AdministrativeArea', 'name' => 'Orange County, California' ) );
 	foreach ( elivation_service_cities() as $city ) {
 		$area_served[] = array(
 			'@type' => 'City',
@@ -455,10 +458,11 @@ function elivation_business_node() {
 	return array(
 		'@context'        => 'https://schema.org',
 		'@type'           => 'MedicalBusiness',
-		'@id'             => home_url( '/#business' ),
+		'@id'             => home_url( '/#organization' ),
 		'name'            => 'Elivation Health',
 		'description'     => 'Registered Nurses bring physician-directed IV therapy to your home, office, hotel or event.',
 		'url'             => home_url( '/' ),
+		'logo'            => get_theme_file_uri( 'assets/images/logo-navy.png' ),
 		'telephone'       => ELIVATION_PHONE_TEL,
 		'image'           => elivation_photo_url( 'hero-2' ),
 		'areaServed'      => $area_served,

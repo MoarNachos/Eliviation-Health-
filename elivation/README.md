@@ -79,3 +79,13 @@ Each section is a pattern in `patterns/`. Edit the PHP file to change it everywh
 - "How it works" has top padding. In the reference its rules sit flush against the bottom of the hero photo.
 - Card and form shadows use the `--shadow-2` and `--shadow-3` tokens. The reference hardcodes slightly different values.
 - Dead `#` links point at the booking site or a page section; "Meet the full team" is left out until that page exists.
+
+## FAQ and organic search
+
+The theme creates a published WordPress page at `/faq/` on activation. For an existing installation, open wp-admin once as a user with permission to publish pages after updating the theme. An existing FAQ record keeps its ID and publication status. The answers rendered by `patterns/faq-page.php` and the FAQ structured data both use `elivation_faq_groups()` in `inc/faq.php`. The source for individual treatment prices and durations is `inc/treatments.php`.
+
+The canonical production site is `https://www.elivationhealth.com/`. For a static copy of the Viacopia preview, set `WP_ENVIRONMENT_TYPE` to `staging` **when rendering the export** so the saved HTML includes `noindex`. The same directive is applied when WordPress is served from the Viacopia preview URL. Use the production environment and the real site URL for the live deployment. Production respects WordPress and SEO-plugin indexing settings.
+
+After deployment, check the homepage, FAQ and three treatments in Search Console URL Inspection. Confirm the published URLs are in the active sitemap (Yoast uses `/sitemap_index.xml`; WordPress core uses `/wp-sitemap.xml`). The original `/recovery/`, `/relief/` and `/rejuvenation/` addresses should each return one permanent redirect to the published treatment. Existing Orange County and city URLs are separate content; preserve them during a migration and review their search traffic before consolidating any.
+
+Use Search Console to compare non-branded local queries and landing pages with completed bookings and qualified calls in the booking system. Verify the official service-area Business Profile, phone, booking link and coverage with the business owner. Check the production host/CDN allows Googlebot, Bingbot and OAI-SearchBot to retrieve public pages and rendering assets. Theme changes alone cannot verify profile ownership, server rules, or completed bookings.

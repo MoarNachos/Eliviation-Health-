@@ -6,7 +6,7 @@
  * Inserter: no
  * Description: Footer with four columns and the medical disclaimer, plus the sticky mobile booking bar.
  *
- * TODO(client): Pricing, FAQ, Careers, Privacy and Terms pages do not exist yet. Pricing points at the booking site; the others are left out or shown as plain text.
+ * TODO(client): Pricing, Careers, Privacy and Terms pages do not exist yet. Pricing points at the booking site; the others are left out or shown as plain text.
  * TODO(client): have the medical disclaimer line reviewed.
  * TODO(client): swap the PNG logo (assets/images/logo-white.png) for an SVG when supplied.
  *
@@ -34,6 +34,9 @@
 				<a href="<?php echo esc_url( home_url( '/#team' ) ); ?>">Our nurses</a>
 				<a href="<?php echo esc_url( home_url( '/#events' ) ); ?>">Events &amp; groups</a>
 				<a href="<?php echo esc_url( home_url( '/#reviews' ) ); ?>">Reviews</a>
+				<?php if ( elivation_faq_url() ) : ?>
+				<a href="<?php echo esc_url( elivation_faq_url() ); ?>">FAQ</a>
+				<?php endif; ?>
 				<a href="<?php echo esc_url( home_url( '/#areas' ) ); ?>">Areas</a>
 			</nav>
 			<nav class="eh-footer__col" aria-label="Contact">

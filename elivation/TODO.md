@@ -53,7 +53,7 @@ Nothing below has been invented. Where the design had placeholder content, the p
 | 15 | Event inquiry form sends nothing. It checks the fields, then asks the visitor to call. Decide on email or CRM and connect it | `patterns/events.php`, `assets/js/theme.js` |
 | 16 | ZIP card passes `?zip=` to the booking site. Confirm the booking platform reads it | `patterns/hero.php` |
 | 17 | Out-of-area ZIP message is off until a list of covered ZIP codes is supplied | `functions.php` (`elivation_service_zips()`) |
-| 18 | Pages that do not exist yet: pricing comparison, full team, FAQ, Careers, Privacy, Terms. (`/treatments/` itself redirects to the homepage section.) Links point at the booking site or a page section, or are left out | `patterns/treatments.php`, `patterns/team.php`, `patterns/footer.php` |
+| 18 | Pages that do not exist yet: pricing comparison, full team, Careers, Privacy, Terms. (`/treatments/` itself redirects to the homepage section.) Links point at the booking site or a page section, or are left out | `patterns/treatments.php`, `patterns/team.php`, `patterns/footer.php` |
 
 ## Palette
 
