@@ -1,0 +1,19 @@
+{
+  "name": "elivation-health-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Elivation Health design system and the elivation WordPress block theme",
+  "type": "module",
+  "scripts": {
+    "tokens": "node tools/build-theme-json.mjs",
+    "photos": "node tools/build-photos.mjs",
+    "build": "npm run tokens && npm run photos",
+    "start": "wp-env start",
+    "stop": "wp-env stop",
+    "playground": "npx @wp-playground/cli@latest server --mount=./elivation:/wordpress/wp-content/themes/elivation --blueprint=./tools/playground-blueprint.json"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.0.0",
+    "sharp": "^0.33.5"
+  }
+}

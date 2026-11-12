@@ -1,0 +1,14 @@
+/*
+Theme Name: Elivation
+Theme URI: https://www.elivationhealth.com
+Author: Elivation Health
+Description: Block theme for Elivation Health, a mobile IV hydration service. Built from the Elivation design tokens: theme.json is generated from tokens/*.css, and each homepage section is a block pattern.
+Version: 0.1.0
+Requires at least: 6.6
+Tested up to: 6.8
+Requires PHP: 7.4
+License: Proprietary
+Text Domain: elivation
+*/
+
+/* Styles live in assets/css/tokens.css (generated) and assets/css/theme.css. */
