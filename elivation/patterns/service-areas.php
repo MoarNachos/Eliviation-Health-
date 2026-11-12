@@ -6,7 +6,7 @@
  * Description: Where the service goes, with city pills and the booking and call buttons.
  *
  * TODO(client): verify the city list (edit elivation_service_cities() in functions.php; it also feeds the JSON-LD).
- * TODO(client): verify "Anywhere in Orange County. And a lot of LA." and "Same-day visits are often available."
+ * TODO(client): verify coverage with the booking team.
  *
  * @package elivation
  */
@@ -23,11 +23,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"eh-h2"} -->
-<h2 class="wp-block-heading eh-h2">Anywhere in Orange County. <em>And a lot of LA.</em></h2>
+<h2 class="wp-block-heading eh-h2">Orange County <em>and parts of Los Angeles.</em></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"eh-lede"} -->
-<p class="eh-lede">Same-day visits are often available. Not sure we cover you? Call and we'll tell you straight.</p>
+<p class="eh-lede">Need a visit today? Call to check availability for your address.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"className":"eh-actions"} -->

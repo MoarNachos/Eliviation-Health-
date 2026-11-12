@@ -264,6 +264,9 @@ function elivation_photo_srcset( $name ) {
  * @return string
  */
 function elivation_photo_sizes( $class_name ) {
+	if ( false !== strpos( $class_name, 'eh-home-intro__photo' ) ) {
+		return '(min-width: 1500px) 580px, (min-width: 900px) 42vw, 90vw';
+	}
 	if ( false !== strpos( $class_name, 'eh-hero__photo' ) ) {
 		return '100vw';
 	}
@@ -308,7 +311,9 @@ function elivation_responsive_theme_photos( $block_content, $block ) {
 	}
 
 	$class_name = isset( $block['attrs']['className'] ) ? (string) $block['attrs']['className'] : '';
-	$is_hero    = false !== strpos( $class_name, 'eh-hero__photo' ) || false !== strpos( $class_name, 'eh-tx-hero__photo' );
+	$is_hero    = false !== strpos( $class_name, 'eh-home-intro__photo' )
+		|| false !== strpos( $class_name, 'eh-hero__photo' )
+		|| false !== strpos( $class_name, 'eh-tx-hero__photo' );
 	$largest    = end( $manifest[ $name ]['sizes'] );
 
 	$tags = new WP_HTML_Tag_Processor( $block_content );
@@ -337,14 +342,15 @@ function elivation_preload_hero() {
 	if ( ! is_front_page() ) {
 		return;
 	}
-	$srcset = elivation_photo_srcset( 'hero-2' );
+	$srcset = elivation_photo_srcset( 'mobile-iv-home' );
 	if ( '' === $srcset ) {
 		return;
 	}
 	printf(
-		'<link rel="preload" as="image" type="image/webp" href="%s" imagesrcset="%s" imagesizes="100vw" fetchpriority="high">' . "\n",
-		esc_url( elivation_photo_url( 'hero-2' ) ),
-		esc_attr( $srcset )
+		'<link rel="preload" as="image" type="image/webp" href="%s" imagesrcset="%s" imagesizes="%s" fetchpriority="high">' . "\n",
+		esc_url( elivation_photo_url( 'mobile-iv-home' ) ),
+		esc_attr( $srcset ),
+		esc_attr( elivation_photo_sizes( 'eh-home-intro__photo' ) )
 	);
 }
 add_action( 'wp_head', 'elivation_preload_hero', 2 );
@@ -409,20 +415,29 @@ function elivation_review_excerpt( $text, $max_words = 45 ) {
 }
 
 /**
- * Block markup for one review card: opening sentences verbatim, then "…" and
+ * Block markup for one review card: a verbatim excerpt, then "…" and
  * a link to the full review when the excerpt is cut.
  *
- * @param array $review One entry from elivation_reviews().
+ * @param array  $review One entry from elivation_reviews().
+ * @param string $selected_excerpt Optional passage from this review, quoted verbatim.
  * @return string
  */
-function elivation_review_card( $review ) {
-	$excerpt = elivation_review_excerpt( $review['text'] );
-	$more    = $excerpt['cut']
+function elivation_review_card( $review, $selected_excerpt = '' ) {
+	if ( '' !== $selected_excerpt && false !== strpos( $review['text'], $selected_excerpt ) ) {
+		$excerpt = array(
+			'text' => $selected_excerpt,
+			'cut'  => $selected_excerpt !== $review['text'],
+		);
+	} else {
+		$excerpt = elivation_review_excerpt( $review['text'] );
+	}
+	$ellipsis = $excerpt['cut'] && ! preg_match( '/[.!?…]$/u', $excerpt['text'] ) ? '…' : '';
+	$more     = $excerpt['cut']
 		? ' · <a class="eh-review__more" href="' . esc_url( ELIVATION_REVIEWS_URL ) . '">Read the full review</a>'
 		: '';
 	return '<!-- wp:quote {"className":"eh-review"} -->' . "\n"
 		. '<blockquote class="wp-block-quote eh-review"><!-- wp:paragraph -->' . "\n"
-		. '<p>“' . esc_html( $excerpt['text'] ) . ( $excerpt['cut'] ? '…' : '' ) . '”</p>' . "\n"
+		. '<p>“' . esc_html( $excerpt['text'] ) . $ellipsis . '”</p>' . "\n"
 		. '<!-- /wp:paragraph --><cite><strong>' . esc_html( $review['author'] ) . '</strong> · Elivation client' . $more . '</cite></blockquote>' . "\n"
 		. '<!-- /wp:quote -->' . "\n";
 }
@@ -460,7 +475,7 @@ function elivation_business_node() {
 		'description'     => 'Registered Nurses bring physician-directed IV therapy to your home, office, hotel or event.',
 		'url'             => home_url( '/' ),
 		'telephone'       => ELIVATION_PHONE_TEL,
-		'image'           => elivation_photo_url( 'hero-2' ),
+		'image'           => elivation_photo_url( 'mobile-iv-home' ),
 		'areaServed'      => $area_served,
 		'sameAs'          => array( ELIVATION_INSTAGRAM_URL ),
 		'potentialAction' => array(
