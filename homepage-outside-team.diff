@@ -1,0 +1,23 @@
+--- before (1d4aa5d)
++++ after
+@@ -97,3 +97,3 @@
+ <cite>
+-<a href="https://www.elivationhealth.com/testimonials/">Blythe P. · Elivation client</a>
++<a href="/elivation/testimonials/#review-r3">Blythe P. · Elivation client</a>
+ </cite>
+@@ -321,3 +321,3 @@
+ <cite>
+-<strong>David B.</strong> · Elivation client · <a class="eh-review__more" href="https://www.elivationhealth.com/testimonials/">Read the full review</a>
++<strong>David B.</strong> · Elivation client · <a class="eh-review__more" href="/elivation/testimonials/#review-r2">Read the full review</a>
+ </cite>
+@@ -327,3 +327,3 @@
+ <cite>
+-<strong>Logan A.</strong> · Elivation client · <a class="eh-review__more" href="https://www.elivationhealth.com/testimonials/">Read the full review</a>
++<strong>Logan A.</strong> · Elivation client · <a class="eh-review__more" href="/elivation/testimonials/#review-r5">Read the full review</a>
+ </cite>
+@@ -397,3 +397,4 @@
+ <span>© 2026 Elivation Health. IV therapy is provided under physician direction after a health screening. Not a substitute for emergency care.</span>
+-<span>Privacy · Terms</span>
++<span>
++<a href="/elivation/privacy-policy/">Privacy</a> · Terms</span>
+ </div>
