@@ -373,40 +373,6 @@ add_filter( 'body_class', 'elivation_treatment_body_class' );
  * ---------------------------------------------------------------------- */
 
 /**
- * Unique document title per treatment page.
- *
- * @param string $title Pre-filtered title ('' to let WordPress build it).
- * @return string
- */
-function elivation_treatment_document_title( $title ) {
-	$key = elivation_current_treatment();
-	if ( ! $key ) {
-		return $title;
-	}
-	$treatment = elivation_treatment( $key );
-	return sprintf( '%s IV therapy at home, from %s | Elivation Health', $treatment['name'], elivation_price( elivation_treatment_from_price( $treatment ) ) );
-}
-add_filter( 'pre_get_document_title', 'elivation_treatment_document_title', 20 );
-
-/**
- * Meta description and canonical-friendly Open Graph basics.
- * Skipped when an SEO plugin that writes its own description is active.
- */
-function elivation_treatment_meta() {
-	$key = elivation_current_treatment();
-	if ( ! $key || defined( 'WPSEO_VERSION' ) || defined( 'RANK_MATH_VERSION' ) ) {
-		return;
-	}
-	$treatment = elivation_treatment( $key );
-	printf( '<meta name="description" content="%s">' . "\n", esc_attr( $treatment['meta'] ) );
-	printf( '<meta property="og:title" content="%s">' . "\n", esc_attr( elivation_treatment_document_title( '' ) ) );
-	printf( '<meta property="og:description" content="%s">' . "\n", esc_attr( $treatment['meta'] ) );
-	printf( '<meta property="og:image" content="%s">' . "\n", esc_url( elivation_photo_url( $treatment['photo'] ) ) );
-	printf( '<meta property="og:url" content="%s">' . "\n", esc_url( elivation_treatment_url( $key ) ) );
-}
-add_action( 'wp_head', 'elivation_treatment_meta', 1 );
-
-/**
  * Preload the hero photo on treatment pages.
  */
 function elivation_treatment_preload_hero() {
