@@ -1,0 +1,8 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "login": true,
+  "steps": [
+    { "step": "activateTheme", "themeFolderName": "elivation" }
+  ]
+}
