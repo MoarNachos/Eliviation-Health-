@@ -7,14 +7,15 @@
  * Description: Treatment page hero: breadcrumb, H1, one-line promise, photo, Book and See drips buttons, trust line.
  *
  * Content comes from elivation_treatments() in inc/treatments.php.
- * TODO(client): verify "HSA / FSA eligible" and "Registered Nurses · Physician directed".
+ * TODO(client): verify the listed service area and physician-directed protocols.
  *
  * @package elivation
  */
 
-$elivation_key = elivation_current_treatment( true );
-$elivation_tx  = elivation_treatment( $elivation_key );
-$elivation_from = elivation_price( elivation_treatment_from_price( $elivation_tx ) );
+$elivation_key    = elivation_current_treatment( true );
+$elivation_tx     = elivation_treatment( $elivation_key );
+$elivation_from   = elivation_price( elivation_treatment_from_price( $elivation_tx ) );
+$elivation_prices = wp_list_pluck( $elivation_tx['drips'], 'price', 'id' );
 ?>
 <!-- wp:group {"tagName":"section","className":"eh-scope eh-tx-hero"} -->
 <section class="wp-block-group eh-scope eh-tx-hero">
@@ -33,7 +34,7 @@ $elivation_from = elivation_price( elivation_treatment_from_price( $elivation_tx
 <!-- /wp:html -->
 
 <!-- wp:paragraph {"className":"eh-eyebrow eh-eyebrow--dot"} -->
-<p class="eh-eyebrow eh-eyebrow--dot"><?php echo esc_html( $elivation_tx['name'] ); ?> IV therapy · delivered to you</p>
+<p class="eh-eyebrow eh-eyebrow--dot"><?php echo esc_html( $elivation_tx['name'] ); ?> IV therapy · Orange County &amp; parts of Los Angeles</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"className":"eh-tx-hero__title"} -->
@@ -41,12 +42,12 @@ $elivation_from = elivation_price( elivation_treatment_from_price( $elivation_tx
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"eh-lede"} -->
-<p class="eh-lede"><?php echo esc_html( $elivation_tx['promise'] ); ?></p>
+<p class="eh-lede"><?php echo esc_html( $elivation_tx['promise'] ); ?><?php if ( 'relief' === $elivation_key ) : ?> <a href="tel:<?php echo esc_attr( ELIVATION_PHONE_TEL ); ?>">Call about a visit today</a>.<?php endif; ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
 <div class="eh-actions eh-tx-hero__actions">
-	<a class="eh-btn eh-btn--primary" href="<?php echo esc_url( ELIVATION_BOOKING_URL ); ?>" data-eh-book>Book <?php echo esc_html( $elivation_tx['name'] ); ?></a>
+	<a class="eh-btn eh-btn--primary" href="<?php echo esc_url( ELIVATION_BOOKING_URL ); ?>" data-eh-book>Book a visit</a>
 	<a class="eh-btn eh-btn--ghost" href="#drips">See drips &amp; prices</a>
 </div>
 <!-- /wp:html -->
@@ -54,16 +55,18 @@ $elivation_from = elivation_price( elivation_treatment_from_price( $elivation_tx
 <!-- wp:list {"className":"eh-tx-hero__trust"} -->
 <ul class="wp-block-list eh-tx-hero__trust">
 <!-- wp:list-item -->
-<li>From <?php echo esc_html( $elivation_from ); ?></li>
+<li><?php echo isset( $elivation_prices['nad250'] ) ? 'Wellness from' : 'From'; ?> <?php echo esc_html( $elivation_from ); ?></li>
+<!-- /wp:list-item -->
+<?php if ( isset( $elivation_prices['nad250'] ) ) : ?>
+<!-- wp:list-item -->
+<li>NAD+ from <?php echo esc_html( elivation_price( $elivation_prices['nad250'] ) ); ?></li>
+<!-- /wp:list-item -->
+<?php endif; ?>
+<!-- wp:list-item -->
+<li><?php echo esc_html( $elivation_tx['session'] ); ?> per visit</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><?php echo esc_html( $elivation_tx['session'] ); ?> sessions</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
-<li>HSA / FSA eligible</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
-<li>Registered Nurses · Physician directed</li>
+<li>Physician-directed care</li>
 <!-- /wp:list-item -->
 </ul>
 <!-- /wp:list -->
