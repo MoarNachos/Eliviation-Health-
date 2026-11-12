@@ -605,6 +605,46 @@ header.wp-block-template-part {
 	color: var(--eh-white-85);
 }
 
+.eh-scope .eh-hero__lede {
+	max-width: 50ch;
+	font-size: clamp(1.0625rem, 1rem + .35vw, 1.3125rem);
+	line-height: 1.45;
+	color: var(--eh-white-85);
+	text-shadow: 0 1px 12px var(--eh-scrim-35);
+}
+
+/* Client quote on the hero photo, above the events link. */
+.eh-scope .eh-hero__review {
+	margin: 0 0 6px;
+	padding: 2px 0 2px 16px;
+	border: 0;
+	border-inline-start: 2px solid var(--sun-100);
+	color: var(--white);
+	text-shadow: 0 1px 12px var(--eh-scrim-35);
+}
+
+.eh-hero__review p {
+	max-width: 34ch;
+	font-family: var(--font-serif);
+	font-size: clamp(1.25rem, 1rem + .6vw, 1.6rem);
+	line-height: 1.2;
+}
+
+.eh-hero__review cite {
+	display: block;
+	margin-top: 6px;
+	font: 600 14px/1.5 var(--font-body);
+	font-style: normal;
+}
+
+.eh-hero__review cite a {
+	color: var(--eh-white-85);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.eh-hero__review cite a:hover { color: var(--white); }
+
 /* ---------- How it works ---------- */
 .eh-steps {
 	padding: clamp(48px, 6vw, 96px) var(--eh-margin) clamp(56px, 6vw, 96px);
@@ -693,6 +733,11 @@ header.wp-block-template-part {
 .eh-card__body > p {
 	font-size: 16px;
 	line-height: 1.55;
+}
+
+.eh-scope .eh-card__price {
+	color: var(--text-trust);
+	font-weight: 700;
 }
 
 .eh-scope .eh-chips {
@@ -800,6 +845,11 @@ header.wp-block-template-part {
 	overflow: hidden;
 	border-radius: 24px;
 	background: var(--coral-600);
+}
+
+.eh-scope .eh-events__caption {
+	margin-top: -12px;
+	font-size: 14px;
 }
 
 .eh-scope .eh-events__facts {
