@@ -21,6 +21,7 @@ define( 'ELIVATION_BOOKING_URL', 'https://book.elivationhealth.com/' );
 define( 'ELIVATION_PHONE_DISPLAY', '(949) 561-0590' );
 define( 'ELIVATION_PHONE_TEL', '+19495610590' );
 define( 'ELIVATION_INSTAGRAM_URL', 'https://www.instagram.com/elivation.health' );
+define( 'ELIVATION_REVIEWS_URL', 'https://www.elivationhealth.com/testimonials/' ); // TODO(build): new reviews page.
 
 require_once __DIR__ . '/inc/treatments.php';
 
@@ -349,6 +350,84 @@ function elivation_preload_hero() {
 add_action( 'wp_head', 'elivation_preload_hero', 2 );
 
 /* -------------------------------------------------------------------------
+ * Reviews
+ * ---------------------------------------------------------------------- */
+
+/**
+ * Reviews from assets/reviews.json, in the order of the ids given.
+ *
+ * @param string[] $ids Review ids, for example array( 'r1', 'r3' ).
+ * @return array[] Each with 'author' and 'text'. Missing ids are skipped.
+ */
+function elivation_reviews( $ids ) {
+	static $all = null;
+	if ( null === $all ) {
+		$all  = array();
+		$path = get_theme_file_path( 'assets/reviews.json' );
+		if ( is_readable( $path ) ) {
+			$decoded = json_decode( (string) file_get_contents( $path ), true ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+			foreach ( (array) ( $decoded['reviews'] ?? array() ) as $review ) {
+				if ( ! empty( $review['id'] ) && ! empty( $review['text'] ) ) {
+					$all[ $review['id'] ] = $review;
+				}
+			}
+		}
+	}
+	$out = array();
+	foreach ( $ids as $id ) {
+		if ( isset( $all[ $id ] ) ) {
+			$out[] = $all[ $id ];
+		}
+	}
+	return $out;
+}
+
+/**
+ * Opening sentences of a review, word for word, up to about $max_words.
+ * Never cuts mid-sentence; the first sentence is always kept whole.
+ *
+ * @param string $text      Full review text.
+ * @param int    $max_words Word budget.
+ * @return array { text: string, cut: bool }
+ */
+function elivation_review_excerpt( $text, $max_words = 45 ) {
+	$sentences = preg_split( '/(?<=[.!?])\s+/u', trim( $text ) );
+	$kept      = array();
+	$words     = 0;
+	foreach ( $sentences as $sentence ) {
+		$count = count( preg_split( '/\s+/u', $sentence ) );
+		if ( $kept && $words + $count > $max_words ) {
+			break;
+		}
+		$kept[] = $sentence;
+		$words += $count;
+	}
+	return array(
+		'text' => implode( ' ', $kept ),
+		'cut'  => count( $kept ) < count( $sentences ),
+	);
+}
+
+/**
+ * Block markup for one review card: opening sentences verbatim, then "…" and
+ * a link to the full review when the excerpt is cut.
+ *
+ * @param array $review One entry from elivation_reviews().
+ * @return string
+ */
+function elivation_review_card( $review ) {
+	$excerpt = elivation_review_excerpt( $review['text'] );
+	$more    = $excerpt['cut']
+		? ' · <a class="eh-review__more" href="' . esc_url( ELIVATION_REVIEWS_URL ) . '">Read the full review</a>'
+		: '';
+	return '<!-- wp:quote {"className":"eh-review"} -->' . "\n"
+		. '<blockquote class="wp-block-quote eh-review"><!-- wp:paragraph -->' . "\n"
+		. '<p>“' . esc_html( $excerpt['text'] ) . ( $excerpt['cut'] ? '…' : '' ) . '”</p>' . "\n"
+		. '<!-- /wp:paragraph --><cite><strong>' . esc_html( $review['author'] ) . '</strong> · Elivation client' . $more . '</cite></blockquote>' . "\n"
+		. '<!-- /wp:quote -->' . "\n";
+}
+
+/* -------------------------------------------------------------------------
  * Structured data
  * ---------------------------------------------------------------------- */
 
@@ -358,6 +437,9 @@ add_action( 'wp_head', 'elivation_preload_hero', 2 );
  * TODO(client): add openingHoursSpecification once hours are confirmed.
  * TODO(client): add a postal address if the business wants one published.
  * TODO(client): verify areaServed (see elivation_service_cities()).
+ *
+ * No Review or AggregateRating on purpose: the reviews in assets/reviews.json are
+ * published by the business itself and can't be checked against a review platform.
  *
  * @return array
  */

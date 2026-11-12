@@ -988,6 +988,14 @@ header.wp-block-template-part {
 
 .eh-review cite strong { color: var(--text-strong); }
 
+.eh-scope .eh-review__more {
+	color: var(--text-link);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.eh-scope .eh-review__more:hover { color: var(--text-link-hover); }
+
 /* ---------- Service areas ---------- */
 .eh-scope .eh-areas {
 	display: flex;

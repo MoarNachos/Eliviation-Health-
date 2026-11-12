@@ -1,0 +1,103 @@
+{
+  "retrieved": "2026-11-12",
+  "notes": [
+    "Text is copied exactly from https://www.elivationhealth.com/testimonials/, including the spelling 'Elevation Health' in r2.",
+    "No review on the site is attributed to Google, Yelp or any other platform, and none shows a date, so source is 'site' and date is null.",
+    "rating is the number of star icons the site's testimonial widget shows: all five cards show 5 identical stars, with no partial or empty stars in the markup. Treat it as the site's display, not a verified rating.",
+    "treatment_mentions quote the review's own words. live_site_page is filled in only where the phrase matches a drip named on the live site's treatment pages."
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "author": "Chelsea B.",
+      "text": "Elivation IV services are fantastic! The team is professional, kind, and makes the whole process comfortable from start to finish. I felt refreshed, energized, and well taken care of. Highly recommend for anyone looking for a safe and effective wellness boost!",
+      "rating": 5,
+      "source": "site",
+      "date": null,
+      "treatment_mentions": [],
+      "found_on": [
+        "https://www.elivationhealth.com/testimonials/",
+        "https://www.elivationhealth.com/ (cut short)"
+      ]
+    },
+    {
+      "id": "r2",
+      "author": "David B.",
+      "text": "I had an incredible experience with Elevation Health! Nurse Richard was amazing, gentle, professional, and truly cared about my comfort. He never tried to oversell me, but instead politely educated me throughout the treatment.\n\nI’ve done IV treatments before in lounge settings with zen music and friendly (enough) staff, but the best part of this experience? They came to me! Being able to enjoy the treatment in the comfort of my own space was a game-changer. I was far more comfortable in my setting where I could relax, eat, drink, or even watch something while getting my IV.\n\nWill I use them again? Absolutely. Do I recommend you try them? Absolutely. Whether it’s your home, office, or wherever you are, Elevation Health makes the entire process convenient, comfortable, and professional.",
+      "rating": 5,
+      "source": "site",
+      "date": null,
+      "treatment_mentions": [],
+      "found_on": [
+        "https://www.elivationhealth.com/testimonials/",
+        "https://www.elivationhealth.com/ (cut short)"
+      ]
+    },
+    {
+      "id": "r3",
+      "author": "Blythe P.",
+      "text": "I don’t normally leave reviews, but my experience with Elivation Health and Nurse Richard was so outstanding that I have to share. He came right to my home, made the process easy and comfortable, and the results were incredible! I track my sleep on my Oura ring and so the difference was significant! After my IV + NAD treatment, my sleep and recovery improved in ways I’ve never seen before. Highly recommend to anyone looking for a convenient and effective reset!",
+      "rating": 5,
+      "source": "site",
+      "date": null,
+      "treatment_mentions": [
+        {
+          "phrase": "IV + NAD treatment",
+          "live_site_page": "Rejuvenation (lists NAD+ 250mg and NAD+ 500mg)"
+        }
+      ],
+      "found_on": [
+        "https://www.elivationhealth.com/testimonials/",
+        "https://www.elivationhealth.com/ (cut short)"
+      ]
+    },
+    {
+      "id": "r4",
+      "author": "Jackie G.",
+      "text": "I recently had the pleasure of using Elivation Health mobile hydration services, and I couldn’t have been more satisfied. From booking to the actual treatment, the entire process was seamless, professional, and highly effective.\n\nRichard arrived right on time, fully equipped, and made me feel comfortable from the moment he walked in. They explained the process thoroughly, answered all my questions, took my vitals and tailored the IV therapy to my specific needs.\n\nWhat really stood out was how convenient this is, being able to receive top-quality hydration therapy right in the comfort of my own home was a game changer. Whether you're recovering from a long week, prepping for an event, or just looking to boost your wellness, this service is worth every penny.\n\nI felt noticeably more energized and refreshed afterward. I highly recommend them to anyone looking for safe, professional, and convenient hydration therapy. I’ll definitely be booking a hydration party.",
+      "rating": 5,
+      "source": "site",
+      "date": null,
+      "treatment_mentions": [
+        {
+          "phrase": "mobile hydration services",
+          "live_site_page": null
+        },
+        {
+          "phrase": "hydration therapy",
+          "live_site_page": null
+        }
+      ],
+      "found_on": [
+        "https://www.elivationhealth.com/testimonials/",
+        "https://www.elivationhealth.com/ (cut short)"
+      ]
+    },
+    {
+      "id": "r5",
+      "author": "Logan A.",
+      "text": "My IV hydration experience with Elivation Health could not have been more positive. To start, their wonderful RN’s will come to your place of work or residence, giving you the chance to be in the comfort of your preferred space.\n\nOn top of that, their team members are world-class registered nurses. My nurse, Joshua, was extremely professional and guided me through the process with ease. And before I could even blink, my therapy finished, and I can already tell the difference in my mental clarity and level of alertness.\n\nI highly recommend Elivation and their IV services for just about anything, whether it be for immune system support, hangover remedies, or just to get hydration in order!\n\nLooking forward to my next session!",
+      "rating": 5,
+      "source": "site",
+      "date": null,
+      "treatment_mentions": [
+        {
+          "phrase": "IV hydration",
+          "live_site_page": null
+        },
+        {
+          "phrase": "immune system support",
+          "live_site_page": null
+        },
+        {
+          "phrase": "hangover remedies",
+          "live_site_page": "Recovery (lists Hangover Remedy)"
+        }
+      ],
+      "found_on": [
+        "https://www.elivationhealth.com/testimonials/",
+        "https://www.elivationhealth.com/ (cut short)"
+      ]
+    }
+  ]
+}

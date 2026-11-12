@@ -7,7 +7,8 @@
   "scripts": {
     "tokens": "node tools/build-theme-json.mjs",
     "photos": "node tools/build-photos.mjs",
-    "build": "npm run tokens && npm run photos",
+    "reviews": "node tools/build-reviews.mjs",
+    "build": "npm run tokens && npm run photos && npm run reviews",
     "start": "wp-env start",
     "stop": "wp-env stop",
     "playground": "npx @wp-playground/cli@latest server --mount=./elivation:/wordpress/wp-content/themes/elivation --blueprint=./tools/playground-blueprint.json"
