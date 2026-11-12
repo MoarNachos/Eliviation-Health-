@@ -8,15 +8,15 @@
 <body>
 <x-dc>
 <!-- @template name="Treatment page" description="Service landing page for Recovery, Relief or Rejuvenation — drips, prices, durations, inline booking" -->
-<helmet><script src="./ds-base.js"></script><script src="./treatments-data.js"></script><style>body{margin:0;background:#FBF6EE}a{color:#165A50}a:hover{color:#10463F}</style></helmet>
+<helmet><script src="./ds-base.js"></script><script src="./treatments-data.js"></script><style>body{margin:0;background:#FBF6EE}a{color:#1F4673}a:hover{color:#16355A}</style></helmet>
 <div style="font-family:'Figtree',system-ui,sans-serif;color:#3A403E;background:#FBF6EE;min-height:100vh">
 <header style="position:sticky;top:0;z-index:20;background:rgba(251,246,238,.86);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid #ECDFCB">
 <div style="max-width:1280px;margin:0 auto;padding:14px clamp(20px,5vw,72px);display:flex;align-items:center;gap:28px">
-<a href="../homepage/Homepage.dc.html" style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:24px;letter-spacing:-.03em;color:#10463F;text-decoration:none">elivation<span style="color:#E2532E">.</span></a>
+<a href="../homepage/Homepage.dc.html" style="display:flex;flex-shrink:0"><img src="../../assets/logo-navy.png" alt="Elivation Health" style="height:40px;width:auto;display:block"></a>
 <nav style="display:flex;gap:6px;flex:1;min-width:0;overflow-x:auto;font-size:15px;font-weight:600">
-<sc-for list="{{ tabs }}" as="t" hint-placeholder-count="3"><sc-if value="{{ t.active }}" hint-placeholder-val="{{ false }}"><button type="button" onClick="{{ t.go }}" style="font:inherit;border:0;cursor:pointer;padding:9px 16px;border-radius:999px;background:#10463F;color:#fff;white-space:nowrap">{{ t.name }}</button></sc-if><sc-if value="{{ t.idle }}" hint-placeholder-val="{{ true }}"><button type="button" onClick="{{ t.go }}" style="font:inherit;border:0;cursor:pointer;padding:9px 16px;border-radius:999px;background:transparent;color:#1B1F1E;white-space:nowrap" style-hover="background:rgba(31,111,98,.08)">{{ t.name }}</button></sc-if></sc-for>
+<sc-for list="{{ tabs }}" as="t" hint-placeholder-count="3"><sc-if value="{{ t.active }}" hint-placeholder-val="{{ false }}"><button type="button" onClick="{{ t.go }}" style="font:inherit;border:0;cursor:pointer;padding:9px 16px;border-radius:999px;background:#16355A;color:#fff;white-space:nowrap">{{ t.name }}</button></sc-if><sc-if value="{{ t.idle }}" hint-placeholder-val="{{ true }}"><button type="button" onClick="{{ t.go }}" style="font:inherit;border:0;cursor:pointer;padding:9px 16px;border-radius:999px;background:transparent;color:#1B1F1E;white-space:nowrap" style-hover="background:rgba(44,90,140,.08)">{{ t.name }}</button></sc-if></sc-for>
 </nav>
-<a href="tel:9495610590" style="font-size:15px;font-weight:600;color:#165A50;text-decoration:none">(949) 561-0590</a>
+<a href="tel:9495610590" style="font-size:15px;font-weight:600;color:#1F4673;text-decoration:none">(949) 561-0590</a>
 <button type="button" onClick="{{ openFirst }}" style="font:inherit;background:#E2532E;color:#fff;font-weight:600;font-size:15px;padding:12px 22px;border-radius:999px;border:0;cursor:pointer" style-hover="background:#C44020">Book a visit</button>
 </div>
 </header>
@@ -26,15 +26,15 @@
 <div style="display:flex;gap:10px;align-items:center;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#C44020"><span style="width:8px;height:8px;border-radius:50%;background:#E2532E"></span>{{ cat.name }} IV therapy · delivered to you</div>
 <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:clamp(2.75rem,1.6rem + 4vw,5.25rem);line-height:1;letter-spacing:-.035em;color:#1B1F1E;margin:0;text-wrap:balance">{{ cat.lede }}</h1>
 <p style="font-size:19px;line-height:1.55;max-width:540px;margin:0;text-wrap:pretty">{{ cat.intro }}</p>
-<div style="display:flex;gap:12px;flex-wrap:wrap"><a href="#drips" style="background:#E2532E;color:#fff;font-weight:600;font-size:17px;padding:16px 28px;border-radius:999px;text-decoration:none" style-hover="background:#C44020">See drips &amp; prices</a><a href="tel:9495610590" style="color:#10463F;font-weight:600;font-size:17px;padding:15px 27px;border-radius:999px;text-decoration:none;border:1.5px solid #10463F" style-hover="background:rgba(31,111,98,.08)">Ask a nurse</a></div>
-<div style="display:flex;gap:10px 22px;flex-wrap:wrap;padding-top:20px;border-top:1px solid #ECDFCB;font-size:14px;font-weight:600;color:#165A50"><span>✓ Registered Nurses</span><span>✓ Physician directed</span><span>✓ HSA / FSA eligible</span></div>
+<div style="display:flex;gap:12px;flex-wrap:wrap"><a href="#drips" style="background:#E2532E;color:#fff;font-weight:600;font-size:17px;padding:16px 28px;border-radius:999px;text-decoration:none" style-hover="background:#C44020">See drips &amp; prices</a><a href="tel:9495610590" style="color:#16355A;font-weight:600;font-size:17px;padding:15px 27px;border-radius:999px;text-decoration:none;border:1.5px solid #16355A" style-hover="background:rgba(44,90,140,.08)">Ask a nurse</a></div>
+<div style="display:flex;gap:10px 22px;flex-wrap:wrap;padding-top:20px;border-top:1px solid #ECDFCB;font-size:14px;font-weight:600;color:#1F4673"><span>✓ Registered Nurses</span><span>✓ Physician directed</span><span>✓ HSA / FSA eligible</span></div>
 </div>
 <div style="height:clamp(320px,42vw,540px);border-radius:28px;overflow:hidden;background:#F5EDE0"><img src="{{ cat.photo }}" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
 </section>
 <section id="drips" style="background:#F5EDE0;padding:clamp(64px,8vw,120px) clamp(20px,5vw,72px)">
 <div style="max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap">
-<div style="display:flex;flex-direction:column;gap:14px;max-width:640px"><span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#C44020">{{ cat.name }} drips</span><h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:clamp(2rem,1.4rem + 2vw,3.25rem);line-height:1.08;letter-spacing:-.025em;color:#1B1F1E;margin:0">Clear prices. <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:#1F6F62">No surprises at the door.</span></h2></div>
+<div style="display:flex;flex-direction:column;gap:14px;max-width:640px"><span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#C44020">{{ cat.name }} drips</span><h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:clamp(2rem,1.4rem + 2vw,3.25rem);line-height:1.08;letter-spacing:-.025em;color:#1B1F1E;margin:0">Clear prices. <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:#2C5A8C">No surprises at the door.</span></h2></div>
 <p style="margin:0;font-size:15px;max-width:360px;color:#5E6562">Prices include the nurse visit, health screening and supplies. Travel fees may apply outside our core area.</p>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:20px">
@@ -44,7 +44,7 @@
 <p style="margin:0;font-size:16px;line-height:1.55;flex:1">{{ x.desc }}</p>
 <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:16px;border-top:1px solid #ECDFCB">
 <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:700;color:#1B1F1E">{{ x.priceLabel }}</span><span style="font-family:'DM Mono',monospace;font-size:13px;color:#5E6562">{{ x.dur }}</span></div>
-<button type="button" onClick="{{ x.open }}" style="font:inherit;background:#10463F;color:#fff;font-weight:600;font-size:16px;padding:0 22px;min-height:48px;border-radius:999px;border:0;cursor:pointer" style-hover="background:#0C3530">Book this drip</button>
+<button type="button" onClick="{{ x.open }}" style="font:inherit;background:#16355A;color:#fff;font-weight:600;font-size:16px;padding:0 22px;min-height:48px;border-radius:999px;border:0;cursor:pointer" style-hover="background:#0F2846">Book this drip</button>
 </div>
 </article>
 </sc-for>
@@ -54,21 +54,21 @@
 <section style="max-width:1280px;margin:0 auto;padding:clamp(64px,8vw,120px) clamp(20px,5vw,72px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:40px 72px">
 <div style="display:flex;flex-direction:column;gap:18px"><span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#C44020">Good for</span>
 <sc-for list="{{ goodFor }}" as="g" hint-placeholder-count="4"><div style="font-family:'Bricolage Grotesque',sans-serif;font-size:24px;font-weight:600;letter-spacing:-.015em;color:#1B1F1E;padding-bottom:16px;border-bottom:1px solid #ECDFCB">{{ g }}</div></sc-for></div>
-<div style="background:#0C3530;color:#D2E6E1;border-radius:28px;padding:clamp(28px,3vw,40px);display:flex;flex-direction:column;gap:16px"><span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#F7906F">Every visit</span>
+<div style="background:#0F2846;color:#D6E2EF;border-radius:28px;padding:clamp(28px,3vw,40px);display:flex;flex-direction:column;gap:16px"><span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#F7906F">Every visit</span>
 <p style="margin:0;font-size:17px;line-height:1.55">A Registered Nurse reviews your health history and checks your vitals before anything starts. If a drip isn't right for you, we'll say so — and suggest what is.</p>
-<p style="margin:0;font-size:14px;color:#A6CDC3">IV therapy is provided under physician direction. It is not a substitute for emergency care. If you have chest pain or trouble breathing, call 911.</p></div>
+<p style="margin:0;font-size:14px;color:#ADC4DE">IV therapy is provided under physician direction. It is not a substitute for emergency care. If you have chest pain or trouble breathing, call 911.</p></div>
 </section>
 <sc-if value="{{ sheet }}" hint-placeholder-val="{{ false }}">
-<div onClick="{{ close }}" style="position:fixed;inset:0;z-index:50;background:rgba(8,37,34,.55);display:flex;align-items:flex-end;justify-content:center">
+<div onClick="{{ close }}" style="position:fixed;inset:0;z-index:50;background:rgba(10,28,51,.55);display:flex;align-items:flex-end;justify-content:center">
 <div onClick="{{ stop }}" style="background:#FBF6EE;width:min(100%,520px);border-radius:28px 28px 0 0;padding:28px;display:flex;flex-direction:column;gap:18px">
 <div style="display:flex;justify-content:space-between;align-items:start"><div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:700;color:#1B1F1E">{{ d.name }}</span><span style="font-family:'DM Mono',monospace;font-size:14px;color:#5E6562">{{ d.priceLabel }} · {{ d.dur }}</span></div><button type="button" onClick="{{ close }}" style="font:inherit;border:0;background:#F5EDE0;width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:18px">×</button></div>
 <sc-if value="{{ step0 }}" hint-placeholder-val="{{ true }}"><label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#1B1F1E">Where should we meet you?<input placeholder="Address or ZIP" style="font:inherit;font-weight:400;font-size:17px;padding:14px 16px;border:1.5px solid #DCCAAE;border-radius:12px;background:#fff"></label></sc-if>
-<sc-if value="{{ step1 }}" hint-placeholder-val="{{ false }}"><div style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#1B1F1E">Pick a time<div style="display:flex;flex-wrap:wrap;gap:8px"><span style="background:#10463F;color:#fff;padding:10px 16px;border-radius:999px">Today 2:00</span><span style="border:1.5px solid #DCCAAE;padding:9px 15px;border-radius:999px">Today 4:30</span><span style="border:1.5px solid #DCCAAE;padding:9px 15px;border-radius:999px">Tomorrow 10:00</span></div></div></sc-if>
+<sc-if value="{{ step1 }}" hint-placeholder-val="{{ false }}"><div style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#1B1F1E">Pick a time<div style="display:flex;flex-wrap:wrap;gap:8px"><span style="background:#16355A;color:#fff;padding:10px 16px;border-radius:999px">Today 2:00</span><span style="border:1.5px solid #DCCAAE;padding:9px 15px;border-radius:999px">Today 4:30</span><span style="border:1.5px solid #DCCAAE;padding:9px 15px;border-radius:999px">Tomorrow 10:00</span></div></div></sc-if>
 <sc-if value="{{ step2 }}" hint-placeholder-val="{{ false }}"><p style="margin:0;font-size:17px;line-height:1.5;color:#1B1F1E">You're booked. Your nurse will text you 30 minutes before arriving.</p></sc-if>
 <button type="button" onClick="{{ next }}" style="font:inherit;background:#E2532E;color:#fff;font-weight:600;font-size:17px;min-height:52px;border-radius:999px;border:0;cursor:pointer">Continue</button>
 </div></div>
 </sc-if>
-<footer style="background:#082522;color:#73AFA1;padding:40px clamp(20px,5vw,72px);font-size:13px"><div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><span>© 2026 Elivation Health · (949) 561-0590</span><span>Prices and durations shown are from the current site — verify before publishing.</span></div></footer>
+<footer style="background:#0A1C33;color:#8FB0D6;padding:40px clamp(20px,5vw,72px);font-size:13px"><div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><span>© 2026 Elivation Health · (949) 561-0590</span><span>Prices and durations shown are from the current site — verify before publishing.</span></div></footer>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;category&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;recovery&quot;,&quot;relief&quot;,&quot;rejuvenation&quot;],&quot;default&quot;:&quot;recovery&quot;,&quot;tsType&quot;:&quot;'recovery'|'relief'|'rejuvenation'&quot;}}">

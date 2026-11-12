@@ -4,10 +4,10 @@
  * Slug: elivation/header
  * Categories: elivation
  * Inserter: no
- * Description: Sticky header with wordmark, section links, phone and the Book a visit button.
+ * Description: Sticky header with logo, section links, phone and the Book a visit button.
  *
- * The wordmark is set in type until the official logo arrives.
- * TODO(client): replace the text wordmark with assets/logo.svg when supplied.
+ * Logo: assets/images/logo-navy.png (official artwork, 407x103, recolored navy for light backgrounds).
+ * TODO(client): supply an SVG master of the logo and swap it in here and in the footer.
  *
  * @package elivation
  */
@@ -17,7 +17,7 @@
 <div class="eh-nav" data-eh-nav>
 	<a class="eh-skip" href="#main">Skip to content</a>
 	<div class="eh-nav__inner">
-		<a class="eh-wordmark" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Elivation Health, home">elivation<span class="eh-wordmark__dot">.</span></a>
+		<a class="eh-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="eh-logo__img" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/logo-navy.png' ) ); ?>" alt="Elivation Health" width="407" height="103"></a>
 		<button class="eh-nav__toggle" type="button" aria-expanded="false" aria-controls="eh-site-nav" data-eh-nav-toggle>Menu</button>
 		<nav class="eh-nav__links" id="eh-site-nav" aria-label="Primary">
 			<a href="<?php echo esc_url( home_url( '/#treatments' ) ); ?>">Treatments</a>
