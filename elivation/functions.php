@@ -412,20 +412,29 @@ function elivation_review_excerpt( $text, $max_words = 45 ) {
 }
 
 /**
- * Block markup for one review card: opening sentences verbatim, then "…" and
+ * Block markup for one review card: a verbatim excerpt, then "…" and
  * a link to the full review when the excerpt is cut.
  *
- * @param array $review One entry from elivation_reviews().
+ * @param array  $review One entry from elivation_reviews().
+ * @param string $selected_excerpt Optional passage from this review, quoted verbatim.
  * @return string
  */
-function elivation_review_card( $review ) {
-	$excerpt = elivation_review_excerpt( $review['text'] );
-	$more    = $excerpt['cut']
+function elivation_review_card( $review, $selected_excerpt = '' ) {
+	if ( '' !== $selected_excerpt && false !== strpos( $review['text'], $selected_excerpt ) ) {
+		$excerpt = array(
+			'text' => $selected_excerpt,
+			'cut'  => $selected_excerpt !== $review['text'],
+		);
+	} else {
+		$excerpt = elivation_review_excerpt( $review['text'] );
+	}
+	$ellipsis = $excerpt['cut'] && ! preg_match( '/[.!?…]$/u', $excerpt['text'] ) ? '…' : '';
+	$more     = $excerpt['cut']
 		? ' · <a class="eh-review__more" href="' . esc_url( ELIVATION_REVIEWS_URL ) . '">Read the full review</a>'
 		: '';
 	return '<!-- wp:quote {"className":"eh-review"} -->' . "\n"
 		. '<blockquote class="wp-block-quote eh-review"><!-- wp:paragraph -->' . "\n"
-		. '<p>“' . esc_html( $excerpt['text'] ) . ( $excerpt['cut'] ? '…' : '' ) . '”</p>' . "\n"
+		. '<p>“' . esc_html( $excerpt['text'] ) . $ellipsis . '”</p>' . "\n"
 		. '<!-- /wp:paragraph --><cite><strong>' . esc_html( $review['author'] ) . '</strong> · Elivation client' . $more . '</cite></blockquote>' . "\n"
 		. '<!-- /wp:quote -->' . "\n";
 }

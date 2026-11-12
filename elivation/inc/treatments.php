@@ -40,26 +40,27 @@ function elivation_treatments() {
 		'recovery'     => array(
 			'name'        => 'Recovery',
 			// H1: plain part, then the italic serif part.
-			'h1'          => array( 'Bounce back from training, travel, ', 'illness or a big night.' ),
-			'promise'     => 'Recovery drips replace fluids and nutrients your body has used up, so you can get back to your day sooner.',
-			'meta'        => 'Recovery IV drips delivered by a Registered Nurse in Orange County and LA. Myers\' Cocktail, Hangover Remedy, Performance and more, from $245.',
-			// TODO(client): community-2 has a consent flag (one golfer visible in profile). Confirm, crop or swap.
+			'h1'          => array( 'IV hydration after ', 'training or travel.' ),
+			'promise'     => 'Home from a race, a long flight or a late night? A registered nurse can bring IV hydration to your home or hotel. They’ll check your vitals and talk through your options before you start.',
+			'meta'        => 'At-home recovery IV visits after training or travel in Orange County and parts of Los Angeles. See options, prices and what to expect from your nurse.',
+			'fit_heading' => array( 'When people book ', 'a recovery visit.' ),
 			'photo'       => 'community-2',
 			'session'     => '1h 15m',
 			// Review ids from content/reviews.json; mentions "hangover remedies".
 			'reviews'     => array( 'r5' ),
+			'excerpts'    => array( 'r5' => 'My nurse, Joshua, was extremely professional and guided me through the process with ease.' ),
 			'good_for'    => array(
-				'After a race, game or hard training block',
-				'Long-haul travel and jet lag',
-				'The first sign of feeling run down',
+				'After a race or tournament',
+				'After a long training block',
+				'When you arrive after a long flight',
 				'The morning after a celebration',
 			),
 			'drips'       => array(
-				array( 'id' => 'myers', 'name' => 'Myers\' Cocktail', 'price' => 245, 'dur' => '1h 15m', 'desc' => 'A classic infusion designed to help relieve fatigue, support immune health and restore overall energy.', 'tag' => 'Most booked' ),
-				array( 'id' => 'defense', 'name' => 'Defense', 'price' => 279, 'dur' => '1h 15m', 'desc' => 'A blend of vitamins and antioxidants to support your immune system, for prevention or early in an illness.' ),
-				array( 'id' => 'hangover', 'name' => 'Hangover Remedy', 'price' => 279, 'dur' => '1h 15m', 'desc' => 'Rehydrates and replaces nutrients to ease nausea, headache and fatigue.' ),
-				array( 'id' => 'performance', 'name' => 'Performance', 'price' => 359, 'dur' => '1h 15m', 'desc' => 'Supports muscle recovery and replaces nutrients lost during intense exercise.' ),
-				array( 'id' => 'maxdefense', 'name' => 'Max Defense', 'price' => 369, 'dur' => '1h 15m', 'desc' => 'Our advanced immune formula with high-dose vitamin C and magnesium for rest and recovery.' ),
+				array( 'id' => 'myers', 'name' => 'Myers\' Cocktail', 'price' => 245, 'dur' => '1h 15m', 'desc' => 'A vitamin and mineral infusion. Ask your nurse what’s in the blend and whether it fits your visit.' ),
+				array( 'id' => 'defense', 'name' => 'Defense', 'price' => 279, 'dur' => '1h 15m', 'desc' => 'A blend of vitamins and antioxidants. Your nurse reviews the ingredients with you during screening.' ),
+				array( 'id' => 'hangover', 'name' => 'Hangover Remedy', 'price' => 279, 'dur' => '1h 15m', 'desc' => 'IV hydration for the morning after a celebration. Let your nurse know about any headache or nausea before the infusion.' ),
+				array( 'id' => 'performance', 'name' => 'Performance', 'price' => 359, 'dur' => '1h 15m', 'desc' => 'A hydration and nutrient blend for a visit after a race, game or training session.' ),
+				array( 'id' => 'maxdefense', 'name' => 'Max Defense', 'price' => 369, 'dur' => '1h 15m', 'desc' => 'This blend includes high-dose vitamin C and magnesium. Your nurse checks whether these ingredients are appropriate for you.' ),
 				array( 'id' => 'buildabag', 'name' => 'Build-a-Bag', 'price' => 420, 'dur' => '1h 15m', 'desc' => 'Your nurse builds a bag around your goals, with four add-ons included.', 'tag' => 'Customizable' ),
 			),
 			// TODO(client): have every FAQ answer on all three pages checked by the medical director,
@@ -68,7 +69,7 @@ function elivation_treatments() {
 			'faq'         => array(
 				array(
 					'q' => 'Which Recovery drip should I pick?',
-					'a' => 'Most people start with the Myers\' Cocktail. For a hard training block, Performance adds nutrients lost through exercise. If you\'re not sure, book any drip and your nurse will talk it through with you before anything starts.',
+					'a' => 'Performance is the option designed for training days. Myers’ Cocktail is a vitamin and mineral blend. If you’re deciding between them, call before booking. A nurse can explain the ingredients and what to expect.',
 				),
 				array(
 					'q' => 'How long does a Recovery drip take?',
@@ -95,12 +96,14 @@ function elivation_treatments() {
 		'relief'       => array(
 			'name'        => 'Relief',
 			'h1'          => array( 'When you feel awful, the last thing you want is ', 'a waiting room.' ),
-			'promise'     => 'Relief drips help with dehydration and the symptoms that come with it — nausea, aches, headaches and fatigue — in your own bed.',
-			'meta'        => 'Relief IV drips for cold and flu, nausea, migraines and food poisoning, brought to you by a Registered Nurse in Orange County and LA. From $185.',
+			'promise'     => 'If nausea or a stomach bug has made it hard to stay hydrated, a registered nurse can assess you at home and discuss whether IV fluids are appropriate.',
+			'meta'        => 'Explore mobile IV hydration for illness-related dehydration in Orange County and parts of Los Angeles. See visit prices and ask a nurse whether home care fits.',
+			'fit_heading' => array( 'Is an at-home visit ', 'right for you?' ),
 			'photo'       => 'event-4',
 			'session'     => '1h 15m',
-			// Review ids from content/reviews.json; no review on the live site mentions a Relief drip.
-			'reviews'     => array(),
+			// General account of a home visit. Do not present it as a Relief treatment outcome.
+			'reviews'     => array( 'r4' ),
+			'excerpts'    => array( 'r4' => 'Richard arrived right on time, fully equipped, and made me feel comfortable from the moment he walked in.' ),
 			'good_for'    => array(
 				'Cold and flu symptoms',
 				'Food poisoning or stomach bugs',
@@ -108,17 +111,17 @@ function elivation_treatments() {
 				'Nausea, including motion sickness',
 			),
 			'drips'       => array(
-				array( 'id' => 'basic', 'name' => 'Basic Drip', 'price' => 185, 'dur' => '1h 15m', 'desc' => 'Sterile saline to rehydrate after travel, exertion or dehydration. Simple and effective.' ),
-				array( 'id' => 'lr', 'name' => 'Lactated Ringer\'s', 'price' => 185, 'dur' => '1h 15m', 'desc' => 'A balanced electrolyte solution that supports hydration and nutrient absorption.' ),
-				array( 'id' => 'nausea', 'name' => 'Nausea', 'price' => 215, 'dur' => '1h 15m', 'desc' => 'Hydrates and calms the stomach to help with nausea, morning or motion sickness.' ),
-				array( 'id' => 'migraine', 'name' => 'Migraine Relief', 'price' => 229, 'dur' => '1h 15m', 'desc' => 'Aims to ease migraine pain, muscle tension and light sensitivity.' ),
-				array( 'id' => 'coldflu', 'name' => 'Cold & Flu', 'price' => 299, 'dur' => '1h 15m', 'desc' => 'Helps relieve body aches, fatigue and sinus pressure while supporting your immune response.', 'tag' => 'Most booked' ),
-				array( 'id' => 'foodpoison', 'name' => 'Food Poisoning', 'price' => 329, 'dur' => '1h 15m', 'desc' => 'Electrolytes, vitamins and medication to reduce nausea, cramping and fatigue from GI distress.' ),
+				array( 'id' => 'basic', 'name' => 'Basic Drip', 'price' => 185, 'dur' => '1h 15m', 'desc' => 'Sterile saline for hydration. Your nurse can help you choose between saline and an electrolyte solution.' ),
+				array( 'id' => 'lr', 'name' => 'Lactated Ringer\'s', 'price' => 185, 'dur' => '1h 15m', 'desc' => 'A balanced electrolyte solution for hydration. Your nurse will review your health history before choosing a fluid.' ),
+				array( 'id' => 'nausea', 'name' => 'Nausea', 'price' => 215, 'dur' => '1h 15m', 'desc' => 'An option when nausea has made drinking fluids difficult. Tell your nurse if you’re pregnant or may be pregnant.' ),
+				array( 'id' => 'migraine', 'name' => 'Migraine Relief', 'price' => 229, 'dur' => '1h 15m', 'desc' => 'An option for people who experience migraines. Your nurse will ask about your symptoms and assess whether home care is appropriate.' ),
+				array( 'id' => 'coldflu', 'name' => 'Cold & Flu', 'price' => 299, 'dur' => '1h 15m', 'desc' => 'A hydration option when a cold or flu has made it difficult to keep up with fluids.' ),
+				array( 'id' => 'foodpoison', 'name' => 'Food Poisoning', 'price' => 329, 'dur' => '1h 15m', 'desc' => 'An infusion with electrolytes, vitamins and medication. Your nurse reviews your symptoms, medications and allergies first.' ),
 			),
 			'faq'         => array(
 				array(
 					'q' => 'Should I go to urgent care or the ER instead?',
-					'a' => 'IV therapy is not emergency care. Call 911 or go to the ER for chest pain, trouble breathing, confusion, a stiff neck with fever, fainting, blood in vomit or stool, or the worst headache of your life. If you\'re not sure, call us and a nurse will tell you straight.',
+					'a' => 'IV therapy is not emergency care. Call 911 or go to the ER for chest pain, trouble breathing, confusion, a stiff neck with fever, fainting, blood in vomit or stool, or the worst headache of your life.',
 				),
 				array(
 					'q' => 'How fast can a nurse get to me?',
@@ -144,25 +147,27 @@ function elivation_treatments() {
 		),
 		'rejuvenation' => array(
 			'name'        => 'Rejuvenation',
-			'h1'          => array( 'Wellness drips for ', 'energy, focus and skin.' ),
-			'promise'     => 'Longer, slower sessions built around NAD+, glutathione and skin-supporting nutrients. Settle in — these take up to 2.5 hours.',
-			'meta'        => 'Rejuvenation IV drips with NAD+, glutathione and skin-supporting nutrients, given at home by a Registered Nurse in Orange County and LA. From $239.',
+			'h1'          => array( 'NAD+ and wellness infusions, ', 'at home.' ),
+			'promise'     => 'Compare shorter wellness visits with longer NAD+ infusions. Your registered nurse checks your vitals, sets the pace of the infusion and stays with you throughout your visit.',
+			'meta'        => 'Compare at-home wellness and NAD+ infusion visits in Orange County and parts of Los Angeles. See individual prices, visit lengths and how your nurse monitors you.',
+			'fit_heading' => array( 'Exploring your ', 'wellness options?' ),
 			'photo'       => 'community-3',
 			'session'     => '1h 15m – 2h 30m',
 			// Review ids from content/reviews.json; mentions "IV + NAD treatment".
 			'reviews'     => array( 'r3' ),
+			'excerpts'    => array( 'r3' => 'He came right to my home, made the process easy and comfortable' ),
 			'good_for'    => array(
-				'Steady energy and mental focus',
-				'Skin, hair and nail support',
-				'A reset after a demanding season',
-				'PMS and menstrual discomfort',
+				'You’re considering NAD+ for the first time',
+				'You’ve had NAD+ and want to compare the options',
+				'You’re interested in the Radiance blend',
+				'You have questions about an infusion for menstrual discomfort',
 			),
 			'drips'       => array(
-				array( 'id' => 'pms', 'name' => 'Premenstrual Tension', 'price' => 239, 'dur' => '1h 15m', 'desc' => 'Tailored to help with cramps, fatigue and mood changes around your cycle.' ),
-				array( 'id' => 'radiance', 'name' => 'Radiance', 'price' => 279, 'dur' => '1h 15m', 'desc' => 'Nutrients that support collagen, glowing skin and stronger hair and nails.' ),
-				array( 'id' => 'nad250', 'name' => 'NAD+ 250mg', 'price' => 449, 'dur' => 'Up to 2h 30m', 'desc' => 'Supports cellular energy, mental clarity and metabolic function. Add 50mg for $60.', 'tag' => 'Most booked' ),
-				array( 'id' => 'elivation', 'name' => 'The Elivation', 'price' => 539, 'dur' => 'Up to 2h 30m', 'desc' => 'Our signature: NAD+ with glutathione for detox, energy and focus. Add 50mg NAD+ for $60.', 'tag' => 'Signature' ),
-				array( 'id' => 'nad500', 'name' => 'NAD+ 500mg', 'price' => 649, 'dur' => 'Up to 2h 30m', 'desc' => 'A higher NAD+ dose for clients who\'ve tolerated 250mg well. Add 50mg for $60.' ),
+				array( 'id' => 'pms', 'name' => 'Premenstrual Tension', 'price' => 239, 'dur' => '1h 15m', 'desc' => 'An infusion offered for premenstrual discomfort. Your nurse reviews your symptoms and the ingredients with you before the visit proceeds.' ),
+				array( 'id' => 'radiance', 'name' => 'Radiance', 'price' => 279, 'dur' => '1h 15m', 'desc' => 'Our skin, hair and nail wellness blend. Your nurse can explain the ingredients before your infusion.' ),
+				array( 'id' => 'nad250', 'name' => 'NAD+ 250mg', 'price' => 449, 'dur' => 'Up to 2h 30m', 'desc' => 'A 250 mg NAD+ infusion given slowly while your nurse monitors your comfort. An additional 50 mg is $60.' ),
+				array( 'id' => 'elivation', 'name' => 'The Elivation', 'price' => 539, 'dur' => 'Up to 2h 30m', 'desc' => 'Our signature infusion combines NAD+ with glutathione. An additional 50 mg of NAD+ is $60.', 'tag' => 'Signature' ),
+				array( 'id' => 'nad500', 'name' => 'NAD+ 500mg', 'price' => 649, 'dur' => 'Up to 2h 30m', 'desc' => 'A 500 mg NAD+ infusion. Your nurse will ask about previous infusions and how well you tolerated them. An additional 50 mg is $60.' ),
 			),
 			'faq'         => array(
 				array(
@@ -171,11 +176,11 @@ function elivation_treatments() {
 				),
 				array(
 					'q' => 'Should I start with 250mg or 500mg of NAD+?',
-					'a' => 'Start with 250mg. The 500mg dose is for clients who\'ve tolerated 250mg well. You can add 50mg to any NAD+ drip for $60.',
+					'a' => 'Tell your nurse if this is your first NAD+ infusion or how previous visits felt. They’ll review the options and whether an infusion is appropriate for you.',
 				),
 				array(
 					'q' => 'What is The Elivation?',
-					'a' => 'Our signature drip: NAD+ with glutathione, for energy and focus. It runs up to 2 hours 30 minutes.',
+					'a' => 'Our signature infusion combines NAD+ with glutathione. Allow up to 2 hours 30 minutes for your visit.',
 				),
 				array(
 					'q' => 'When will I notice a difference?',

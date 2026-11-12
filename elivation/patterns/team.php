@@ -5,9 +5,10 @@
  * Categories: elivation
  * Description: Dark section introducing the nurses, with three portrait cards and a group photo.
  *
- * TODO(client): the three portraits still load from the old site's uploads folder. They need new photos, and those URLs will break when the old site is replaced.
+ * TODO(client): Kathy's and Jon's portraits still load from the old site's uploads folder. They need new photos, and those URLs will break when the old site is replaced.
  * TODO(client): verify every name, credential and title (RN, BSN, "Critical Care RN, 10+ years").
- * TODO(client): verify "certified Registered Nurse under physician direction".
+ * TODO(client): verify the description of the medical director's oversight.
+ * TODO(client): supply the medical director's verified name and credentials if they should appear.
  * TODO(client): "Meet the full team" is left out until a team page exists.
  *
  * @package elivation
@@ -17,8 +18,8 @@ $elivation_people = array(
 	array(
 		'name'  => 'Richard Ladines, RN, BSN',
 		'role'  => 'Chief Nursing Officer · Critical Care RN, 10+ years',
-		'photo' => 'https://www.elivationhealth.com/wp-content/uploads/2026/07/Richard-Ladines-2.jpg',
-		'alt'   => 'Richard Ladines',
+		'photo' => get_theme_file_uri( 'assets/images/richard-ladines.webp' ),
+		'alt'   => 'Richard Ladines, Chief Nursing Officer at Elivation Health',
 	),
 	array(
 		'name'  => 'Kathy Tran',
@@ -43,7 +44,7 @@ $elivation_people = array(
 <!-- wp:group {"className":"eh-section__intro"} -->
 <div class="wp-block-group eh-section__intro">
 <!-- wp:paragraph {"className":"eh-eyebrow"} -->
-<p class="eh-eyebrow">The people who show up</p>
+<p class="eh-eyebrow">Your care team</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"eh-h2"} -->
@@ -53,7 +54,7 @@ $elivation_people = array(
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"className":"eh-lede"} -->
-<p class="eh-lede">Every visit is delivered by a certified Registered Nurse under physician direction. We hire for bedside manner as much as clinical skill — no upselling, just honest guidance.</p>
+<p class="eh-lede">Our medical director sets the treatment protocols. The registered nurse who visits you checks your vitals, reviews your medications and answers your questions before starting an IV. If a treatment isn't right for you, your nurse will tell you.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
