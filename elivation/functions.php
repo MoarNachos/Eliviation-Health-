@@ -431,12 +431,13 @@ function elivation_review_card( $review, $selected_excerpt = '' ) {
 	} else {
 		$excerpt = elivation_review_excerpt( $review['text'] );
 	}
-	$more    = $excerpt['cut']
+	$ellipsis = $excerpt['cut'] && ! preg_match( '/[.!?…]$/u', $excerpt['text'] ) ? '…' : '';
+	$more     = $excerpt['cut']
 		? ' · <a class="eh-review__more" href="' . esc_url( ELIVATION_REVIEWS_URL ) . '">Read the full review</a>'
 		: '';
 	return '<!-- wp:quote {"className":"eh-review"} -->' . "\n"
 		. '<blockquote class="wp-block-quote eh-review"><!-- wp:paragraph -->' . "\n"
-		. '<p>“' . esc_html( $excerpt['text'] ) . ( $excerpt['cut'] ? '…' : '' ) . '”</p>' . "\n"
+		. '<p>“' . esc_html( $excerpt['text'] ) . $ellipsis . '”</p>' . "\n"
 		. '<!-- /wp:paragraph --><cite><strong>' . esc_html( $review['author'] ) . '</strong> · Elivation client' . $more . '</cite></blockquote>' . "\n"
 		. '<!-- /wp:quote -->' . "\n";
 }
