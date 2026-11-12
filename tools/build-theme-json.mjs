@@ -231,7 +231,9 @@ const theme = {
     { name: 'header', title: 'Header', area: 'header' },
     { name: 'footer', title: 'Footer', area: 'footer' },
   ],
-  customTemplates: [],
+  customTemplates: [
+    { name: 'treatment', title: 'Treatment landing page', postTypes: ['page'] },
+  ],
 };
 
 /* ---------- Write theme.json ---------- */

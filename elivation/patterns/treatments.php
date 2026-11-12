@@ -5,8 +5,9 @@
  * Categories: elivation
  * Description: The three treatment categories as cards with drip names.
  *
- * TODO(client): drip names are taken from the current site. Verify them and add prices.
- * TODO(client): the "Compare" and "Explore" links point at the booking site until treatment pages exist.
+ * TODO(client): drip names are taken from the current site. Verify them (prices are on the treatment pages).
+ * TODO(client): the "Compare all drips" link points at the booking site until a comparison page exists.
+ * "Explore" links go to the treatment pages (inc/treatments.php).
  * TODO(client): community-2.jpg (Recovery card) has a consent flag: one golfer is visible in profile. Confirm consent, crop or swap.
  *
  * @package elivation
@@ -14,18 +15,21 @@
 
 $elivation_treatments = array(
 	array(
+		'key'   => 'recovery',
 		'title' => 'Recovery',
 		'photo' => 'community-2',
 		'text'  => 'Restore strength and muscle performance after training, travel or a big night.',
 		'drips' => array( 'Myers\' Cocktail', 'Performance', 'Defense', 'Hangover Remedy', 'Build-a-Bag' ),
 	),
 	array(
+		'key'   => 'relief',
 		'title' => 'Relief',
 		'photo' => 'event-4',
 		'text'  => 'Support when you\'re run down — cold and flu, nausea, migraines and food poisoning.',
 		'drips' => array( 'Cold &amp; Flu', 'Migraine Relief', 'Nausea', 'Basic Drip', 'Lactated Ringer\'s' ),
 	),
 	array(
+		'key'   => 'rejuvenation',
 		'title' => 'Rejuvenation',
 		'photo' => 'community-3',
 		'text'  => 'Refresh body, skin and energy with our wellness-focused drips and NAD+.',
@@ -87,7 +91,7 @@ $elivation_treatments = array(
 <!-- /wp:list -->
 
 <!-- wp:paragraph {"className":"eh-more eh-more--accent eh-card__cta"} -->
-<p class="eh-more eh-more--accent eh-card__cta"><a href="<?php echo esc_url( ELIVATION_BOOKING_URL ); ?>">Explore <?php echo esc_html( $elivation_tx['title'] ); ?> →</a></p>
+<p class="eh-more eh-more--accent eh-card__cta"><a href="<?php echo esc_url( elivation_treatment_url( $elivation_tx['key'] ) ); ?>">Explore <?php echo esc_html( $elivation_tx['title'] ); ?> →</a></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->

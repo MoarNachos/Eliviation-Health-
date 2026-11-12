@@ -23,9 +23,9 @@
 			</div>
 			<nav class="eh-footer__col" aria-label="Treatments">
 				<span class="eh-footer__heading">Treatments</span>
-				<a href="<?php echo esc_url( home_url( '/#treatments' ) ); ?>">Recovery</a>
-				<a href="<?php echo esc_url( home_url( '/#treatments' ) ); ?>">Relief</a>
-				<a href="<?php echo esc_url( home_url( '/#treatments' ) ); ?>">Rejuvenation</a>
+				<a href="<?php echo esc_url( elivation_treatment_url( 'recovery' ) ); ?>">Recovery</a>
+				<a href="<?php echo esc_url( elivation_treatment_url( 'relief' ) ); ?>">Relief</a>
+				<a href="<?php echo esc_url( elivation_treatment_url( 'rejuvenation' ) ); ?>">Rejuvenation</a>
 				<a href="<?php echo esc_url( ELIVATION_BOOKING_URL ); ?>">Pricing</a>
 			</nav>
 			<nav class="eh-footer__col" aria-label="Company">

@@ -22,6 +22,8 @@ define( 'ELIVATION_PHONE_DISPLAY', '(949) 561-0590' );
 define( 'ELIVATION_PHONE_TEL', '+19495610590' );
 define( 'ELIVATION_INSTAGRAM_URL', 'https://www.instagram.com/elivation.health' );
 
+require_once __DIR__ . '/inc/treatments.php';
+
 /* -------------------------------------------------------------------------
  * Content that is shared between patterns and structured data
  * ---------------------------------------------------------------------- */
@@ -273,6 +275,9 @@ function elivation_photo_sizes( $class_name ) {
 	if ( false !== strpos( $class_name, 'eh-gallery__item' ) ) {
 		return '(min-width: 768px) 25vw, 50vw';
 	}
+	if ( false !== strpos( $class_name, 'eh-tx-hero__photo' ) ) {
+		return '(min-width: 1024px) 50vw, 100vw';
+	}
 	if ( false !== strpos( $class_name, 'eh-card__media' ) ) {
 		return '(min-width: 1024px) 33vw, (min-width: 700px) 50vw, 100vw';
 	}
@@ -302,7 +307,7 @@ function elivation_responsive_theme_photos( $block_content, $block ) {
 	}
 
 	$class_name = isset( $block['attrs']['className'] ) ? (string) $block['attrs']['className'] : '';
-	$is_hero    = false !== strpos( $class_name, 'eh-hero__photo' );
+	$is_hero    = false !== strpos( $class_name, 'eh-hero__photo' ) || false !== strpos( $class_name, 'eh-tx-hero__photo' );
 	$largest    = end( $manifest[ $name ]['sizes'] );
 
 	$tags = new WP_HTML_Tag_Processor( $block_content );
@@ -348,17 +353,15 @@ add_action( 'wp_head', 'elivation_preload_hero', 2 );
  * ---------------------------------------------------------------------- */
 
 /**
- * MedicalBusiness JSON-LD on the front page.
+ * The MedicalBusiness node, shared by the homepage and treatment page JSON-LD.
  *
  * TODO(client): add openingHoursSpecification once hours are confirmed.
  * TODO(client): add a postal address if the business wants one published.
  * TODO(client): verify areaServed (see elivation_service_cities()).
+ *
+ * @return array
  */
-function elivation_json_ld() {
-	if ( ! is_front_page() ) {
-		return;
-	}
-
+function elivation_business_node() {
 	$area_served = array();
 	foreach ( elivation_service_cities() as $city ) {
 		$area_served[] = array(
@@ -367,7 +370,7 @@ function elivation_json_ld() {
 		);
 	}
 
-	$data = array(
+	return array(
 		'@context'        => 'https://schema.org',
 		'@type'           => 'MedicalBusiness',
 		'@id'             => home_url( '/#business' ),
@@ -384,7 +387,16 @@ function elivation_json_ld() {
 			'target' => ELIVATION_BOOKING_URL,
 		),
 	);
+}
 
-	echo '<script type="application/ld+json">' . wp_json_encode( $data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) . '</script>' . "\n";
+/**
+ * MedicalBusiness JSON-LD on the front page. Treatment pages print their own
+ * graph (see inc/treatments.php).
+ */
+function elivation_json_ld() {
+	if ( ! is_front_page() ) {
+		return;
+	}
+	echo '<script type="application/ld+json">' . wp_json_encode( elivation_business_node(), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) . '</script>' . "\n";
 }
 add_action( 'wp_head', 'elivation_json_ld', 20 );
