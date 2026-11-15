@@ -25,6 +25,8 @@
 			<a href="<?php echo esc_url( home_url( '/#team' ) ); ?>">Care team</a>
 			<a href="<?php echo esc_url( home_url( '/#reviews' ) ); ?>">Reviews</a>
 			<a href="<?php echo esc_url( home_url( '/#areas' ) ); ?>">Service area</a>
+			<a href="<?php echo esc_url( home_url( '/education/' ) ); ?>">Education</a>
+			<a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">Blog</a>
 		</nav>
 		<a class="eh-nav__phone" href="tel:<?php echo esc_attr( ELIVATION_PHONE_TEL ); ?>"><?php echo esc_html( ELIVATION_PHONE_DISPLAY ); ?></a>
 		<a class="eh-btn eh-btn--primary eh-btn--sm eh-nav__book" href="<?php echo esc_url( ELIVATION_BOOKING_URL ); ?>">Book a visit</a>

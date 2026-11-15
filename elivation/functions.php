@@ -27,6 +27,7 @@ require_once __DIR__ . '/inc/faq.php';
 require_once __DIR__ . '/inc/search.php';
 require_once __DIR__ . '/inc/legacy-treatment-urls.php';
 require_once __DIR__ . '/inc/team.php';
+require_once __DIR__ . '/inc/editorial.php';
 
 /* -------------------------------------------------------------------------
  * Content that is shared between patterns and structured data

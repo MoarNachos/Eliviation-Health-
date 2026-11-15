@@ -42,6 +42,8 @@
 				<a href="<?php echo esc_url( elivation_faq_url() ); ?>">FAQ</a>
 				<?php endif; ?>
 				<a href="<?php echo esc_url( home_url( '/#areas' ) ); ?>">Service area</a>
+			<a href="<?php echo esc_url( home_url( '/education/' ) ); ?>">Education</a>
+			<a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">Blog</a>
 			</nav>
 			<nav class="eh-footer__col" aria-label="Contact">
 				<span class="eh-footer__heading">Contact</span>
