@@ -1269,6 +1269,41 @@ header.wp-block-template-part {
 	line-height: 1.5;
 }
 
+.eh-footer__badges {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-top: 16px;
+}
+
+.eh-footer__badges img {
+	width: 100px;
+	height: auto;
+	object-fit: contain;
+}
+
+.eh-footer__email { overflow-wrap: anywhere; }
+
+.eh-footer__socials {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 8px;
+}
+
+.eh-footer__socials a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 44px;
+	padding: 6px 12px;
+	border: 1px solid var(--navy-500);
+	border-radius: 999px;
+	font-size: 13px;
+}
+
+.eh-footer__socials a:hover { border-color: currentColor; }
+
 .eh-footer__col {
 	display: flex;
 	flex-direction: column;

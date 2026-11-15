@@ -21,6 +21,10 @@
 			<div class="eh-footer__brand">
 				<img class="eh-logo__img eh-logo__img--footer" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/logo-white.png' ) ); ?>" alt="Elivation Health" width="407" height="103" loading="lazy">
 				<span>Mobile IV hydration at home, at work and at events.</span>
+				<div class="eh-footer__badges" aria-label="Practice badges">
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hipaa-silver.png' ) ); ?>" alt="HIPAA compliant" width="141" height="130" loading="lazy">
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/doctor-owned-silver.png' ) ); ?>" alt="Doctor owned and operated" width="130" height="123" loading="lazy">
+				</div>
 			</div>
 			<nav class="eh-footer__col" aria-label="Treatments">
 				<span class="eh-footer__heading">Treatments</span>
@@ -42,8 +46,14 @@
 			<nav class="eh-footer__col" aria-label="Contact">
 				<span class="eh-footer__heading">Contact</span>
 				<a class="eh-footer__phone" href="tel:<?php echo esc_attr( ELIVATION_PHONE_TEL ); ?>"><?php echo esc_html( ELIVATION_PHONE_DISPLAY ); ?></a>
+				<a class="eh-footer__email" href="mailto:info@elivationhealth.com">info@elivationhealth.com</a>
 				<a href="<?php echo esc_url( ELIVATION_BOOKING_URL ); ?>">Book online</a>
-				<a href="<?php echo esc_url( ELIVATION_INSTAGRAM_URL ); ?>">Instagram</a>
+				<div class="eh-footer__socials" aria-label="Social media">
+					<a href="https://www.facebook.com/people/Elivation-Health/61578667049809">Facebook</a>
+					<a href="<?php echo esc_url( ELIVATION_INSTAGRAM_URL ); ?>">Instagram</a>
+					<a href="https://x.com/elivationhealth" aria-label="Elivation Health on X">X</a>
+					<a href="https://www.tiktok.com/@elivationhealth">TikTok</a>
+				</div>
 			</nav>
 		</div>
 		<div class="eh-footer__legal">
