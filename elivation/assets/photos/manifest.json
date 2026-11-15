@@ -376,5 +376,47 @@
         "file": "home-relief-2000.webp"
       }
     ]
+  },
+  "home-community-visit": {
+    "width": 3000,
+    "height": 4000,
+    "sizes": [
+      {
+        "width": 800,
+        "height": 1067,
+        "file": "home-community-visit-800.webp"
+      },
+      {
+        "width": 1400,
+        "height": 1867,
+        "file": "home-community-visit-1400.webp"
+      },
+      {
+        "width": 2000,
+        "height": 2667,
+        "file": "home-community-visit-2000.webp"
+      }
+    ]
+  },
+  "home-community-iv": {
+    "width": 8256,
+    "height": 5504,
+    "sizes": [
+      {
+        "width": 800,
+        "height": 533,
+        "file": "home-community-iv-800.webp"
+      },
+      {
+        "width": 1400,
+        "height": 933,
+        "file": "home-community-iv-1400.webp"
+      },
+      {
+        "width": 2000,
+        "height": 1333,
+        "file": "home-community-iv-2000.webp"
+      }
+    ]
   }
 }

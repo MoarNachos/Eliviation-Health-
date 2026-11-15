@@ -5,12 +5,12 @@
  * Categories: elivation, gallery
  * Description: Photo grid of the team out at local events, with the Instagram link.
  *
- * Photos in order: team-4 (2x2 lead), community-1, event-3, event-2, community-4.
+ * Photos in order: team-4 (2x2 lead), home-community-visit, home-community-iv, event-2, community-4.
  *
  * @package elivation
  */
 
-$elivation_gallery = array( 'team-4', 'community-1', 'event-3', 'event-2', 'community-4' );
+$elivation_gallery = array( 'team-4', 'home-community-visit', 'home-community-iv', 'event-2', 'community-4' );
 ?>
 <!-- wp:group {"tagName":"section","anchor":"community","className":"eh-scope eh-section"} -->
 <section id="community" class="wp-block-group eh-scope eh-section">
