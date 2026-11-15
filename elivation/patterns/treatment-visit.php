@@ -29,6 +29,15 @@ $elivation_tx = elivation_treatment( elivation_current_treatment( true ) );
 </div>
 <!-- /wp:group -->
 
+<?php if ( 'relief' === elivation_current_treatment() ) : ?>
+<!-- wp:html -->
+<div class="eh-visit-support-video">
+ <?php echo elivation_visit_video( true ); ?>
+ <div><h3>See a home visit</h3><p>Watch a nurse arrive and provide care at home, then read what to expect during your own visit.</p></div>
+</div>
+<!-- /wp:html -->
+<?php endif; ?>
+
 <?php if ( 'rejuvenation' === elivation_current_treatment( true ) ) : ?>
 <!-- wp:html -->
 <?php // TODO(client): relaxed-home-iv-detail-1 — confirm client-treatment authorization despite face being outside frame. ?>

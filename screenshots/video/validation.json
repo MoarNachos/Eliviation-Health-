@@ -1,0 +1,20 @@
+{
+  "url": "https://www.elivationhealth.com/design-review/?video-check=3",
+  "testedAt": "2026-11-15T17:08:26.365Z",
+  "mobilePerformance": 70,
+  "accessibility": 100,
+  "performanceTarget": ">90",
+  "performanceTargetMet": false,
+  "videoRequestedOnInitialLoad": false,
+  "manualChecks": [
+    "Tap Play unmutes and shows native controls",
+    "Player pauses after scrolling completely out of view",
+    "Homepage and Relief share identical video source URLs",
+    "No autoplay; preload none; starts muted",
+    "375px mobile uses care poster; desktop uses doorway poster"
+  ],
+  "remaining": [
+    "Hosted mobile performance below target; server latency and web-font shifts remain",
+    "Client review of transcript/claims, creator permission, disclosures, nurse credential, client consent and actual upload date"
+  ]
+}

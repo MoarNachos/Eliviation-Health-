@@ -260,3 +260,16 @@ Every entry below is **TODO(client): medical director review**. Source links are
 - TODO(client): screening, precautions, required tests and clinical protocols.
 - TODO(client): booking provider support for the drip parameter; confirm the selection on the external booking site.
 - TODO(client): goal tags describe browsing interests, not promised effects.
+
+## Home-visit video
+
+- TODO(client): review the full spoken and on-screen transcript for health claims, especially “designed for cold and flu recovery,” “in an hour we felt rehydrated,” and “finally on the road to recovery.” These are quoted statements from the recording, not independently verified clinical outcomes. Review the ingredient/claim sheet visible in the video as well. Source video has burned-in captions; changes to those claims require an edited source, not just a revised transcript.
+- TODO(client): obtain written permission from the creator if this is influencer content, including website use, audio, captions and extracted posters.
+- TODO(client): confirm whether the visit or content was paid or gifted, and supply the required FTC disclosure if applicable. Do not invent sponsorship status.
+- TODO(client): confirm the nurse’s name (spoken as “Gina”), RN credential and approved caption. No RN credential has been inferred from appearance.
+- TODO(client): obtain consent from both clients shown, including the doorway and living-room poster images.
+- TODO(client): supply the actual original video upload/publication date and timezone for VideoObject.uploadDate. The filename date is not evidence of publication. The schema omits uploadDate until confirmed; video rich-result eligibility remains pending.
+- TODO(client): confirm the spoken transcript against the final approved audio; approve the visit overview steps used alongside the video.
+
+### Homepage photo selection update — November 15, 2026
+The user's latest explicit selection restores `home-recovery` (20250819_200045.jpg), `home-rejuvenation` (20251001_085502.jpg), and `home-relief` (20260913_150229.jpg) on the homepage. This supersedes the earlier exclusion notes for these homepage cards above. Existing client-consent review items still apply.

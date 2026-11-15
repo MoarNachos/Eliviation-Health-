@@ -29,6 +29,7 @@ require_once __DIR__ . '/inc/legacy-treatment-urls.php';
 require_once __DIR__ . '/inc/team.php';
 require_once __DIR__ . '/inc/editorial.php';
 require_once __DIR__ . '/inc/education.php';
+require_once __DIR__ . '/inc/visit-video.php';
 
 /* -------------------------------------------------------------------------
  * Content that is shared between patterns and structured data
@@ -110,12 +111,21 @@ function elivation_enqueue_assets() {
 	$dir = get_theme_file_path();
 	$uri = get_theme_file_uri();
 
+	if ( is_front_page() ) {
+		// Inline the compact bundle on the landing page to avoid a blocking round trip.
+		$css = file_get_contents( $dir . '/assets/css/site.css' );
+		$css = str_replace( '../fonts/', $uri . '/assets/fonts/', $css );
+		wp_register_style( 'elivation-theme', false );
+		wp_enqueue_style( 'elivation-theme' );
+		wp_add_inline_style( 'elivation-theme', $css );
+	} else {
 	wp_enqueue_style(
 		'elivation-theme',
 		$uri . '/assets/css/site.css',
 		array(),
 		(string) filemtime( $dir . '/assets/css/site.css' )
 	);
+	}
 
 	wp_enqueue_script(
 		'elivation-theme',
@@ -500,3 +510,11 @@ function elivation_preload_home_visit() {
 		printf( '<link rel="preload" as="image" type="image/webp" media="%s" href="%s" imagesrcset="%s" imagesizes="(min-width: 1024px) 50vw, 100vw" fetchpriority="high">' . "\n", esc_attr( $media ), esc_url( elivation_photo_url( $photo ) ), esc_attr( elivation_photo_srcset( $photo ) ) );
 	}
 }
+
+/** Load above-the-fold fonts early so the homepage does not shift after first paint. */
+add_action( 'wp_head', static function () {
+ if ( ! is_front_page() ) { return; }
+ foreach ( array('bricolage-grotesque-normal-1.woff2','figtree-normal-5.woff2','instrument-serif-italic-6.woff2') as $font ) {
+  printf('<link rel="preload" as="font" type="font/woff2" href="%s" crossorigin>', esc_url(get_theme_file_uri('assets/fonts/'.$font)));
+ }
+}, 1 );
