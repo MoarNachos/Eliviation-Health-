@@ -65,7 +65,7 @@ $elivation_treatments = array(
 <!-- wp:group {"tagName":"article","className":"eh-card"} -->
 <article class="wp-block-group eh-card">
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"eh-card__media"} -->
-<figure class="wp-block-image size-full eh-card__media"><img src="<?php echo esc_url( elivation_photo_url( $elivation_tx['photo'] ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( $elivation_tx['photo'] ) ); ?>"/></figure>
+<figure class="wp-block-image size-full eh-card__media"><img<?php if ( 'recovery' === $elivation_tx['key'] ) : ?> style="object-position:50% 35%"<?php endif; ?> src="<?php echo esc_url( elivation_photo_url( $elivation_tx['photo'] ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( $elivation_tx['photo'] ) ); ?>"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"eh-card__body"} -->
