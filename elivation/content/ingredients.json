@@ -1,0 +1,613 @@
+{
+  "amino-blend": {
+    "name": "Amino Blend",
+    "aka": "A mixture of amino acids; formula varies",
+    "goals": [
+      "Recovery",
+      "Energy"
+    ],
+    "short": "Amino acids are building blocks your body uses to make proteins. An amino blend combines several of them, but its exact contents depend on the formulation. Evidence from food or oral supplements does not establish that a wellness IV improves recovery.",
+    "body": [
+      "Provide building blocks for body proteins.",
+      "Participate in normal tissue maintenance.",
+      "Some amino acids also take part in energy metabolism."
+    ],
+    "why": "People interested in exercise recovery may ask about amino acids. Their role in protein production does not mean an IV blend builds muscle or speeds recovery.",
+    "safety": "Talk with your clinician first if you have kidney problems, follow a medically prescribed protein restriction, or receive specialist care. Share your medicines, supplements, allergies, and previous infusion reactions with the nurse. The medical director must confirm the screening protocol, appropriate route, and any required tests.",
+    "faq": [
+      {
+        "q": "What is in an Amino Blend IV?",
+        "a": "The name does not identify a standard recipe. Ask for the exact amino acids and amounts before booking."
+      },
+      {
+        "q": "Is an amino acid IV better than eating protein?",
+        "a": "Protein foods supply amino acids after digestion. Research on oral protein does not establish an advantage for a wellness IV."
+      },
+      {
+        "q": "Will an amino acid IV improve workout recovery?",
+        "a": "An improvement cannot be promised. Evidence for wellness IV blends is limited, and the formula matters."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NIH ODS: Exercise and Athletic Performance",
+        "url": "https://ods.od.nih.gov/factsheets/ExerciseandAthleticPerformance-HealthProfessional/"
+      },
+      {
+        "label": "NIH ODS: existing ingredient reference",
+        "url": "https://ods.od.nih.gov/factsheets/ImmuneFunction-HealthProfessional/#h63"
+      },
+      {
+        "label": "NIH ODS: existing ingredient reference",
+        "url": "https://ods.od.nih.gov/factsheets/Carnitine-HealthProfessional"
+      },
+      {
+        "label": "NIH ODS: existing ingredient reference",
+        "url": "https://ods.od.nih.gov/factsheets/Carnitine-Consumer"
+      },
+      {
+        "label": "NIH ODS: existing ingredient reference",
+        "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional"
+      },
+      {
+        "label": "NIH ODS: existing ingredient reference",
+        "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer"
+      }
+    ],
+    "related": [
+      "taurine",
+      "magnesium"
+    ],
+    "reviewer": null,
+    "last_reviewed": null,
+    "updated": "2026-11-15",
+    "card": "Provide building blocks for body proteins.",
+    "title": "Amino Blend IV therapy: what it is & what it does | Elivation Health",
+    "meta": "Explore Amino Blend, its role in your body, IV evidence, and questions to ask before an Orange County visit. Read the ingredient guide and compare care options."
+  },
+  "biotin": {
+    "name": "Biotin",
+    "aka": "Vitamin B7",
+    "goals": [
+      "Skin & hair",
+      "Energy"
+    ],
+    "short": "Biotin is a B vitamin that helps enzymes process fats, carbohydrates, and amino acids. It is sometimes included in wellness formulations. Evidence that extra biotin improves hair or nails in people with adequate intake is limited, and an IV benefit is not established.",
+    "body": [
+      "Helps enzymes process fatty acids.",
+      "Participates in glucose metabolism.",
+      "Helps process certain amino acids."
+    ],
+    "why": "People often ask about biotin for hair and nails. Its normal metabolic role should not be read as a promise of hair growth or stronger nails from an infusion.",
+    "safety": "Tell the nurse and the laboratory if you take biotin or have blood tests planned: biotin can interfere with some test results. Share your medicines, supplements, allergies, and previous infusion reactions with the nurse. The medical director must confirm the screening protocol, appropriate route, and any required tests.",
+    "faq": [
+      {
+        "q": "Does biotin help hair grow?",
+        "a": "Evidence for extra biotin improving hair in people with adequate intake is limited. IV delivery does not establish a hair-growth benefit."
+      },
+      {
+        "q": "Can biotin affect blood tests?",
+        "a": "Yes, biotin can interfere with some laboratory tests. Tell your clinician and laboratory what you take and follow their instructions."
+      },
+      {
+        "q": "Is biotin included in Radiance?",
+        "a": "The current published menu does not confirm its complete formula. Ask the team to verify the ingredients before booking."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NIH ODS: Biotin",
+        "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/"
+      },
+      {
+        "label": "NIH ODS: existing ingredient reference",
+        "url": "https://ods.od.nih.gov/factsheets/Biotin-Consumer"
+      }
+    ],
+    "related": [
+      "b-complex",
+      "vitamin-c"
+    ],
+    "reviewer": null,
+    "last_reviewed": null,
+    "updated": "2026-11-15",
+    "card": "Helps enzymes process fatty acids.",
+    "title": "Biotin IV therapy: what it is & what it does | Elivation Health",
+    "meta": "Explore Biotin, its role in your body, IV evidence, and questions to ask before an Orange County visit. Read the ingredient guide and compare care options."
+  },
+  "glutathione": {
+    "name": "Glutathione",
+    "aka": "Reduced glutathione, GSH",
+    "goals": [
+      "Recovery",
+      "Skin & hair"
+    ],
+    "short": "Glutathione is an antioxidant your body makes naturally from three amino acids. It participates in the chemical systems that help cells manage oxidation. It is offered in some IV blends, but evidence for general wellness benefits from IV use is limited.",
+    "body": [
+      "Participates in the body’s antioxidant systems.",
+      "Cycles between reduced and oxidized forms.",
+      "Helps maintain the chemical environment within cells."
+    ],
+    "why": "People may ask about glutathione when exploring antioxidant support. Its activity inside cells does not establish a noticeable benefit from an infusion.",
+    "safety": "Discuss prior reactions to injectable products and any ongoing specialist treatment with your clinician. Share your medicines, supplements, allergies, and previous infusion reactions with the nurse. The medical director must confirm the screening protocol, appropriate route, and any required tests.",
+    "faq": [
+      {
+        "q": "What is glutathione made from?",
+        "a": "It is made from glutamate, cysteine, and glycine. Your body produces it naturally."
+      },
+      {
+        "q": "Is IV glutathione proven to improve wellness?",
+        "a": "Evidence for general wellness outcomes is limited. Studies of oral products cannot establish the effects of an IV formulation."
+      },
+      {
+        "q": "Which Elivation drip contains glutathione?",
+        "a": "The published description of The Elivation lists NAD+ and glutathione. Confirm the current formulation with the team before booking."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Human glutathione trial: oral route, not IV",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3162377/"
+      }
+    ],
+    "related": [
+      "nad",
+      "vitamin-c"
+    ],
+    "reviewer": null,
+    "last_reviewed": null,
+    "updated": "2026-11-15",
+    "card": "Participates in the body’s antioxidant systems.",
+    "title": "Glutathione IV therapy: what it is & what it does | Elivation Health",
+    "meta": "Explore Glutathione, its role in your body, IV evidence, and questions to ask before an Orange County visit. Read the ingredient guide and compare care options."
+  },
+  "lipo-c-mic": {
+    "name": "Lipo-C/MIC",
+    "aka": "MIC commonly refers to methionine, inositol, and choline",
+    "goals": [
+      "Energy"
+    ],
+    "short": "Lipo-C/MIC is a formulation name rather than a single nutrient. MIC commonly refers to methionine, inositol, and choline, but products can differ. Elivation’s exact formula and whether it is offered as an IV ingredient or a separate injection need confirmation.",
+    "body": [
+      "Methionine is an amino acid used in proteins.",
+      "Choline is used to make components of cell membranes.",
+      "Choline is also used to make acetylcholine, a nerve-signaling chemical."
+    ],
+    "why": "People may ask about these nutrients when exploring metabolism. Their roles in the body do not establish a weight-management benefit from a Lipo-C/MIC product.",
+    "safety": "Ask your clinician to review the exact formula, dose, and route before considering this product. Share your medicines, supplements, allergies, and previous infusion reactions with the nurse. The medical director must confirm the screening protocol, appropriate route, and any required tests.",
+    "faq": [
+      {
+        "q": "Is Lipo-C/MIC an IV or an injection?",
+        "a": "The product name alone does not establish its route. Elivation’s available formulation and route need confirmation."
+      },
+      {
+        "q": "Does MIC mean one ingredient?",
+        "a": "No, MIC commonly refers to three ingredients. Additional ingredients and concentrations can vary by product."
+      },
+      {
+        "q": "Does Lipo-C/MIC cause weight loss?",
+        "a": "A weight-loss result cannot be promised. Normal nutrient metabolism is not evidence that an injection changes body weight."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NIH ODS: Choline",
+        "url": "https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/"
+      }
+    ],
+    "related": [
+      "amino-blend",
+      "vitamin-b12"
+    ],
+    "reviewer": null,
+    "last_reviewed": null,
+    "updated": "2026-11-15",
+    "card": "Methionine is an amino acid used in proteins.",
+    "title": "Lipo-C/MIC IV therapy: what it is & what it does | Elivation Health",
+    "meta": "Explore Lipo-C/MIC, its role in your body, IV evidence, and questions to ask before an Orange County visit. Read the ingredient guide and compare care options."
+  },
+  "magnesium": {
+    "name": "Magnesium",
+    "aka": "An essential mineral; injectable form varies",
+    "goals": [
+      "Recovery",
+      "Hydration",
+      "Energy"
+    ],
+    "short": "Magnesium is a mineral involved in normal muscle, nerve, and enzyme function. Some IV blends include magnesium alongside fluids and other nutrients. Its essential role does not establish that an infusion improves wellness in someone with adequate magnesium.",
+    "body": [
+      "Supports normal muscle and nerve function.",
+      "Helps enzymes involved in energy production.",
+      "Participates in protein synthesis."
+    ],
+    "why": "People interested in recovery or hydration may ask about magnesium. Evidence about a mineral’s normal function should not be presented as proof of a benefit from an elective infusion.",
+    "safety": "Talk with your clinician first if you have reduced kidney function or take medicines that affect magnesium levels. Share your medicines, supplements, allergies, and previous infusion reactions with the nurse. The medical director must confirm the screening protocol, appropriate route, and any required tests.",
+    "faq": [
+      {
+        "q": "Is magnesium an electrolyte?",
+        "a": "Yes, magnesium is an electrolyte. It participates in nerve and muscle function."
+      },
+      {
+        "q": "Will magnesium IV therapy improve exercise recovery?",
+        "a": "A recovery benefit cannot be promised. The role of magnesium in muscles does not establish a benefit from IV use for everyone."
+      },
+      {
+        "q": "Which drip contains magnesium?",
+        "a": "The current Max Defense description explicitly includes magnesium. Ask the nurse to confirm its dose and whether it is appropriate for you."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NIH ODS: Magnesium",
+        "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
+      }
+    ],
+    "related": [
+      "vitamin-c",
+      "taurine"
+    ],
+    "reviewer": null,
+    "last_reviewed": null,
+    "updated": "2026-11-15",
+    "card": "Supports normal muscle and nerve function.",
+    "title": "Magnesium IV therapy: what it is & what it does | Elivation Health",
+    "meta": "Explore Magnesium, its role in your body, IV evidence, and questions to ask before an Orange County visit. Read the ingredient guide and compare care options."
+  },
+  "nad": {
+    "name": "NAD+",
+    "aka": "Nicotinamide adenine dinucleotide",
+    "goals": [
+      "Energy",
+      "Recovery"
+    ],
+    "short": "NAD+ is a molecule found in cells that helps transfer electrons during energy metabolism. It also participates in processes involved in cell signaling and maintenance. NAD+ infusions are offered for wellness, but human evidence for meaningful wellness benefits remains limited.",
+    "body": [
+      "Helps cells transfer energy from food through metabolic reactions.",
+      "Cycles between NAD+ and NADH.",
+      "Participates in enzyme reactions involved in cell maintenance."
+    ],
+    "why": "People may explore NAD+ because they are interested in cellular energy. A molecule’s role in cells is not proof that an infusion will improve how energetic or focused you feel.",
+    "safety": "Discuss your health history, current medicines, and previous infusion tolerance with your clinician. Share your medicines, supplements, allergies, and previous infusion reactions with the nurse. The medical director must confirm the screening protocol, appropriate route, and any required tests.",
+    "faq": [
+      {
+        "q": "How long does an NAD+ IV take?",
+        "a": "Elivation’s NAD+ visits currently list up to 2 hours 30 minutes. The team should confirm timing and any charges for additional time before booking."
+      },
+      {
+        "q": "Will an NAD+ IV give me more energy?",
+        "a": "That outcome cannot be promised. Early human research on NAD+ handling in the body does not establish a reliable improvement in energy or focus."
+      },
+      {
+        "q": "Is NAD+ the same as vitamin B3?",
+        "a": "No, NAD+ is a coenzyme, while vitamin B3 is a nutrient used in pathways that help make NAD+. Results for oral precursors cannot simply be applied to IV NAD+."
+      },
+      {
+        "q": "Should I choose 250 mg or 500 mg?",
+        "a": "Ask the clinical team to review whether either option is appropriate. A higher listed amount does not establish a better wellness outcome."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Human pilot study of IV NAD+ metabolism",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31572171/"
+      },
+      {
+        "label": "NIH ODS: Niacin",
+        "url": "https://ods.od.nih.gov/factsheets/Niacin-HealthProfessional/"
+      }
+    ],
+    "related": [
+      "glutathione",
+      "b-complex"
+    ],
+    "reviewer": null,
+    "last_reviewed": null,
+    "updated": "2026-11-15",
+    "card": "Helps cells transfer energy from food through metabolic reactions.",
+    "title": "NAD+ IV therapy: what it is & what it does | Elivation Health",
+    "meta": "Explore NAD+, its role in your body, IV evidence, and questions to ask before an Orange County visit. Read the ingredient guide and compare care options."
+  },
+  "taurine": {
+    "name": "Taurine",
+    "aka": "An amino sulfonic acid",
+    "goals": [
+      "Recovery",
+      "Hydration"
+    ],
+    "short": "Taurine is a compound found naturally in the body, often grouped with amino acids. It participates in bile salt formation and processes involved in cell balance. Evidence for a general wellness benefit from IV taurine is limited.",
+    "body": [
+      "Participates in bile salt formation.",
+      "Is involved in the regulation of cell volume.",
+      "Participates in processes related to cellular calcium handling."
+    ],
+    "why": "People interested in recovery or hydration may ask about taurine. Its normal physiological roles do not establish improved performance or recovery from a wellness infusion.",
+    "safety": "Ask your clinician about the proposed formula and route, particularly if you have kidney problems or receive specialist care. Share your medicines, supplements, allergies, and previous infusion reactions with the nurse. The medical director must confirm the screening protocol, appropriate route, and any required tests.",
+    "faq": [
+      {
+        "q": "Is taurine a stimulant?",
+        "a": "Taurine is not caffeine. Its presence in some energy drinks does not mean an IV provides a stimulant effect."
+      },
+      {
+        "q": "Does taurine build muscle?",
+        "a": "A muscle-building benefit from an IV cannot be promised. Taurine is not used as a standard building block of body proteins."
+      },
+      {
+        "q": "Which drips contain taurine?",
+        "a": "The published menu does not confirm a taurine-containing formula. Ask the team for a current ingredient list before booking."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Taurine physiology: published research overview",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1731369/"
+      }
+    ],
+    "related": [
+      "amino-blend",
+      "magnesium"
+    ],
+    "reviewer": null,
+    "last_reviewed": null,
+    "updated": "2026-11-15",
+    "card": "Participates in bile salt formation.",
+    "title": "Taurine IV therapy: what it is & what it does | Elivation Health",
+    "meta": "Explore Taurine, its role in your body, IV evidence, and questions to ask before an Orange County visit. Read the ingredient guide and compare care options."
+  },
+  "vitamin-b12": {
+    "name": "Vitamin B12",
+    "aka": "Methylcobalamin, cyanocobalamin",
+    "goals": [
+      "Energy"
+    ],
+    "short": "Vitamin B12 is a nutrient involved in normal nerve function, red blood cell formation, and DNA synthesis. It may be offered in injectable formulations, whose form and route should be checked. Extra B12 has not been shown to improve energy in people who already get enough.",
+    "body": [
+      "Supports normal nerve function.",
+      "Participates in red blood cell formation.",
+      "Is needed for DNA synthesis."
+    ],
+    "why": "People often ask about B12 when considering energy support. An essential nutritional role does not mean extra B12 will make someone with adequate intake feel more energetic.",
+    "safety": "Tell your clinician about any cobalt allergy, medicines, supplements, or recent B12 tests. Share your medicines, supplements, allergies, and previous infusion reactions with the nurse. The medical director must confirm the screening protocol, appropriate route, and any required tests.",
+    "faq": [
+      {
+        "q": "Does B12 give you energy?",
+        "a": "B12 is needed for normal body function. Extra B12 has not been shown to improve energy in people who already get enough."
+      },
+      {
+        "q": "Are methylcobalamin and cyanocobalamin the same?",
+        "a": "Both are forms of vitamin B12. Ask which form is being offered and why it is appropriate for you."
+      },
+      {
+        "q": "Is a B12 shot the same as an IV?",
+        "a": "No, the routes are different. Ask the team to confirm the available product and route before booking."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NIH ODS: Vitamin B12",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"
+      },
+      {
+        "label": "NIH ODS: existing ingredient reference",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminB12-Consumer"
+      }
+    ],
+    "related": [
+      "b-complex",
+      "nad"
+    ],
+    "reviewer": null,
+    "last_reviewed": null,
+    "updated": "2026-11-15",
+    "card": "Supports normal nerve function.",
+    "title": "Vitamin B12 IV therapy: what it is & what it does | Elivation Health",
+    "meta": "Explore Vitamin B12, its role in your body, IV evidence, and questions to ask before an Orange County visit. Read the ingredient guide and compare care options."
+  },
+  "b-complex": {
+    "name": "B-Complex",
+    "aka": "A blend of B vitamins; contents vary",
+    "goals": [
+      "Energy",
+      "Recovery"
+    ],
+    "short": "B-Complex describes a combination of B vitamins rather than one ingredient. Several B vitamins help enzymes use nutrients from food. A blend’s exact contents vary, and that metabolic role does not establish extra energy from a wellness IV.",
+    "body": [
+      "Some B vitamins help enzymes process carbohydrates.",
+      "Others participate in amino acid metabolism.",
+      "Individual B vitamins have distinct roles; a blend is not a standardized formula."
+    ],
+    "why": "People interested in energy may ask about B vitamins. Evidence for a nutrient’s function does not prove that a particular IV blend improves fatigue or performance.",
+    "safety": "Ask for the full ingredient list and review all vitamin supplements with your clinician to avoid overlapping doses. Share your medicines, supplements, allergies, and previous infusion reactions with the nurse. The medical director must confirm the screening protocol, appropriate route, and any required tests.",
+    "faq": [
+      {
+        "q": "Does B-Complex always contain B12?",
+        "a": "No, the name does not guarantee a specific recipe. Ask to see the exact formulation."
+      },
+      {
+        "q": "Is B-Complex the same as biotin?",
+        "a": "No, biotin is one B vitamin. A B-Complex product combines several vitamins and may or may not include biotin."
+      },
+      {
+        "q": "Will a B-Complex IV improve my energy?",
+        "a": "An energy boost cannot be promised. The vitamins’ metabolic roles do not establish benefits from an IV when intake is already adequate."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NIH ODS: Thiamin",
+        "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+      },
+      {
+        "label": "NIH ODS: Vitamin B6",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/"
+      },
+      {
+        "label": "NIH ODS: Niacin",
+        "url": "https://ods.od.nih.gov/factsheets/Niacin-HealthProfessional/"
+      }
+    ],
+    "related": [
+      "vitamin-b12",
+      "biotin"
+    ],
+    "reviewer": null,
+    "last_reviewed": null,
+    "updated": "2026-11-15",
+    "card": "Some B vitamins help enzymes process carbohydrates.",
+    "title": "B-Complex IV therapy: what it is & what it does | Elivation Health",
+    "meta": "Explore B-Complex, its role in your body, IV evidence, and questions to ask before an Orange County visit. Read the ingredient guide and compare care options."
+  },
+  "vitamin-c": {
+    "name": "Vitamin C",
+    "aka": "Ascorbic acid, ascorbate",
+    "goals": [
+      "Immune support",
+      "Skin & hair",
+      "Recovery"
+    ],
+    "short": "Vitamin C is a water-soluble nutrient involved in collagen production, normal immune function, and antioxidant protection. Some IV blends deliver it directly into the bloodstream, producing higher blood levels than oral intake. Higher blood levels alone do not establish better wellness outcomes.",
+    "body": [
+      "Helps make collagen, a structural protein in skin and connective tissue.",
+      "Supports normal immune-system function.",
+      "Acts as an antioxidant, helping protect cells from free-radical damage."
+    ],
+    "why": "If your interest is immune support or skin health, vitamin C’s normal roles may be relevant to your questions. Those roles do not establish that an IV improves immunity or skin appearance in someone already getting enough vitamin C.",
+    "safety": "Talk with your clinician first if you have kidney disease, a history of kidney stones, G6PD deficiency, or iron overload. Share your medicines, supplements, allergies, and previous infusion reactions with the nurse. The medical director must confirm the screening protocol, appropriate route, and any required tests.",
+    "faq": [
+      {
+        "q": "Is IV vitamin C better than oral vitamin C?",
+        "a": "IV delivery produces higher blood concentrations than oral intake. That difference does not, by itself, prove better everyday health outcomes."
+      },
+      {
+        "q": "Does IV vitamin C prevent colds?",
+        "a": "Vitamin C contributes to normal immune function, but that is not evidence that an IV prevents colds. This guide makes no cold-prevention promise."
+      },
+      {
+        "q": "How long does a vitamin C drip take?",
+        "a": "Max Defense currently lists a visit length of about 75 minutes. Confirm the expected timing when booking."
+      },
+      {
+        "q": "Can everyone receive IV vitamin C?",
+        "a": "No, suitability depends on health history and the proposed dose. Certain kidney conditions, G6PD deficiency, and iron overload require particular caution."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NIH ODS: Vitamin C",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/"
+      },
+      {
+        "label": "NIH NCI: IV vitamin C safety",
+        "url": "https://www.cancer.gov/about-cancer/treatment/cam/patient/vitamin-c-pdq"
+      },
+      {
+        "label": "NIH ODS: existing ingredient reference",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminC-Consumer"
+      }
+    ],
+    "related": [
+      "magnesium",
+      "zinc"
+    ],
+    "reviewer": null,
+    "last_reviewed": null,
+    "updated": "2026-11-15",
+    "card": "Helps make collagen, a structural protein in skin and connective tissue.",
+    "title": "Vitamin C IV therapy: what it is & what it does | Elivation Health",
+    "meta": "Explore Vitamin C, its role in your body, IV evidence, and questions to ask before an Orange County visit. Read the ingredient guide and compare care options."
+  },
+  "vitamin-d": {
+    "name": "Vitamin D",
+    "aka": "Cholecalciferol (D3), ergocalciferol (D2)",
+    "goals": [
+      "Immune support"
+    ],
+    "short": "Vitamin D is a fat-soluble vitamin involved in calcium absorption and normal bone and muscle function. Its role in nutrition does not establish that a wellness infusion is useful. Elivation’s available product and route need confirmation; an injection and an IV are not interchangeable.",
+    "body": [
+      "Helps the body absorb calcium.",
+      "Supports normal bone maintenance.",
+      "Participates in normal muscle and immune function."
+    ],
+    "why": "People may ask about vitamin D for general nutritional support. Decisions about extra vitamin D should consider total intake and clinical advice, not a promise of an immediate wellness effect.",
+    "safety": "Ask your clinician before taking extra vitamin D if you have kidney problems, elevated calcium, or already take vitamin D products. Share your medicines, supplements, allergies, and previous infusion reactions with the nurse. The medical director must confirm the screening protocol, appropriate route, and any required tests.",
+    "faq": [
+      {
+        "q": "Is vitamin D offered in an IV drip?",
+        "a": "The current published menu does not confirm a vitamin D-containing IV. Ask the team to verify the product and route."
+      },
+      {
+        "q": "Is more vitamin D always better?",
+        "a": "No, excessive vitamin D can be harmful. Review total intake with your clinician."
+      },
+      {
+        "q": "Do I need a vitamin D blood test?",
+        "a": "Whether testing is appropriate depends on your circumstances. Ask your clinician rather than assuming an infusion or supplement is needed."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NIH ODS: Vitamin D",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
+      },
+      {
+        "label": "NIH ODS: existing ingredient reference",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminD-Consumer"
+      }
+    ],
+    "related": [
+      "magnesium",
+      "zinc"
+    ],
+    "reviewer": null,
+    "last_reviewed": null,
+    "updated": "2026-11-15",
+    "card": "Helps the body absorb calcium.",
+    "title": "Vitamin D IV therapy: what it is & what it does | Elivation Health",
+    "meta": "Explore Vitamin D, its role in your body, IV evidence, and questions to ask before an Orange County visit. Read the ingredient guide and compare care options."
+  },
+  "zinc": {
+    "name": "Zinc",
+    "aka": "An essential trace mineral; injectable form varies",
+    "goals": [
+      "Immune support",
+      "Skin & hair"
+    ],
+    "short": "Zinc is a mineral involved in normal immune function, protein production, and cell division. Some nutrient formulations may include it, but Elivation’s current drip matches need confirmation. Evidence about oral zinc products does not establish a benefit from a wellness IV.",
+    "body": [
+      "Supports normal immune function.",
+      "Participates in protein and DNA synthesis.",
+      "Is involved in cell division and normal tissue maintenance."
+    ],
+    "why": "People interested in immune support may ask about zinc. Its normal function is not proof that an infusion prevents illness or improves skin appearance.",
+    "safety": "Review zinc supplements and medicines with your clinician: excess zinc can affect copper balance and interact with some medicines. Share your medicines, supplements, allergies, and previous infusion reactions with the nurse. The medical director must confirm the screening protocol, appropriate route, and any required tests.",
+    "faq": [
+      {
+        "q": "Does IV zinc prevent colds?",
+        "a": "A cold-prevention benefit from IV zinc is not established here. Findings about oral lozenges do not demonstrate an IV benefit."
+      },
+      {
+        "q": "Can you have too much zinc?",
+        "a": "Yes, excess zinc can be harmful and affect copper balance. Discuss total intake and the proposed dose with your clinician."
+      },
+      {
+        "q": "Which drips contain zinc?",
+        "a": "The published menu does not confirm the complete ingredient lists. Ask the team for the current formula before choosing a drip."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NIH ODS: Zinc",
+        "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"
+      }
+    ],
+    "related": [
+      "vitamin-c",
+      "vitamin-d"
+    ],
+    "reviewer": null,
+    "last_reviewed": null,
+    "updated": "2026-11-15",
+    "card": "Supports normal immune function.",
+    "title": "Zinc IV therapy: what it is & what it does | Elivation Health",
+    "meta": "Explore Zinc, its role in your body, IV evidence, and questions to ask before an Orange County visit. Read the ingredient guide and compare care options."
+  }
+}

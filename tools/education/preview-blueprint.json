@@ -1,0 +1,23 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "login": false,
+  "steps": [
+    {
+      "step": "activateTheme",
+      "themeFolderName": "elivation"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; update_option('blogname','Elivation Health'); update_option('permalink_structure','/%postname%/'); elivation_ensure_site_pages(); elivation_ensure_treatment_pages(); elivation_install_faq(); flush_rewrite_rules();"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; define('ELIVATION_IMPORT_CONTENT',true); require get_theme_file_path('tools/import-published-content.php'); wp_update_post(array('ID'=>1,'post_status'=>'draft')); flush_rewrite_rules();"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; elivation_install_education(); update_option('blog_public',1); flush_rewrite_rules();"
+    }
+  ]
+}

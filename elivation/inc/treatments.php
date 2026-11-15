@@ -212,6 +212,13 @@ function elivation_treatments() {
 	}
 	unset( $treatment );
 
+	// Published-menu matches only. TODO(client): verify full formulas, doses and routes.
+	$ingredient_map = array( 'maxdefense' => array( 'vitamin-c', 'magnesium' ), 'nad250' => array( 'nad' ), 'nad500' => array( 'nad' ), 'elivation' => array( 'nad', 'glutathione' ) );
+	foreach ( $treatments as &$group ) {
+		foreach ( $group['drips'] as &$drip ) { $drip['ingredients'] = $ingredient_map[ $drip['id'] ] ?? array(); }
+		unset( $drip );
+	}
+	unset( $group );
 	return apply_filters( 'elivation_treatments', $treatments );
 }
 

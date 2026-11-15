@@ -77,6 +77,7 @@ $elivation_tx = elivation_treatment( elivation_current_treatment( true ) );
 				<?php echo elivation_photo_image( $elivation_drip['photo'], '', '(min-width: 1280px) 520px, (min-width: 900px) 45vw, calc(100vw - 40px)' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in the image helper. ?>
 			</figure>
 			<div class="eh-drip-detail__body">
+				<?php elivation_drip_ingredient_links( $elivation_drip ); ?>
 				<p class="eh-eyebrow"><?php echo esc_html( $elivation_drip['name'] ); ?></p>
 				<h2 class="eh-h2" id="<?php echo esc_attr( $elivation_drip['anchor'] ); ?>-title"><?php echo esc_html( $elivation_drip['hook'] ); ?></h2>
 				<p class="eh-drip-detail__description"><?php echo esc_html( $elivation_drip['description'] ); ?></p>

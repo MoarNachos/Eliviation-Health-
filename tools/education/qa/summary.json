@@ -1,0 +1,51 @@
+{
+  "audit": "Lighthouse 12.8.2",
+  "environment": "Indexable local WordPress build; mobile 412 \u00d7 823. Public review remains noindex.",
+  "pages": {
+    "education/": {
+      "accessibility": 100,
+      "seo": 100
+    },
+    "education/vitamin-c/": {
+      "accessibility": 100,
+      "seo": 100
+    }
+  },
+  "interaction_checks": {
+    "goal_filter_counts": {
+      "All": 12,
+      "Energy": 7,
+      "Recovery": 7,
+      "Immune support": 3,
+      "Skin & hair": 4,
+      "Hydration": 2
+    },
+    "legacy_Vitamin-C": "Opened Vitamin C child page",
+    "booking": "NAD+ 500mg preselected; switching to The Elivation updated handoff URL; close restored page",
+    "mobile": "Vitamin C mobile screenshot checked: single column and sticky Book bar",
+    "medical_review": "122 individual draft claim entries plus shared client approvals"
+  },
+  "live_review": {
+    "hub": {
+      "scores": {
+        "accessibility": 100,
+        "seo": 69
+      },
+      "failed_audits": [
+        "is-crawlable"
+      ],
+      "url": "https://www.elivationhealth.com/design-review/education/"
+    },
+    "vitamin-c": {
+      "scores": {
+        "accessibility": 100,
+        "seo": 69
+      },
+      "failed_audits": [
+        "is-crawlable"
+      ],
+      "url": "https://www.elivationhealth.com/design-review/education/vitamin-c/"
+    }
+  },
+  "live_review_note": "Intentional noindex prevents review pages competing with production. Canonicals are absolute review URLs. Source-reference HTTP probes are separately recorded; NIH automated access returned 403, although ODS source content was available through web research."
+}

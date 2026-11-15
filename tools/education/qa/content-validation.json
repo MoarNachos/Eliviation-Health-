@@ -1,0 +1,22 @@
+{
+  "pages_checked": [
+    "hub",
+    "amino-blend",
+    "biotin",
+    "glutathione",
+    "lipo-c-mic",
+    "magnesium",
+    "nad",
+    "taurine",
+    "vitamin-b12",
+    "b-complex",
+    "vitamin-c",
+    "vitamin-d",
+    "zinc"
+  ],
+  "metadata": "Unique title, one H1, 150\u2013160 character descriptions; Orange County once",
+  "schema": "CollectionPage / MedicalWebPage, FAQPage, BreadcrumbList; no invented reviewer",
+  "sitemap": "All 12 native child pages present",
+  "llms": "Hub, all 12 ingredients, all 3 treatment categories",
+  "formulas": "Only 4 ingredient pages have published-menu matches; remaining 8 pending client formulas"
+}

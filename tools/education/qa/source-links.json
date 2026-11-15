@@ -1,0 +1,98 @@
+[
+  {
+    "url": "https://ods.od.nih.gov/factsheets/Biotin-Consumer",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/Carnitine-Consumer",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/Carnitine-HealthProfessional",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/ExerciseandAthleticPerformance-HealthProfessional/",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/ImmuneFunction-HealthProfessional/#h63",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/Niacin-HealthProfessional/",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/VitaminB12-Consumer",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/VitaminC-Consumer",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/VitaminD-Consumer",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+    "status": "403"
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+    "status": "403"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3162377/",
+    "status": "200"
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1731369/",
+    "status": "203"
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31572171/",
+    "status": "203"
+  },
+  {
+    "url": "https://www.cancer.gov/about-cancer/treatment/cam/patient/vitamin-c-pdq",
+    "status": "200"
+  }
+]
