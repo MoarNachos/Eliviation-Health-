@@ -13,6 +13,9 @@
  * (design_handoff_homepage/design/templates/treatment/treatments-data.js).
  * TODO(client): verify every drip name, price, duration and description before launch.
  *
+ * TODO(client): Photo relaxed-home-iv-detail-1.jpg — Confirm authorization for this client-treatment image despite the face being outside the frame. Also applies to home-community-iv (same source DSC_1818.jpg).
+ * TODO(client): Photo community-2.jpg — Confirm consent for the golfer visible in profile.
+ *
  * @package elivation
  */
 
@@ -99,7 +102,7 @@ function elivation_treatments() {
 			'promise'     => 'If nausea or a stomach bug has made it hard to stay hydrated, a registered nurse can assess you at home and discuss whether IV fluids are appropriate.',
 			'meta'        => 'Explore mobile IV hydration for illness-related dehydration in Orange County and parts of Los Angeles. See visit prices and ask a nurse whether home care fits.',
 			'fit_heading' => array( 'Is an at-home visit ', 'right for you?' ),
-			'photo'       => 'event-4',
+			'photo'       => 'relaxed-home-iv-detail-1',
 			'session'     => '1h 15m',
 			// General account of a home visit. Do not present it as a Relief treatment outcome.
 			'reviews'     => array( 'r4' ),

@@ -9,6 +9,9 @@
  * TODO(client): verify the "reply within one business day" promise (also used in the success message in theme.js).
  * TODO(build): the form is NOT connected. It validates in the browser and then asks the visitor to call. Decide where inquiries go (email or CRM) and wire it up.
  *
+ * TODO(client): Photo branded-tent-care-wide-3.jpg — Confirm consent for the identifiable standing guest and seated client; verify provider identity and RN status.
+ * TODO(client): Photo branded-event-table-wide-2.jpg — Verify background people’s staff/client roles and consent for identifiable non-staff.
+ *
  * @package elivation
  */
 
@@ -32,12 +35,16 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"eh-events__photo"} -->
-<figure class="wp-block-image size-full eh-events__photo"><img src="<?php echo esc_url( elivation_photo_url( 'event-2' ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( 'event-2' ) ); ?>"/></figure>
+<figure class="wp-block-image size-full eh-events__photo"><img src="<?php echo esc_url( elivation_photo_url( 'branded-tent-care-wide-3' ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( 'branded-tent-care-wide-3' ) ); ?>"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"className":"eh-events__caption"} -->
-<p class="eh-events__caption">Guests check in at the Elivation tent on the golf course, March 2026.</p>
+<p class="eh-events__caption">Care in progress at a golf event, November 2025.</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"eh-events__photo eh-events__photo--secondary"} -->
+<figure class="wp-block-image size-full eh-events__photo eh-events__photo--secondary"><img src="<?php echo esc_url( elivation_photo_url( 'branded-event-table-wide-2' ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( 'branded-event-table-wide-2' ) ); ?>"/></figure>
+<!-- /wp:image -->
 
 <!-- wp:list {"className":"eh-events__facts"} -->
 <ul class="wp-block-list eh-events__facts">

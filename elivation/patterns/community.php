@@ -5,12 +5,17 @@
  * Categories: elivation, gallery
  * Description: Photo grid of the team out at local events, with the Instagram link.
  *
- * Photos in order: team-4 (2x2 lead), home-community-visit, home-community-iv, event-2, community-4.
+ * Photos in order: care in progress (2x2 lead), home vitals, home IV detail, event setup, quiet seating.
+ *
+ * TODO(client): Photo branded-tent-care-wide-3.jpg — Confirm consent for the identifiable standing guest and seated client; verify provider identity and RN status.
+ * TODO(client): Photo nurse-home-vitals-1.jpg — Confirm consent for both clients; one seated face is visible. Confirm the care provider’s identity and RN status.
+ * TODO(client): Photo relaxed-home-iv-detail-1.jpg — Confirm authorization for this client-treatment image despite the face being outside the frame. Also applies to home-community-iv (same source DSC_1818.jpg).
+ * TODO(client): Photo branded-event-table-wide-2.jpg — Verify background people’s staff/client roles and consent for identifiable non-staff.
  *
  * @package elivation
  */
 
-$elivation_gallery = array( 'team-4', 'home-community-visit', 'home-community-iv', 'event-2', 'community-4' );
+$elivation_gallery = array( 'branded-tent-care-wide-3', 'nurse-home-vitals-1', 'relaxed-home-iv-detail-1', 'branded-event-table-wide-2', 'community-4' );
 ?>
 <!-- wp:group {"tagName":"section","anchor":"community","className":"eh-scope eh-section"} -->
 <section id="community" class="wp-block-group eh-scope eh-section">

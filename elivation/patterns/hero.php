@@ -10,6 +10,8 @@
  * TODO(client): confirm whether the booking platform accepts a ?zip= parameter.
  * TODO(client): supply covered ZIP codes to switch on the out-of-area message (see elivation_service_zips()).
  *
+ * TODO(client): Photo branded-tent-lawn-wide-1.jpg — Check background people for identifiable clients and confirm their consent. Also applies to hero-2 (same source 20251110_093003.jpg).
+ *
  * @package elivation
  */
 

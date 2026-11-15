@@ -21,7 +21,7 @@ const QUALITY = 70;
 
 mkdirSync(outDir, { recursive: true });
 
-const files = readdirSync(srcDir).filter((f) => /\.(jpe?g|png)$/i.test(f)).sort();
+const files = readdirSync(srcDir, { recursive: true }).filter((f) => /\.(jpe?g|png)$/i.test(f)).sort();
 if (!files.length) {
   console.error(`No source photos found in ${srcDir}`);
   process.exit(1);

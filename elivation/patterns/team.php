@@ -66,7 +66,7 @@ $elivation_client   = $elivation_client && false !== strpos( $elivation_client[0
 <!-- /wp:html -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"eh-team__group"} -->
-<figure class="wp-block-image size-full eh-team__group"><img src="<?php echo esc_url( elivation_photo_url( 'team-2' ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( 'team-2' ) ); ?>"/></figure>
+<figure class="wp-block-image size-full eh-team__group"><img src="<?php echo esc_url( elivation_photo_url( 'team-1' ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( 'team-1' ) ); ?>"/></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->

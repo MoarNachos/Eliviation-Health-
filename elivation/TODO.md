@@ -39,12 +39,23 @@ Nothing below has been invented. Where the design had placeholder content, the p
 | T10 | Booking drawer name and phone are collected but **not sent anywhere** (kept out of the URL on purpose). Connect to the CRM or a booking API | `assets/js/theme.js`, `patterns/treatment-booking.php` |
 | T11 | Meta descriptions mention Orange County and parts of Los Angeles | `inc/treatments.php` |
 
-## Photo consent flags (from `assets/photos/picks.txt`)
+## Photo consent flags
 
-| Photo | Flag | Used on the page? |
-|-------|------|-------------------|
-| `community-2` | One golfer is visible in profile. Confirm consent, crop or swap | Yes, Recovery card in `patterns/treatments.php` and the Recovery page hero (`inc/treatments.php`) |
-| `team-3` | Two people are holding cocktails | No |
+Source: `assets/photos/candidates/picks.md` and `assets/photos/picks.txt`. Consent is not established by a person facing away or by a face falling outside the crop.
+
+| Photo | TODO(client) | Use |
+|---|---|---|
+| `nurse-home-vitals-1.jpg` | Confirm consent for both clients; one seated face is visible. Confirm the care provider’s identity and RN status. | Theme photo; see source comments |
+| `relaxed-home-iv-detail-1.jpg` | Confirm authorization for this client-treatment image despite the face being outside the frame. Also applies to home-community-iv (same source DSC_1818.jpg). | Theme photo; see source comments |
+| `branded-tent-lawn-wide-1.jpg` | Check background people for identifiable clients and confirm their consent. Also applies to hero-2 (same source 20251110_093003.jpg). | Hero alias retained |
+| `branded-event-table-wide-2.jpg` | Verify background people’s staff/client roles and consent for identifiable non-staff. | Theme photo; see source comments |
+| `branded-tent-care-wide-3.jpg` | Confirm consent for the identifiable standing guest and seated client; verify provider identity and RN status. | Theme photo; see source comments |
+| `community-2.jpg` | Confirm consent for the golfer visible in profile. | Theme photo; see source comments |
+| `home-recovery.jpg` | Confirm consent for both identifiable clients on the sofa. | Theme photo; see source comments |
+| `home-rejuvenation.jpg` | Confirm client consent for the injection photo; verify provider identity and RN status. | Not used: drinks and injection close-up |
+| `team-3.jpg` | Cocktails visible: excluded from use, not approved for reinstatement. | Not used |
+
+Removed from use after the drinks/bar audit: `team-2` (drinkware on the table), `team-4` (festival scene not retained), `home-relief` and `home-community-visit` (brewery context), and `home-rejuvenation` (visible cans and injection close-up). `team-3`, `community-1`, `event-1` and `hero-1` remain unused. Source images are retained as archival inputs.
 
 ## Not wired up yet (deliberately: content first)
 
