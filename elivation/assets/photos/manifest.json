@@ -313,5 +313,68 @@
         "file": "team-4-2000.webp"
       }
     ]
+  },
+  "home-recovery": {
+    "width": 3000,
+    "height": 4000,
+    "sizes": [
+      {
+        "width": 800,
+        "height": 1067,
+        "file": "home-recovery-800.webp"
+      },
+      {
+        "width": 1400,
+        "height": 1867,
+        "file": "home-recovery-1400.webp"
+      },
+      {
+        "width": 2000,
+        "height": 2667,
+        "file": "home-recovery-2000.webp"
+      }
+    ]
+  },
+  "home-rejuvenation": {
+    "width": 4000,
+    "height": 3000,
+    "sizes": [
+      {
+        "width": 800,
+        "height": 600,
+        "file": "home-rejuvenation-800.webp"
+      },
+      {
+        "width": 1400,
+        "height": 1050,
+        "file": "home-rejuvenation-1400.webp"
+      },
+      {
+        "width": 2000,
+        "height": 1500,
+        "file": "home-rejuvenation-2000.webp"
+      }
+    ]
+  },
+  "home-relief": {
+    "width": 4000,
+    "height": 3000,
+    "sizes": [
+      {
+        "width": 800,
+        "height": 600,
+        "file": "home-relief-800.webp"
+      },
+      {
+        "width": 1400,
+        "height": 1050,
+        "file": "home-relief-1400.webp"
+      },
+      {
+        "width": 2000,
+        "height": 1500,
+        "file": "home-relief-2000.webp"
+      }
+    ]
   }
 }

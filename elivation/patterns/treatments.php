@@ -7,7 +7,6 @@
  *
  * TODO(client): drip names are taken from the current site. Verify them (prices are on the treatment pages).
  * "Explore" links go to the treatment pages (inc/treatments.php).
- * TODO(client): community-2.jpg (Recovery card) has a consent flag: one golfer is visible in profile. Confirm consent, crop or swap.
  *
  * @package elivation
  */
@@ -16,21 +15,21 @@ $elivation_treatments = array(
 	array(
 		'key'   => 'recovery',
 		'title' => 'Recovery',
-		'photo' => 'community-2',
+		'photo' => 'home-recovery',
 		'text'  => 'Hydration after a race, a long flight, or a late night. Your nurse can meet you at home or at your hotel.',
 		'drips' => array( 'Myers\' Cocktail', 'Performance', 'Defense', 'Hangover Remedy', 'Build-a-Bag' ),
 	),
 	array(
 		'key'   => 'relief',
 		'title' => 'Relief',
-		'photo' => 'event-4',
+		'photo' => 'home-relief',
 		'text'  => 'When nausea, a migraine, or a stomach bug makes it hard to go out, a nurse can assess you at home.',
 		'drips' => array( 'Cold &amp; Flu', 'Migraine Relief', 'Nausea', 'Basic Drip', 'Lactated Ringer\'s' ),
 	),
 	array(
 		'key'   => 'rejuvenation',
 		'title' => 'Rejuvenation',
-		'photo' => 'community-3',
+		'photo' => 'home-rejuvenation',
 		'text'  => 'Compare vitamin infusions and longer NAD+ visits. See what’s in each option and how much time to set aside.',
 		'drips' => array( 'NAD+ 250mg', 'NAD+ 500mg', 'Radiance', 'The Elivation' ),
 	),
