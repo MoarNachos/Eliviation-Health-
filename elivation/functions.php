@@ -2,7 +2,7 @@
 /**
  * Elivation theme functions.
  *
- * - Enqueues Google Fonts, the generated tokens and the theme stylesheet
+ * - Enqueues the bundled local fonts, tokens and theme styles
  * - Registers the pattern category
  * - Photo helpers: URLs, alt text from picks.txt, responsive srcset, hero preload
  * - MedicalBusiness JSON-LD
@@ -77,13 +77,12 @@ function elivation_service_zips() {
  * ---------------------------------------------------------------------- */
 
 /**
- * Google Fonts URL. These are the substitutes named in the brand guide;
- * replace with licensed files if the brand supplies them.
+ * Locally hosted brand font stylesheet; OFL licenses are bundled in assets/fonts/.
  *
  * @return string
  */
 function elivation_fonts_url() {
-	return 'https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap';
+	return get_theme_file_uri( 'assets/css/fonts.css' );
 }
 
 /**
@@ -110,20 +109,11 @@ function elivation_enqueue_assets() {
 	$dir = get_theme_file_path();
 	$uri = get_theme_file_uri();
 
-	// Fonts. Version is null so WordPress does not append ?ver to the Google URL.
-	wp_enqueue_style( 'elivation-fonts', elivation_fonts_url(), array(), null ); // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
-
-	wp_enqueue_style(
-		'elivation-tokens',
-		$uri . '/assets/css/tokens.css',
-		array(),
-		(string) filemtime( $dir . '/assets/css/tokens.css' )
-	);
 	wp_enqueue_style(
 		'elivation-theme',
-		$uri . '/assets/css/theme.css',
-		array( 'elivation-tokens' ),
-		(string) filemtime( $dir . '/assets/css/theme.css' )
+		$uri . '/assets/css/site.css',
+		array(),
+		(string) filemtime( $dir . '/assets/css/site.css' )
 	);
 
 	wp_enqueue_script(
@@ -147,25 +137,6 @@ function elivation_enqueue_assets() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'elivation_enqueue_assets' );
-
-/**
- * Preconnect to the Google Fonts hosts.
- *
- * @param array  $urls          Resource hint URLs.
- * @param string $relation_type Hint type.
- * @return array
- */
-function elivation_resource_hints( $urls, $relation_type ) {
-	if ( 'preconnect' === $relation_type ) {
-		$urls[] = array( 'href' => 'https://fonts.googleapis.com' );
-		$urls[] = array(
-			'href'        => 'https://fonts.gstatic.com',
-			'crossorigin' => 'anonymous',
-		);
-	}
-	return $urls;
-}
-add_filter( 'wp_resource_hints', 'elivation_resource_hints', 10, 2 );
 
 /**
  * Pattern category for the homepage sections.

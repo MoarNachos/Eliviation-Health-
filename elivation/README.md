@@ -92,3 +92,9 @@ The canonical production site is `https://www.elivationhealth.com/`. For a stati
 After deployment, check the homepage, FAQ and three treatments in Search Console URL Inspection. Confirm the published URLs are in the active sitemap (Yoast uses `/sitemap_index.xml`; WordPress core uses `/wp-sitemap.xml`). The original `/recovery/`, `/relief/` and `/rejuvenation/` addresses should each return one permanent redirect to the published treatment. Existing Orange County and city URLs are separate content; preserve them during a migration and review their search traffic before consolidating any.
 
 Use Search Console to compare non-branded local queries and landing pages with completed bookings and qualified calls in the booking system. Verify the official service-area Business Profile, phone, booking link and coverage with the business owner. Check the production host/CDN allows Googlebot, Bingbot and OAI-SearchBot to retrieve public pages and rendering assets. Theme changes alone cannot verify profile ownership, server rules, or completed bookings.
+
+## Polish-pass asset build
+
+Run `npm run styles` after editing `assets/css/theme.css`, `assets/css/fonts.css`, or regenerating tokens. The front end loads the generated, minified `assets/css/site.css`; the editor still uses the source styles. `npm run build` rebuilds all assets, including this bundle.
+
+Brand fonts are hosted in `assets/fonts/`, with their SIL Open Font License files. No Google Fonts request is needed on the front end. `tools/build-photos.mjs` recursively reads candidate JPEGs and generates quality-78 WebP variants, including responsive portraits. Small portrait originals are not upscaled; srcset descriptors reflect actual output widths.

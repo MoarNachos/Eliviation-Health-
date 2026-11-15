@@ -8,13 +8,15 @@
     "tokens": "node tools/build-theme-json.mjs",
     "photos": "node tools/build-photos.mjs",
     "reviews": "node tools/build-reviews.mjs",
-    "build": "npm run tokens && npm run photos && npm run reviews",
+    "build": "npm run tokens && npm run photos && npm run reviews && npm run styles",
     "start": "wp-env start",
     "stop": "wp-env stop",
-    "playground": "npx @wp-playground/cli@latest server --mount=./elivation:/wordpress/wp-content/themes/elivation --blueprint=./tools/playground-blueprint.json"
+    "playground": "npx @wp-playground/cli@latest server --mount=./elivation:/wordpress/wp-content/themes/elivation --blueprint=./tools/playground-blueprint.json",
+    "styles": "node tools/build-styles.mjs"
   },
   "devDependencies": {
     "@wordpress/env": "^10.0.0",
+    "lightningcss": "^1.33.0",
     "sharp": "^0.33.5"
   }
 }

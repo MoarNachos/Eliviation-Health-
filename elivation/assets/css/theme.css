@@ -21,7 +21,7 @@
 	--eh-scrim-10: color-mix(in srgb, var(--navy-900) 10%, transparent);
 	--eh-white-85: color-mix(in srgb, var(--white) 85%, transparent);
 	--eh-white-70: color-mix(in srgb, var(--white) 70%, transparent);
-	--eh-hero-scrim: linear-gradient(180deg, var(--eh-scrim-78) 0%, var(--eh-scrim-50) 32%, var(--eh-scrim-10) 58%, var(--eh-scrim-50) 100%);
+	--eh-hero-scrim: linear-gradient(90deg, color-mix(in srgb, var(--navy-900) 72%, transparent) 0%, var(--eh-scrim-35) 45%, transparent 65%), linear-gradient(180deg, var(--eh-scrim-78) 0%, var(--eh-scrim-50) 32%, var(--eh-scrim-10) 58%, var(--eh-scrim-50) 100%);
 	--eh-margin: clamp(20px, 5vw, 72px);
 	--eh-section-y: clamp(64px, 8vw, 128px);
 	--eh-admin-bar: var(--wp-admin--admin-bar--height, 0px);
@@ -606,44 +606,29 @@ header.wp-block-template-part {
 }
 
 .eh-scope .eh-hero__lede {
-	max-width: 50ch;
+	max-width: 560px;
 	font-size: clamp(1.0625rem, 1rem + .35vw, 1.3125rem);
 	line-height: 1.45;
 	color: var(--eh-white-85);
-	text-shadow: 0 1px 12px var(--eh-scrim-35);
+	text-shadow: 0 1px 12px var(--eh-scrim-50);
 }
 
-/* Client quote on the hero photo, above the events link. */
+/* Compact paper quote card; keep mobile and tablet focused on the booking form. */
 .eh-scope .eh-hero__review {
-	margin: 0 0 6px;
-	padding: 2px 0 2px 16px;
-	border: 0;
-	border-inline-start: 2px solid var(--sun-100);
-	color: var(--white);
-	text-shadow: 0 1px 12px var(--eh-scrim-35);
+	box-sizing: border-box; margin: 0 0 6px; padding: 20px 24px;
+	border: 0; border-radius: 20px; max-width: 360px;
+	background: var(--paper); color: var(--navy-900); text-shadow: none;
 }
-
-.eh-hero__review p {
-	max-width: 34ch;
-	font-family: var(--font-serif);
-	font-size: clamp(1.25rem, 1rem + .6vw, 1.6rem);
-	line-height: 1.2;
+.eh-hero__review p { font-family: var(--font-serif); font-size: 16px; line-height: 1.45; }
+.eh-hero__review cite { display: block; margin-top: 8px; font: 600 13px/1.5 var(--font-body); font-style: normal; }
+.eh-hero__review cite a { display: inline-flex; align-items: center; min-height: 48px; color: var(--navy-700); text-decoration: underline; text-underline-offset: 3px; }
+.eh-hero__review cite a:hover { color: var(--navy-900); }
+@media (max-width: 1099px) { .eh-scope .eh-hero__review { display: none; } }
+@media (min-width: 1440px) {
+	.eh-scope .eh-hero__photo img { object-position: 50% 18%; }
+	.eh-hero__copy { max-width: 760px; }
+	.eh-scope .eh-hero__title { font-size: 88px; }
 }
-
-.eh-hero__review cite {
-	display: block;
-	margin-top: 6px;
-	font: 600 14px/1.5 var(--font-body);
-	font-style: normal;
-}
-
-.eh-hero__review cite a {
-	color: var(--eh-white-85);
-	text-decoration: underline;
-	text-underline-offset: 3px;
-}
-
-.eh-hero__review cite a:hover { color: var(--white); }
 
 /* ---------- How it works ---------- */
 .eh-steps {
@@ -2155,3 +2140,30 @@ body {
 .eh-scope .eh-events__photo--secondary img { aspect-ratio: 16 / 9; object-fit: cover; }
 @media (min-width: 900px) { .eh-steps__layout { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 64px; } }
 @media (max-width: 599px) { .eh-scope .eh-steps__photo { height: 320px; } }
+
+/* Accessible interaction areas, including small text links. */
+.eh-nav__links a, .eh-footer a, .eh-card__link,
+.eh-more a, .eh-breadcrumb a, .eh-review cite a, .eh-clinicians__quote a,
+.eh-goodfor__quote a, .eh-faq__intro a, .eh-section__head a,
+.eh-tx-hero p a, .eh-lede a, .eh-hero__caption a {
+	min-height: 48px; min-width: 48px; display: inline-flex; align-items: center;
+}
+.eh-footer__socials a, .eh-drawer__close { min-width: 48px; min-height: 48px; }
+.eh-scope a, .eh-footer a { overflow-wrap: anywhere; }
+.eh-field input::placeholder, .eh-zip__row input::placeholder { color: var(--ink-500); }
+@media (max-width: 599px) {
+	.eh-hero__inner { gap: 28px; }
+	.eh-scope .eh-hero__title { font-size: clamp(42px, 11vw, 58px); }
+	.eh-zip__row { flex-wrap: wrap; }
+	.eh-zip__row input { min-width: 0; flex: 1 1 150px; }
+	.eh-zip__submit { flex: 1 1 120px; }
+}
+
+.eh-logo { min-height: 48px; align-items: center; }
+.eh-nav__phone { min-height: 48px; }
+@media (max-width: 479px) {
+	.eh-zip__row { flex-direction: column; align-items: stretch; }
+	.eh-zip__row input, .eh-zip__submit { flex: none; width: 100%; box-sizing: border-box; }
+	.eh-scope .eh-hero__lede { color: var(--white); }
+	.eh-hero__photo::after { background: linear-gradient(90deg, color-mix(in srgb, var(--navy-900) 72%, transparent) 0%, var(--eh-scrim-35) 45%, transparent 65%), linear-gradient(180deg, var(--eh-scrim-78), var(--eh-scrim-50) 70%, var(--eh-scrim-35)); }
+}
