@@ -748,5 +748,105 @@
         "bytes": 6632
       }
     ]
+  },
+  "home-visit-couch-1-16x10": {
+    "width": 3600,
+    "height": 2250,
+    "quality": 78,
+    "sizes": [
+      {
+        "width": 800,
+        "height": 500,
+        "file": "home-visit-couch-1-16x10-800.webp",
+        "bytes": 59398
+      },
+      {
+        "width": 1400,
+        "height": 875,
+        "file": "home-visit-couch-1-16x10-1400.webp",
+        "bytes": 139530
+      },
+      {
+        "width": 2000,
+        "height": 1250,
+        "file": "home-visit-couch-1-16x10-2000.webp",
+        "bytes": 231128
+      }
+    ]
+  },
+  "home-visit-couch-1-4x5": {
+    "width": 1920,
+    "height": 2400,
+    "quality": 78,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 800,
+        "file": "home-visit-couch-1-4x5-800.webp",
+        "bytes": 57434
+      },
+      {
+        "width": 1120,
+        "height": 1400,
+        "file": "home-visit-couch-1-4x5-1400.webp",
+        "bytes": 132198
+      },
+      {
+        "width": 1600,
+        "height": 2000,
+        "file": "home-visit-couch-1-4x5-2000.webp",
+        "bytes": 217628
+      }
+    ]
+  },
+  "group-event-guest-nurse-1-4x5": {
+    "width": 1680,
+    "height": 2100,
+    "quality": 78,
+    "sizes": [
+      {
+        "width": 640,
+        "height": 800,
+        "file": "group-event-guest-nurse-1-4x5-800.webp",
+        "bytes": 35700
+      },
+      {
+        "width": 1120,
+        "height": 1400,
+        "file": "group-event-guest-nurse-1-4x5-1400.webp",
+        "bytes": 76620
+      },
+      {
+        "width": 1600,
+        "height": 2000,
+        "file": "group-event-guest-nurse-1-4x5-2000.webp",
+        "bytes": 119314
+      }
+    ]
+  },
+  "group-event-guest-nurse-1-1x1": {
+    "width": 2050,
+    "height": 2050,
+    "quality": 78,
+    "sizes": [
+      {
+        "width": 800,
+        "height": 800,
+        "file": "group-event-guest-nurse-1-1x1-800.webp",
+        "bytes": 44256
+      },
+      {
+        "width": 1400,
+        "height": 1400,
+        "file": "group-event-guest-nurse-1-1x1-1400.webp",
+        "bytes": 96732
+      },
+      {
+        "width": 2000,
+        "height": 2000,
+        "file": "group-event-guest-nurse-1-1x1-2000.webp",
+        "bytes": 152996
+      }
+    ]
   }
 }

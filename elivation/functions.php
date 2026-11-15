@@ -485,3 +485,17 @@ function elivation_json_ld() {
 	echo '<script type="application/ld+json">' . wp_json_encode( elivation_business_node(), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) . '</script>' . "\n";
 }
 add_action( 'wp_head', 'elivation_json_ld', 20 );
+
+/** Approved art-directed home crop. TODO(client): home-visit-couch-1 — consent for both identifiable clients and staff authorization. */
+function elivation_home_visit_picture( $sizes, $hero = false ) {
+	$mobile = elivation_photo_manifest()['home-visit-couch-1-4x5']['sizes'];
+	$mobile = end( $mobile );
+	return '<picture class="eh-home-visit"><source media="(max-width: 599px)" type="image/webp" srcset="' . esc_attr( elivation_photo_srcset( 'home-visit-couch-1-4x5' ) ) . '" sizes="' . esc_attr( $sizes ) . '" width="' . (int) $mobile['width'] . '" height="' . (int) $mobile['height'] . '">' . elivation_photo_image( 'home-visit-couch-1-16x10', 'Staff preparing IV tubing beside a client during an at-home visit', $sizes, $hero ) . '</picture>';
+}
+
+/** Match Recovery's hero preload to its picture source; do not download both crops. */
+function elivation_preload_home_visit() {
+	foreach ( array( 'home-visit-couch-1-4x5' => '(max-width: 599px)', 'home-visit-couch-1-16x10' => '(min-width: 600px)' ) as $photo => $media ) {
+		printf( '<link rel="preload" as="image" type="image/webp" media="%s" href="%s" imagesrcset="%s" imagesizes="(min-width: 1024px) 50vw, 100vw" fetchpriority="high">' . "\n", esc_attr( $media ), esc_url( elivation_photo_url( $photo ) ), esc_attr( elivation_photo_srcset( $photo ) ) );
+	}
+}

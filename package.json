@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "tokens": "node tools/build-theme-json.mjs",
-    "photos": "node tools/build-photos.mjs",
+    "photos": "node tools/build-photo-crops.mjs && node tools/build-photos.mjs",
     "reviews": "node tools/build-reviews.mjs",
     "build": "npm run tokens && npm run photos && npm run reviews && npm run styles",
     "start": "wp-env start",

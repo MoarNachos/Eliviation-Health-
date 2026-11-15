@@ -2177,7 +2177,7 @@ body {
 .eh-scope .eh-drip-detail__photo { height: 340px; margin: 0; overflow: hidden; border-radius: 28px; background: var(--sand-200); }
 .eh-drip-detail__photo img { width: 100%; height: 100%; object-fit: cover; }
 .eh-drip-detail__photo[data-photo="home-recovery"] img { object-position: 50% 28%; }
-.eh-drip-detail__photo[data-photo="nurse-home-vitals-1"] img { object-position: 50% 44%; }
+
 .eh-drip-detail__body { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
 .eh-scope .eh-drip-detail__description { font-size: 18px; line-height: 1.65; max-width: 58ch; }
 .eh-drip-detail__meta { display: flex; align-items: baseline; flex-wrap: wrap; gap: 20px; color: var(--text-trust); }
@@ -2194,3 +2194,18 @@ body {
 	.eh-drip-detail:nth-child(even) .eh-drip-detail__photo { order: 2; }
 }
 @media (max-width: 479px) { .eh-scope .eh-drip-detail__photo { height: 280px; } .eh-drip-detail__body .eh-actions { align-items: stretch; flex-direction: column; } }
+
+/* Approved photo-swap compositions: preserve the actual crop rather than cropping faces again. */
+.eh-home-visit { display: block; width: 100%; }
+.eh-scope .eh-home-visit-frame { height: auto; min-height: 0; aspect-ratio: 16 / 10; }
+.eh-scope .eh-home-visit-frame img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: contain; }
+.eh-scope .eh-events__photos { display: grid; grid-template-columns: 3fr 2fr; align-items: start; gap: 16px; }
+.eh-scope .eh-events__photos figure { margin: 0; min-width: 0; }
+.eh-events__photos img { display: block; width: 100%; height: auto; border-radius: 20px; }
+.eh-events__photos figcaption { margin-top: 10px; font-size: 13px; line-height: 1.5; }
+.eh-scope .eh-visit-support { width: 100%; max-width: 640px; margin: 0; }
+.eh-visit-support img { display: block; width: 100%; height: auto; border-radius: 24px; }
+@media (max-width: 599px) {
+ .eh-scope .eh-home-visit-frame, .eh-scope .eh-home-visit-frame img { aspect-ratio: 4 / 5; }
+ .eh-scope .eh-events__photos { grid-template-columns: 1fr; }
+}

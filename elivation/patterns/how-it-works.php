@@ -7,7 +7,7 @@
  *
  * Visit lengths correspond to the full appointments listed on the treatment pages.
  *
- * TODO(client): Photo nurse-home-vitals-1.jpg — Confirm consent for both clients; one seated face is visible. Confirm the care provider’s identity and RN status.
+ * TODO(client): Photo home-visit-couch-1-16x10.jpg — Confirm consent for both identifiable clients and staff image authorization.
  *
  * @package elivation
  */
@@ -21,9 +21,9 @@
 
 <!-- wp:group {"className":"eh-steps__layout"} -->
 <div class="wp-block-group eh-steps__layout">
-<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"eh-steps__photo"} -->
-<figure class="wp-block-image size-full eh-steps__photo"><img src="<?php echo esc_url( elivation_photo_url( 'nurse-home-vitals-1' ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( 'nurse-home-vitals-1' ) ); ?>"/></figure>
-<!-- /wp:image -->
+<!-- wp:html -->
+<figure class="eh-steps__photo eh-home-visit-frame"><?php echo elivation_home_visit_picture( '(min-width: 900px) 460px, calc(100vw - 40px)' ); ?></figure>
+<!-- /wp:html -->
 
 <!-- wp:group {"className":"eh-steps__grid"} -->
 <div class="wp-block-group eh-steps__grid">

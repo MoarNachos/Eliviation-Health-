@@ -81,3 +81,10 @@ TODO(client): Review the new hook, 2–3 sentence description and every “Good 
 | Rejuvenation | Premenstrual Tension; Radiance; NAD+ 250mg; The Elivation; NAD+ 500mg |
 
 TODO(client): Confirm that using general home-care, chair and setup photographs alongside drip descriptions does not imply that a pictured client received that particular formula or experienced a particular outcome. There are not yet enough distinct treatment-specific photos; replacements can use the per-drip `photo` field. Photos repeat across categories, but no two drips within a category share a source photo.
+
+## Additional photo candidates — approved crop compositions
+
+- TODO(client): `home-visit-couch-1.jpg` and its crop variants — obtain consent for both identifiable clients in the source photo; confirm staff image authorization. The user approved the framing compromises: the desktop crop retains background equipment; the portrait shows one client. Consent remains to be confirmed.
+- TODO(client): `group-event-guest-nurse-1.jpg` and its crop variants — obtain client-treatment consent from the identifiable guest in pink and confirm staff image authorization for the team member in navy.
+
+The photo swap removes all active theme uses of `nurse-home-vitals-1` (20250819_195637). 20250819_194533 and `home-relief` (20260913_150229) also remain excluded. Archival files are not placed in the theme.

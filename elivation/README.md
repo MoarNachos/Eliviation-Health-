@@ -98,3 +98,5 @@ Use Search Console to compare non-branded local queries and landing pages with c
 Run `npm run styles` after editing `assets/css/theme.css`, `assets/css/fonts.css`, or regenerating tokens. The front end loads the generated, minified `assets/css/site.css`; the editor still uses the source styles. `npm run build` rebuilds all assets, including this bundle.
 
 Brand fonts are hosted in `assets/fonts/`, with their SIL Open Font License files. No Google Fonts request is needed on the front end. `tools/build-photos.mjs` recursively reads candidate JPEGs and generates quality-78 WebP variants, including responsive portraits. Small portrait originals are not upscaled; srcset descriptors reflect actual output widths.
+
+Approved photo crops are reproducible with `npm run photos`: `tools/build-photo-crops.mjs` reads the copied originals, then `tools/build-photos.mjs` copies the direct WebP exports into the theme manifest. Crop exports use long-edge sizes and retain their exact approved framing; responsive descriptors use actual pixel widths.

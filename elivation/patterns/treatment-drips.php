@@ -10,7 +10,7 @@
  * TODO(client): verify "Your price includes the nurse visit, health screening and supplies. Travel fees may apply outside our core area."
  *
  * TODO(client): Medical director review of every new hook, description and Good for chip in elivation_drip_details().
- * TODO(client): Photos home-recovery.jpg, relaxed-home-iv-detail-1.jpg and nurse-home-vitals-1.jpg require client-treatment consent; see inc/treatments.php and TODO.md.
+ * TODO(client): Photos home-recovery.jpg, relaxed-home-iv-detail-1.jpg and home-visit-couch-1-16x10.jpg require client-treatment consent; see inc/treatments.php and TODO.md.
  *
  * @package elivation
  */

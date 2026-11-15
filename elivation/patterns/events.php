@@ -10,7 +10,7 @@
  * TODO(build): the form is NOT connected. It validates in the browser and then asks the visitor to call. Decide where inquiries go (email or CRM) and wire it up.
  *
  * TODO(client): Photo branded-tent-care-wide-3.jpg — Confirm consent for the identifiable standing guest and seated client; verify provider identity and RN status.
- * TODO(client): Photo branded-event-table-wide-2.jpg — Verify background people’s staff/client roles and consent for identifiable non-staff.
+ * TODO(client): Photo group-event-guest-nurse-1.jpg — Confirm client-treatment consent for the identifiable guest in pink and staff image authorization.
  *
  * @package elivation
  */
@@ -34,17 +34,12 @@
 <p class="eh-lede">Planning a golf tournament, a company wellness day or a wedding weekend? We bring the nurses, chairs and supplies. Each guest meets with a nurse for a health screening before treatment.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"eh-events__photo"} -->
-<figure class="wp-block-image size-full eh-events__photo"><img src="<?php echo esc_url( elivation_photo_url( 'branded-tent-care-wide-3' ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( 'branded-tent-care-wide-3' ) ); ?>"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph {"className":"eh-events__caption"} -->
-<p class="eh-events__caption">Care in progress at a golf event, November 2025.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"eh-events__photo eh-events__photo--secondary"} -->
-<figure class="wp-block-image size-full eh-events__photo eh-events__photo--secondary"><img src="<?php echo esc_url( elivation_photo_url( 'branded-event-table-wide-2' ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( 'branded-event-table-wide-2' ) ); ?>"/></figure>
-<!-- /wp:image -->
+<!-- wp:html -->
+<div class="eh-events__photos">
+<figure><?php echo elivation_photo_image( 'branded-tent-care-wide-3', '', '(min-width: 1024px) 320px, 100vw' ); ?><figcaption>Care in progress at a golf event, November 2025.</figcaption></figure>
+<figure><?php echo elivation_photo_image( 'group-event-guest-nurse-1-1x1', '', '(min-width: 1024px) 220px, 100vw' ); ?><figcaption>A guest and team member during an event visit.</figcaption></figure>
+</div>
+<!-- /wp:html -->
 
 <!-- wp:list {"className":"eh-events__facts"} -->
 <ul class="wp-block-list eh-events__facts">

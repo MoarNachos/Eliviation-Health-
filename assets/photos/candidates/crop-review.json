@@ -1,0 +1,153 @@
+{
+  "status": "Crop compromises approved by user on 2026-11-15",
+  "crops": [
+    {
+      "source": "20250819_194922.jpg",
+      "crop": "nurse-at-home/home-visit-couch-1-16x10",
+      "rect": {
+        "left": 400,
+        "top": 430,
+        "width": 3600,
+        "height": 2250
+      },
+      "jpegQuality": 80,
+      "webpQuality": 78,
+      "longEdges": [
+        800,
+        1400,
+        2000
+      ],
+      "variants": [
+        {
+          "file": "nurse-at-home/home-visit-couch-1-16x10-800.webp",
+          "width": 800,
+          "height": 500,
+          "bytes": 59398
+        },
+        {
+          "file": "nurse-at-home/home-visit-couch-1-16x10-1400.webp",
+          "width": 1400,
+          "height": 875,
+          "bytes": 139530
+        },
+        {
+          "file": "nurse-at-home/home-visit-couch-1-16x10-2000.webp",
+          "width": 2000,
+          "height": 1250,
+          "bytes": 231128
+        }
+      ]
+    },
+    {
+      "source": "20250819_194922.jpg",
+      "crop": "nurse-at-home/home-visit-couch-1-4x5",
+      "rect": {
+        "left": 2080,
+        "top": 400,
+        "width": 1920,
+        "height": 2400
+      },
+      "jpegQuality": 80,
+      "webpQuality": 78,
+      "longEdges": [
+        800,
+        1400,
+        2000
+      ],
+      "variants": [
+        {
+          "file": "nurse-at-home/home-visit-couch-1-4x5-800.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 57434
+        },
+        {
+          "file": "nurse-at-home/home-visit-couch-1-4x5-1400.webp",
+          "width": 1120,
+          "height": 1400,
+          "bytes": 132198
+        },
+        {
+          "file": "nurse-at-home/home-visit-couch-1-4x5-2000.webp",
+          "width": 1600,
+          "height": 2000,
+          "bytes": 217628
+        }
+      ]
+    },
+    {
+      "source": "20260913_154900.jpg",
+      "crop": "events/group-event-guest-nurse-1-4x5",
+      "rect": {
+        "left": 1400,
+        "top": 900,
+        "width": 1680,
+        "height": 2100
+      },
+      "jpegQuality": 80,
+      "webpQuality": 78,
+      "longEdges": [
+        800,
+        1400,
+        2000
+      ],
+      "variants": [
+        {
+          "file": "events/group-event-guest-nurse-1-4x5-800.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 35700
+        },
+        {
+          "file": "events/group-event-guest-nurse-1-4x5-1400.webp",
+          "width": 1120,
+          "height": 1400,
+          "bytes": 76620
+        },
+        {
+          "file": "events/group-event-guest-nurse-1-4x5-2000.webp",
+          "width": 1600,
+          "height": 2000,
+          "bytes": 119314
+        }
+      ]
+    },
+    {
+      "source": "20260913_154900.jpg",
+      "crop": "events/group-event-guest-nurse-1-1x1",
+      "rect": {
+        "left": 1400,
+        "top": 950,
+        "width": 2050,
+        "height": 2050
+      },
+      "jpegQuality": 80,
+      "webpQuality": 78,
+      "longEdges": [
+        800,
+        1400,
+        2000
+      ],
+      "variants": [
+        {
+          "file": "events/group-event-guest-nurse-1-1x1-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 44256
+        },
+        {
+          "file": "events/group-event-guest-nurse-1-1x1-1400.webp",
+          "width": 1400,
+          "height": 1400,
+          "bytes": 96732
+        },
+        {
+          "file": "events/group-event-guest-nurse-1-1x1-2000.webp",
+          "width": 2000,
+          "height": 2000,
+          "bytes": 152996
+        }
+      ]
+    }
+  ]
+}

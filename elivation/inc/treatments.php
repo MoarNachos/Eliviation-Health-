@@ -47,7 +47,7 @@ function elivation_treatments() {
 			'promise'     => 'Home from a race, a long flight or a late night? A registered nurse can bring IV hydration to your home or hotel. They’ll check your vitals and talk through your options before you start.',
 			'meta'        => 'At-home recovery IV visits after training or travel in Orange County and parts of Los Angeles. See options, prices and what to expect from your nurse.',
 			'fit_heading' => array( 'When people book ', 'a recovery visit.' ),
-			'photo'       => 'community-2',
+			'photo'       => 'home-visit-couch-1-16x10',
 			'session'     => '1h 15m',
 			// Review ids from content/reviews.json; mentions "hangover remedies".
 			'reviews'     => array( 'r5' ),
@@ -221,7 +221,7 @@ function elivation_treatments() {
  * Photos illustrate visits and settings; they do not identify a client's drip, diagnosis or outcome.
  * TODO(client): Photo home-recovery.jpg — confirm consent for both identifiable sofa clients.
  * TODO(client): Photo relaxed-home-iv-detail-1.jpg — confirm client-treatment authorization despite the face being outside the frame.
- * TODO(client): Photo nurse-home-vitals-1.jpg — confirm consent for both clients and verify provider identity/RN status.
+ * TODO(client): Photo home-visit-couch-1-16x10.jpg — confirm consent for both clients and verify provider identity/RN status.
  */
 function elivation_drip_details() {
 	return array(
@@ -244,7 +244,7 @@ function elivation_drip_details() {
 		// TODO(client): Medical director review — hangover hook, description and Good for chips.
 		'hangover' => array(
 			'anchor' => 'hangover',
-			'photo' => 'nurse-home-vitals-1',
+			'photo' => 'home-visit-couch-1-16x10',
 			'hook' => 'The morning after, at your pace.',
 			'description' => 'After a celebration, heading out may be the last thing on your list. This visit is designed to support hydration, with a nurse checking your symptoms and suitability first. It is not a guaranteed hangover fix.',
 			'good_for' => array( 'After a celebration', 'Hydration questions', 'A nurse assessment' ),
@@ -300,7 +300,7 @@ function elivation_drip_details() {
 		// TODO(client): Medical director review — migraine hook, description and Good for chips.
 		'migraine' => array(
 			'anchor' => 'migraine',
-			'photo' => 'nurse-home-vitals-1',
+			'photo' => 'home-visit-couch-1-16x10',
 			'hook' => 'Stay in your own quiet corner.',
 			'description' => 'If you experience migraines, being at home may feel more comfortable than heading out. Your nurse reviews your symptoms and checks whether this visit is appropriate. Home IV care does not replace urgent or emergency assessment when it is needed.',
 			'good_for' => array( 'A familiar setting', 'Symptom review', 'Care-option questions' ),
@@ -340,7 +340,7 @@ function elivation_drip_details() {
 		// TODO(client): Medical director review — nad250 hook, description and Good for chips.
 		'nad250' => array(
 			'anchor' => 'nad-250',
-			'photo' => 'nurse-home-vitals-1',
+			'photo' => 'home-visit-couch-1-16x10',
 			'hook' => 'Bring a book. Settle into the slower pace.',
 			'description' => 'This 250 mg NAD+ infusion is given slowly while your nurse monitors your comfort. Allow up to two and a half hours for the visit, and let the nurse know how you feel along the way. An additional 50 mg is $60 if appropriate.',
 			'good_for' => array( 'Comparing NAD+ options', 'A longer appointment', 'Questions before starting' ),
@@ -541,6 +541,10 @@ add_filter( 'body_class', 'elivation_treatment_body_class' );
 function elivation_treatment_preload_hero() {
 	$key = elivation_current_treatment();
 	if ( ! $key ) {
+		return;
+	}
+	if ( 'recovery' === $key ) {
+		elivation_preload_home_visit();
 		return;
 	}
 	$photo  = elivation_treatment( $key )['photo'];

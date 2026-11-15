@@ -29,6 +29,13 @@ $elivation_tx = elivation_treatment( elivation_current_treatment( true ) );
 </div>
 <!-- /wp:group -->
 
+<?php if ( 'rejuvenation' === elivation_current_treatment( true ) ) : ?>
+<!-- wp:html -->
+<?php // TODO(client): relaxed-home-iv-detail-1 — confirm client-treatment authorization despite face being outside frame. ?>
+<figure class="eh-visit-support"><?php echo elivation_photo_image( 'relaxed-home-iv-detail-1', '', '(min-width: 768px) 640px, calc(100vw - 40px)' ); ?></figure>
+<!-- /wp:html -->
+<?php endif; ?>
+
 <!-- wp:group {"className":"eh-steps__grid"} -->
 <div class="wp-block-group eh-steps__grid">
 <!-- wp:group {"className":"eh-step"} -->

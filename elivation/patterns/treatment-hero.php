@@ -73,9 +73,15 @@ $elivation_prices = wp_list_pluck( $elivation_tx['drips'], 'price', 'id' );
 </div>
 <!-- /wp:group -->
 
+<?php if ( 'recovery' === $elivation_key ) : ?>
+<!-- wp:html -->
+<figure class="eh-tx-hero__photo eh-home-visit-frame"><?php echo elivation_home_visit_picture( '(min-width: 1024px) 50vw, 100vw', true ); ?></figure>
+<!-- /wp:html -->
+<?php else : ?>
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"eh-tx-hero__photo"} -->
 <figure class="wp-block-image size-full eh-tx-hero__photo"><img src="<?php echo esc_url( elivation_photo_url( $elivation_tx['photo'] ) ); ?>" alt="<?php echo esc_attr( elivation_photo_alt( $elivation_tx['photo'] ) ); ?>"/></figure>
 <!-- /wp:image -->
+<?php endif; ?>
 </div>
 <!-- /wp:group -->
 </section>

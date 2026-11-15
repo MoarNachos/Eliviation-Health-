@@ -10,7 +10,7 @@
  *
  * TODO(client): Photo relaxed-home-iv-detail-1.jpg — Confirm authorization for this client-treatment image despite the face being outside the frame. Also applies to home-community-iv (same source DSC_1818.jpg).
  * TODO(client): Photo home-recovery.jpg — Confirm consent for both identifiable clients on the sofa.
- * TODO(client): Photo nurse-home-vitals-1.jpg — Confirm consent for both clients; verify provider identity and RN status.
+ * TODO(client): Photo home-visit-couch-1-16x10.jpg — Confirm consent for both clients; verify provider identity and RN status.
  *
  * @package elivation
  */
@@ -33,7 +33,7 @@ $elivation_treatments = array(
 	array(
 		'key'   => 'rejuvenation',
 		'title' => 'Rejuvenation',
-		'photo' => 'nurse-home-vitals-1',
+		'photo' => 'home-visit-couch-1-16x10',
 		'text'  => 'Compare vitamin infusions and longer NAD+ visits. See what’s in each option and how much time to set aside.',
 		'drips' => array( 'NAD+ 250mg', 'NAD+ 500mg', 'Radiance', 'The Elivation' ),
 	),

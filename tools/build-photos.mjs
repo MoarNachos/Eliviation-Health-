@@ -7,7 +7,7 @@
  * Usage: node tools/build-photos.mjs
  * Requires: npm install (sharp)
  */
-import { readdirSync, mkdirSync, copyFileSync, statSync, writeFileSync } from 'node:fs';
+import { readdirSync, mkdirSync, copyFileSync, statSync, writeFileSync, readFileSync } from 'node:fs';
 import { dirname, join, resolve, basename, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
@@ -21,7 +21,9 @@ const QUALITY = 78;
 
 mkdirSync(outDir, { recursive: true });
 
-const files = readdirSync(srcDir, { recursive: true }).filter((f) => /\.(jpe?g|png)$/i.test(f)).sort();
+const cropReview = JSON.parse(readFileSync(join(srcDir, 'candidates/crop-review.json'), 'utf8'));
+const cropInputs = new Set(cropReview.crops.flatMap(c => [c.crop + '.jpg', c.crop.replace(/-(16x10|4x5|1x1)$/, '') + '.jpg']));
+const files = readdirSync(srcDir, { recursive: true }).filter((f) => /\.(jpe?g|png)$/i.test(f) && !cropInputs.has(f.replace(/^candidates\//, ''))).sort();
 const portraits = ['richard-ladines.webp', 'team/kathy-tran.png', 'team/jon-lai.png', 'team/charles-antis.png', 'team/eric-l-goodman.png'];
 const sources = files.map(file => ({ name: basename(file, extname(file)), path: join(srcDir, file) }));
 for (const file of portraits) sources.push({ name: 'portrait-' + basename(file, extname(file)), path: join(root, 'elivation/assets/images', file) });
@@ -61,10 +63,22 @@ for (const { name, path } of sources) {
   );
 }
 
+// Approved crops are encoded directly from the copied originals, never from lossy JPEG exports.
+for (const crop of cropReview.crops) {
+  const name = basename(crop.crop);
+  manifest[name] = { width: crop.rect.width, height: crop.rect.height, quality: QUALITY, sizes: [] };
+  for (const variant of crop.variants) {
+    const file = basename(variant.file);
+    copyFileSync(join(srcDir, 'candidates', variant.file), join(outDir, file));
+    manifest[name].sizes.push({ width: variant.width, height: variant.height, file, bytes: variant.bytes });
+    total += variant.bytes;
+  }
+}
+
 // Logos and trust badges are graphics rather than photo srcsets; retain their intrinsic dimensions.
 for (const name of ['logo-navy', 'logo-white', 'hipaa-silver', 'doctor-owned-silver']) {
   await sharp(join(root, 'elivation/assets/images', name + '.png')).webp({quality: QUALITY, effort: 6}).toFile(join(root, 'elivation/assets/images', name + '.webp'));
 }
 copyFileSync(join(srcDir, 'picks.txt'), join(outDir, 'picks.txt'));
 writeFileSync(join(outDir, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
-console.log(`\n${sources.length} photos, ${sources.length * WIDTHS.length} WebP files, ${(total / 1e6).toFixed(1)} MB total`);
+console.log(`\n${Object.keys(manifest).length} photos/crops, ${Object.values(manifest).reduce((n, p) => n + p.sizes.length, 0)} WebP files, ${(total / 1e6).toFixed(1)} MB total`);
