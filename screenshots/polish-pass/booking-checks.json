@@ -1,0 +1,141 @@
+{
+  "checks": [
+    {
+      "page": "recovery",
+      "anchor": true,
+      "drip": "myers",
+      "photo": "home-recovery",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "recovery",
+      "anchor": true,
+      "drip": "defense",
+      "photo": "relaxed-home-iv-detail-1",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "recovery",
+      "anchor": true,
+      "drip": "hangover",
+      "photo": "nurse-home-vitals-1",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "recovery",
+      "anchor": true,
+      "drip": "performance",
+      "photo": "hero-3",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "recovery",
+      "anchor": true,
+      "drip": "maxdefense",
+      "photo": "community-3",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "recovery",
+      "anchor": true,
+      "drip": "buildabag",
+      "photo": "community-4",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "relief",
+      "anchor": true,
+      "drip": "basic",
+      "photo": "relaxed-home-iv-detail-1",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "relief",
+      "anchor": true,
+      "drip": "lr",
+      "photo": "community-3",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "relief",
+      "anchor": true,
+      "drip": "nausea",
+      "photo": "home-recovery",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "relief",
+      "anchor": true,
+      "drip": "migraine",
+      "photo": "nurse-home-vitals-1",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "relief",
+      "anchor": true,
+      "drip": "coldflu",
+      "photo": "community-4",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "relief",
+      "anchor": true,
+      "drip": "foodpoison",
+      "photo": "hero-3",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "rejuvenation",
+      "anchor": true,
+      "drip": "pms",
+      "photo": "home-recovery",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "rejuvenation",
+      "anchor": true,
+      "drip": "radiance",
+      "photo": "relaxed-home-iv-detail-1",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "rejuvenation",
+      "anchor": true,
+      "drip": "nad250",
+      "photo": "nurse-home-vitals-1",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "rejuvenation",
+      "anchor": true,
+      "drip": "elivation",
+      "photo": "community-3",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    },
+    {
+      "page": "rejuvenation",
+      "anchor": true,
+      "drip": "nad500",
+      "photo": "community-4",
+      "drawerPreselection": true,
+      "escapeCloses": true
+    }
+  ],
+  "errors": []
+}

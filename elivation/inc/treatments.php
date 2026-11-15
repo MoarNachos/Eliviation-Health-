@@ -201,7 +201,167 @@ function elivation_treatments() {
 		),
 	);
 
+	$details = elivation_drip_details();
+	foreach ( $treatments as &$treatment ) {
+		foreach ( $treatment['drips'] as &$drip ) {
+			if ( isset( $details[ $drip['id'] ] ) ) {
+				$drip = array_merge( $drip, $details[ $drip['id'] ] );
+			}
+		}
+		unset( $drip );
+	}
+	unset( $treatment );
+
 	return apply_filters( 'elivation_treatments', $treatments );
+}
+
+/**
+ * Editorial details are distinct from stable booking IDs and existing short menu descriptions.
+ * TODO(client): Medical director must review every new hook, description and Good for chip below.
+ * Photos illustrate visits and settings; they do not identify a client's drip, diagnosis or outcome.
+ * TODO(client): Photo home-recovery.jpg — confirm consent for both identifiable sofa clients.
+ * TODO(client): Photo relaxed-home-iv-detail-1.jpg — confirm client-treatment authorization despite the face being outside the frame.
+ * TODO(client): Photo nurse-home-vitals-1.jpg — confirm consent for both clients and verify provider identity/RN status.
+ */
+function elivation_drip_details() {
+	return array(
+		// TODO(client): Medical director review — myers hook, description and Good for chips.
+		'myers' => array(
+			'anchor' => 'myers',
+			'photo' => 'home-recovery',
+			'hook' => 'Your couch. Your catch-up hour.',
+			'description' => 'Make yourself comfortable while your nurse walks you through this vitamin and mineral blend. Bring your ingredient questions, pick a spot on the sofa, and allow about 75 minutes for screening and the visit.',
+			'good_for' => array( 'At-home visits', 'Vitamin blend questions', 'A 75-minute window' ),
+		),
+		// TODO(client): Medical director review — defense hook, description and Good for chips.
+		'defense' => array(
+			'anchor' => 'defense',
+			'photo' => 'relaxed-home-iv-detail-1',
+			'hook' => 'Make room for a slower hour.',
+			'description' => 'Curious about a vitamin and antioxidant infusion? Your nurse explains the blend and reviews whether it fits your health history before anything starts. You can stay right where you are comfortable.',
+			'good_for' => array( 'Exploring vitamin options', 'Ingredient review', 'Home or hotel visits' ),
+		),
+		// TODO(client): Medical director review — hangover hook, description and Good for chips.
+		'hangover' => array(
+			'anchor' => 'hangover',
+			'photo' => 'nurse-home-vitals-1',
+			'hook' => 'The morning after, at your pace.',
+			'description' => 'After a celebration, heading out may be the last thing on your list. This visit is designed to support hydration, with a nurse checking your symptoms and suitability first. It is not a guaranteed hangover fix.',
+			'good_for' => array( 'After a celebration', 'Hydration questions', 'A nurse assessment' ),
+		),
+		// TODO(client): Medical director review — performance hook, description and Good for chips.
+		'performance' => array(
+			'anchor' => 'performance',
+			'photo' => 'hero-3',
+			'hook' => 'Training done. Time to sit down.',
+			'description' => 'After a race or a long training block, you may be considering a hydration visit. Your nurse reviews this hydration and nutrient blend with you and checks whether an infusion is appropriate. Choose a comfortable spot and leave time for the full visit.',
+			'good_for' => array( 'Post-training visits', 'After a tournament', 'Hydration planning' ),
+		),
+		// TODO(client): Medical director review — maxdefense hook, description and Good for chips.
+		'maxdefense' => array(
+			'anchor' => 'max-defense',
+			'photo' => 'community-3',
+			'hook' => 'Know what goes into your bag.',
+			'description' => 'This option includes high-dose vitamin C and magnesium, so a careful screening comes first. Your nurse talks through the ingredients, your medications, and whether this blend is suitable for you. There is room for questions before you decide.',
+			'good_for' => array( 'Ingredient questions', 'Comparing blends', 'A screening first' ),
+		),
+		// TODO(client): Medical director review — buildabag hook, description and Good for chips.
+		'buildabag' => array(
+			'anchor' => 'build-a-bag',
+			'photo' => 'community-4',
+			'hook' => 'A visit with your questions built in.',
+			'description' => 'Tell your nurse what you are hoping to get from your visit. Four add-ons are included, with the final selection guided by your health screening and the care team\'s protocols. Your nurse explains the plan before starting.',
+			'good_for' => array( 'Comparing add-ons', 'Personal preferences', 'Nurse-guided planning' ),
+		),
+		// TODO(client): Medical director review — basic hook, description and Good for chips.
+		'basic' => array(
+			'anchor' => 'basic',
+			'photo' => 'relaxed-home-iv-detail-1',
+			'hook' => 'Keep your hydration visit simple.',
+			'description' => 'The Basic Drip uses sterile saline to support hydration. Your nurse checks your health history and talks through whether saline or another fluid is suitable. You settle in; the nurse stays for the visit.',
+			'good_for' => array( 'Hydration questions', 'Comparing fluids', 'A simple option' ),
+		),
+		// TODO(client): Medical director review — lr hook, description and Good for chips.
+		'lr' => array(
+			'anchor' => 'lactated-ringers',
+			'photo' => 'community-3',
+			'hook' => 'Fluids, with electrolytes in the mix.',
+			'description' => 'Lactated Ringer\'s is a balanced electrolyte solution designed to support hydration. Your nurse helps you compare it with saline after reviewing your health history. No need to figure out the fluid choice on your own.',
+			'good_for' => array( 'Electrolyte questions', 'Comparing fluids', 'Nurse-guided choices' ),
+		),
+		// TODO(client): Medical director review — nausea hook, description and Good for chips.
+		'nausea' => array(
+			'anchor' => 'nausea',
+			'photo' => 'home-recovery',
+			'hook' => 'A quieter visit when sipping is hard.',
+			'description' => 'When nausea makes drinking difficult, start with a conversation about your symptoms. Your nurse assesses whether a home infusion may be appropriate and talks through the options. Mention pregnancy or possible pregnancy before booking.',
+			'good_for' => array( 'Difficulty drinking', 'Nausea questions', 'A home-care assessment' ),
+		),
+		// TODO(client): Medical director review — migraine hook, description and Good for chips.
+		'migraine' => array(
+			'anchor' => 'migraine',
+			'photo' => 'nurse-home-vitals-1',
+			'hook' => 'Stay in your own quiet corner.',
+			'description' => 'If you experience migraines, being at home may feel more comfortable than heading out. Your nurse reviews your symptoms and checks whether this visit is appropriate. Home IV care does not replace urgent or emergency assessment when it is needed.',
+			'good_for' => array( 'A familiar setting', 'Symptom review', 'Care-option questions' ),
+		),
+		// TODO(client): Medical director review — coldflu hook, description and Good for chips.
+		'coldflu' => array(
+			'anchor' => 'cold-flu',
+			'photo' => 'community-4',
+			'hook' => 'Stay on the sofa. We can come to you.',
+			'description' => 'A cold or flu can make it harder to keep up with fluids. This option is designed to support hydration when a nurse determines home care is appropriate. Plan on a screening first and time to rest during the visit.',
+			'good_for' => array( 'Hydration during illness', 'At-home assessment', 'Resting at home' ),
+		),
+		// TODO(client): Medical director review — foodpoison hook, description and Good for chips.
+		'foodpoison' => array(
+			'anchor' => 'food-poisoning',
+			'photo' => 'hero-3',
+			'hook' => 'A home visit starts with a careful check.',
+			'description' => 'Tell us what has been happening before choosing this option. The infusion includes electrolytes, vitamins, and medication, with your nurse reviewing symptoms, medications, and allergies first. They may recommend a different level of care rather than an infusion.',
+			'good_for' => array( 'Symptom assessment', 'Fluid-intake concerns', 'Medication review' ),
+		),
+		// TODO(client): Medical director review — pms hook, description and Good for chips.
+		'pms' => array(
+			'anchor' => 'premenstrual-tension',
+			'photo' => 'home-recovery',
+			'hook' => 'A little less running around.',
+			'description' => 'If you are exploring an infusion for premenstrual discomfort, start with your questions. Your nurse reviews your symptoms and the ingredients before deciding whether to proceed. The visit can happen in a comfortable spot at home.',
+			'good_for' => array( 'Premenstrual questions', 'Ingredient review', 'A comfortable setting' ),
+		),
+		// TODO(client): Medical director review — radiance hook, description and Good for chips.
+		'radiance' => array(
+			'anchor' => 'radiance',
+			'photo' => 'relaxed-home-iv-detail-1',
+			'hook' => 'Wellness, with time to unwind.',
+			'description' => 'Meet the blend offered for skin, hair, and nail wellness. Your nurse explains what is in it and checks whether it fits your health history. Bring a book or a playlist, without expecting a promised cosmetic result.',
+			'good_for' => array( 'Wellness questions', 'Comparing ingredients', 'Time at home' ),
+		),
+		// TODO(client): Medical director review — nad250 hook, description and Good for chips.
+		'nad250' => array(
+			'anchor' => 'nad-250',
+			'photo' => 'nurse-home-vitals-1',
+			'hook' => 'Bring a book. Settle into the slower pace.',
+			'description' => 'This 250 mg NAD+ infusion is given slowly while your nurse monitors your comfort. Allow up to two and a half hours for the visit, and let the nurse know how you feel along the way. An additional 50 mg is $60 if appropriate.',
+			'good_for' => array( 'Comparing NAD+ options', 'A longer appointment', 'Questions before starting' ),
+		),
+		// TODO(client): Medical director review — elivation hook, description and Good for chips.
+		'elivation' => array(
+			'anchor' => 'the-elivation',
+			'photo' => 'community-3',
+			'hook' => 'Meet the signature option.',
+			'description' => 'The Elivation combines NAD+ with glutathione in the signature infusion. Your nurse reviews the ingredients and sets the pace around your comfort. Plan for a longer visit; an additional 50 mg of NAD+ is $60 if appropriate.',
+			'good_for' => array( 'Signature-blend questions', 'NAD+ comparisons', 'A longer visit' ),
+		),
+		// TODO(client): Medical director review — nad500 hook, description and Good for chips.
+		'nad500' => array(
+			'anchor' => 'nad-500',
+			'photo' => 'community-4',
+			'hook' => 'A longer visit, paced with you.',
+			'description' => 'Before a 500 mg NAD+ infusion, your nurse asks about previous infusions and how you tolerated them. The infusion runs slowly with your comfort monitored throughout. Set aside up to two and a half hours; an additional 50 mg is $60 if appropriate.',
+			'good_for' => array( 'Reviewing previous visits', 'Comparing NAD+ amounts', 'Time to settle in' ),
+		),
+	);
 }
 
 /**

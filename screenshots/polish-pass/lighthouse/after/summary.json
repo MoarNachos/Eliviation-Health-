@@ -1,0 +1,50 @@
+[
+  {
+    "page": "home",
+    "url": "http://127.0.0.1:9411/",
+    "scores": {
+      "performance": 91,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "errors": null,
+    "failed": []
+  },
+  {
+    "page": "recovery",
+    "url": "http://127.0.0.1:9411/treatments/recovery/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "errors": null,
+    "failed": []
+  },
+  {
+    "page": "relief",
+    "url": "http://127.0.0.1:9411/treatments/relief/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "errors": null,
+    "failed": []
+  },
+  {
+    "page": "rejuvenation",
+    "url": "http://127.0.0.1:9411/treatments/rejuvenation/",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "errors": null,
+    "failed": []
+  }
+]

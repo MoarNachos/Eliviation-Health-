@@ -1,0 +1,1018 @@
+[
+  {
+    "page": "home",
+    "url": "http://127.0.0.1:9413/",
+    "scores": {
+      "performance": 87,
+      "accessibility": 97,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "errors": null,
+    "failed": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-BUTTON",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,0,SECTION,1,DIV,1,DIV,0,FORM,1,DIV,1,BUTTON",
+                "selector": "div.wp-block-group > form.eh-zip > div.eh-zip__row > button.eh-btn",
+                "boundingRect": {
+                  "top": 555,
+                  "bottom": 611,
+                  "left": 227,
+                  "right": 369,
+                  "width": 142,
+                  "height": 56
+                },
+                "snippet": "<button class=\"eh-btn eh-btn--primary eh-zip__submit\" type=\"submit\">",
+                "nodeLabel": "Book a visit",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-P",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,1,SECTION,0,DIV,0,DIV,0,DIV,0,P",
+                "selector": "div.wp-block-group > div.wp-block-group > div.wp-block-group > p.eh-eyebrow",
+                "boundingRect": {
+                  "top": 952,
+                  "bottom": 971,
+                  "left": 21,
+                  "right": 314,
+                  "width": 293,
+                  "height": 19
+                },
+                "snippet": "<p class=\"eh-eyebrow wp-block-paragraph\">",
+                "nodeLabel": "TREATMENTS & PRICES",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #c44020, background color: #f5ede0, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-2-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,1,SECTION",
+                      "selector": "body.home > div.wp-site-blocks > main#main > section#treatments",
+                      "boundingRect": {
+                        "top": 888,
+                        "bottom": 3044,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 2156
+                      },
+                      "snippet": "<section id=\"treatments\" class=\"wp-block-group eh-scope eh-section eh-section--sunken is-layout-flow wp-bl…\">",
+                      "nodeLabel": "TREATMENTS & PRICES\n\nWhat brings us to you?\n\nUnsure which to choose? Call our t…"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-3-P",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,4,SECTION,0,DIV,0,DIV,0,P",
+                "selector": "section#events > div.wp-block-group > div.wp-block-group > p.eh-eyebrow",
+                "boundingRect": {
+                  "top": 5682,
+                  "bottom": 5701,
+                  "left": 21,
+                  "right": 391,
+                  "width": 371,
+                  "height": 19
+                },
+                "snippet": "<p class=\"eh-eyebrow wp-block-paragraph\">",
+                "nodeLabel": "EVENTS & GROUPS",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.35 (foreground color: #fdf0cc, background color: #e2532e, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-4-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,4,SECTION",
+                      "selector": "body.home > div.wp-site-blocks > main#main > section#events",
+                      "boundingRect": {
+                        "top": 5618,
+                        "bottom": 7248,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 1630
+                      },
+                      "snippet": "<section id=\"events\" class=\"wp-block-group eh-scope eh-section eh-section--accent is-layout-flow wp-bl…\">",
+                      "nodeLabel": "EVENTS & GROUPS\n\nAn IV lounge at your event.\n\nPlanning a golf tournament, a com…"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-5-P",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,4,SECTION,0,DIV,0,DIV,2,P",
+                "selector": "section#events > div.wp-block-group > div.wp-block-group > p.eh-lede",
+                "boundingRect": {
+                  "top": 5823,
+                  "bottom": 5963,
+                  "left": 21,
+                  "right": 391,
+                  "width": 371,
+                  "height": 139
+                },
+                "snippet": "<p class=\"eh-lede wp-block-paragraph\">",
+                "nodeLabel": "Planning a golf tournament, a company wellness day or a wedding weekend? We bri…",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-4-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,4,SECTION",
+                      "selector": "body.home > div.wp-site-blocks > main#main > section#events",
+                      "boundingRect": {
+                        "top": 5618,
+                        "bottom": 7248,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 1630
+                      },
+                      "snippet": "<section id=\"events\" class=\"wp-block-group eh-scope eh-section eh-section--accent is-layout-flow wp-bl…\">",
+                      "nodeLabel": "EVENTS & GROUPS\n\nAn IV lounge at your event.\n\nPlanning a golf tournament, a com…"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-6-P",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,4,SECTION,0,DIV,0,DIV,4,P",
+                "selector": "section#events > div.wp-block-group > div.wp-block-group > p.eh-events__caption",
+                "boundingRect": {
+                  "top": 6299,
+                  "bottom": 6342,
+                  "left": 21,
+                  "right": 391,
+                  "width": 371,
+                  "height": 43
+                },
+                "snippet": "<p class=\"eh-events__caption wp-block-paragraph\">",
+                "nodeLabel": "Guests check in at the Elivation tent on the golf course, March 2026.",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-4-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,4,SECTION",
+                      "selector": "body.home > div.wp-site-blocks > main#main > section#events",
+                      "boundingRect": {
+                        "top": 5618,
+                        "bottom": 7248,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 1630
+                      },
+                      "snippet": "<section id=\"events\" class=\"wp-block-group eh-scope eh-section eh-section--accent is-layout-flow wp-bl…\">",
+                      "nodeLabel": "EVENTS & GROUPS\n\nAn IV lounge at your event.\n\nPlanning a golf tournament, a com…"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-7-LI",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,4,SECTION,0,DIV,0,DIV,5,UL,0,LI",
+                "selector": "div.wp-block-group > div.wp-block-group > ul.wp-block-list > li",
+                "boundingRect": {
+                  "top": 6366,
+                  "bottom": 6389,
+                  "left": 21,
+                  "right": 158,
+                  "width": 138,
+                  "height": 23
+                },
+                "snippet": "<li>",
+                "nodeLabel": "Groups of 4 to 100+",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.45 (foreground color: #fff1ec, background color: #e2532e, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-4-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,4,SECTION",
+                      "selector": "body.home > div.wp-site-blocks > main#main > section#events",
+                      "boundingRect": {
+                        "top": 5618,
+                        "bottom": 7248,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 1630
+                      },
+                      "snippet": "<section id=\"events\" class=\"wp-block-group eh-scope eh-section eh-section--accent is-layout-flow wp-bl…\">",
+                      "nodeLabel": "EVENTS & GROUPS\n\nAn IV lounge at your event.\n\nPlanning a golf tournament, a com…"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-8-LI",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,4,SECTION,0,DIV,0,DIV,5,UL,1,LI",
+                "selector": "div.wp-block-group > div.wp-block-group > ul.wp-block-list > li",
+                "boundingRect": {
+                  "top": 6366,
+                  "bottom": 6389,
+                  "left": 182,
+                  "right": 354,
+                  "width": 172,
+                  "height": 23
+                },
+                "snippet": "<li>",
+                "nodeLabel": "On-site nursing team",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.45 (foreground color: #fff1ec, background color: #e2532e, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-4-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,4,SECTION",
+                      "selector": "body.home > div.wp-site-blocks > main#main > section#events",
+                      "boundingRect": {
+                        "top": 5618,
+                        "bottom": 7248,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 1630
+                      },
+                      "snippet": "<section id=\"events\" class=\"wp-block-group eh-scope eh-section eh-section--accent is-layout-flow wp-bl…\">",
+                      "nodeLabel": "EVENTS & GROUPS\n\nAn IV lounge at your event.\n\nPlanning a golf tournament, a com…"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-9-LI",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,4,SECTION,0,DIV,0,DIV,5,UL,2,LI",
+                "selector": "div.wp-block-group > div.wp-block-group > ul.wp-block-list > li",
+                "boundingRect": {
+                  "top": 6399,
+                  "bottom": 6423,
+                  "left": 21,
+                  "right": 244,
+                  "width": 223,
+                  "height": 23
+                },
+                "snippet": "<li>",
+                "nodeLabel": "Menus tailored to your event",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.45 (foreground color: #fff1ec, background color: #e2532e, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-4-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,4,SECTION",
+                      "selector": "body.home > div.wp-site-blocks > main#main > section#events",
+                      "boundingRect": {
+                        "top": 5618,
+                        "bottom": 7248,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 1630
+                      },
+                      "snippet": "<section id=\"events\" class=\"wp-block-group eh-scope eh-section eh-section--accent is-layout-flow wp-bl…\">",
+                      "nodeLabel": "EVENTS & GROUPS\n\nAn IV lounge at your event.\n\nPlanning a golf tournament, a com…"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-10-P",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,6,SECTION,0,DIV,0,DIV,0,P",
+                "selector": "section#areas > div.wp-block-group > div.wp-block-group > p.eh-eyebrow",
+                "boundingRect": {
+                  "top": 8688,
+                  "bottom": 8706,
+                  "left": 21,
+                  "right": 391,
+                  "width": 371,
+                  "height": 19
+                },
+                "snippet": "<p class=\"eh-eyebrow wp-block-paragraph\">",
+                "nodeLabel": "WHERE WE GO",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #c44020, background color: #f5ede0, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-11-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,6,SECTION",
+                      "selector": "body.home > div.wp-site-blocks > main#main > section#areas",
+                      "boundingRect": {
+                        "top": 8624,
+                        "bottom": 9251,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 627
+                      },
+                      "snippet": "<section id=\"areas\" class=\"wp-block-group eh-scope eh-section eh-section--sunken eh-section--tight is…\">",
+                      "nodeLabel": "WHERE WE GO\n\nOrange County and parts of Los Angeles.\n\nNeed a visit today? Call …"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-12-A",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,6,SECTION,0,DIV,0,DIV,3,DIV,0,DIV,0,A",
+                "selector": "div.wp-block-group > div.wp-block-buttons > div.wp-block-button > a.wp-block-button__link",
+                "boundingRect": {
+                  "top": 8893,
+                  "bottom": 8944,
+                  "left": 21,
+                  "right": 167,
+                  "width": 146,
+                  "height": 51
+                },
+                "snippet": "<a class=\"wp-block-button__link wp-element-button\" href=\"https://book.elivationhealth.com/\">",
+                "nodeLabel": "Book a visit",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-13-A",
+                "path": "1,HTML,1,BODY,1,DIV,2,FOOTER,1,DIV,1,A",
+                "selector": "div.wp-site-blocks > footer.wp-block-template-part > div.eh-bookbar > a.eh-btn",
+                "boundingRect": {
+                  "top": 760,
+                  "bottom": 811,
+                  "left": 152,
+                  "right": 391,
+                  "width": 239,
+                  "height": 51
+                },
+                "snippet": "<a class=\"eh-btn eh-btn--primary\" href=\"https://book.elivationhealth.com/\">",
+                "nodeLabel": "Book a visit",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.color",
+              "wcag2aa",
+              "wcag143",
+              "TTv5",
+              "TT13.c",
+              "EN-301-549",
+              "EN-9.1.4.3",
+              "ACT",
+              "RGAAv4",
+              "RGAA-3.2.1"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "page": "recovery",
+    "url": "http://127.0.0.1:9413/treatments/recovery/",
+    "scores": {
+      "performance": 95,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "errors": null,
+    "failed": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-A",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,0,SECTION,0,DIV,0,DIV,4,DIV,0,A",
+                "selector": "div.wp-block-group > div.wp-block-group > div.eh-actions > a.eh-btn",
+                "boundingRect": {
+                  "top": 492,
+                  "bottom": 543,
+                  "left": 21,
+                  "right": 167,
+                  "width": 146,
+                  "height": 51
+                },
+                "snippet": "<a class=\"eh-btn eh-btn--primary\" href=\"https://book.elivationhealth.com/\" data-eh-book=\"\">",
+                "nodeLabel": "Book a visit",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-P",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,2,SECTION,0,DIV,0,DIV,0,DIV,0,P",
+                "selector": "div.wp-block-group > div.wp-block-group > div.wp-block-group > p.eh-eyebrow",
+                "boundingRect": {
+                  "top": 1994,
+                  "bottom": 2013,
+                  "left": 21,
+                  "right": 355,
+                  "width": 335,
+                  "height": 19
+                },
+                "snippet": "<p class=\"eh-eyebrow wp-block-paragraph\">",
+                "nodeLabel": "RECOVERY DRIPS",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #c44020, background color: #f5ede0, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-2-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,2,SECTION",
+                      "selector": "body.wp-singular > div.wp-site-blocks > main#main > section#drips",
+                      "boundingRect": {
+                        "top": 1930,
+                        "bottom": 3917,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 1987
+                      },
+                      "snippet": "<section id=\"drips\" class=\"wp-block-group eh-scope eh-section eh-section--sunken is-layout-flow wp-bl…\">",
+                      "nodeLabel": "RECOVERY DRIPS\n\nCompare Recovery options.\n\nYour price includes the nurse visit,…"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-3-P",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,7,SECTION,0,DIV,0,DIV,0,P",
+                "selector": "section#areas > div.wp-block-group > div.wp-block-group > p.eh-eyebrow",
+                "boundingRect": {
+                  "top": 7688,
+                  "bottom": 7706,
+                  "left": 21,
+                  "right": 391,
+                  "width": 371,
+                  "height": 19
+                },
+                "snippet": "<p class=\"eh-eyebrow wp-block-paragraph\">",
+                "nodeLabel": "WHERE WE GO",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #c44020, background color: #f5ede0, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-4-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,7,SECTION",
+                      "selector": "body.wp-singular > div.wp-site-blocks > main#main > section#areas",
+                      "boundingRect": {
+                        "top": 7624,
+                        "bottom": 8251,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 627
+                      },
+                      "snippet": "<section id=\"areas\" class=\"wp-block-group eh-scope eh-section eh-section--sunken eh-section--tight is…\">",
+                      "nodeLabel": "WHERE WE GO\n\nOrange County and parts of Los Angeles.\n\nNeed a visit today? Call …"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-5-A",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,7,SECTION,0,DIV,0,DIV,3,DIV,0,DIV,0,A",
+                "selector": "div.wp-block-group > div.wp-block-buttons > div.wp-block-button > a.wp-block-button__link",
+                "boundingRect": {
+                  "top": 7893,
+                  "bottom": 7944,
+                  "left": 21,
+                  "right": 167,
+                  "width": 146,
+                  "height": 51
+                },
+                "snippet": "<a class=\"wp-block-button__link wp-element-button\" href=\"https://book.elivationhealth.com/\">",
+                "nodeLabel": "Book a visit",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-6-A",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,8,DIV,1,A",
+                "selector": "div.wp-site-blocks > main#main > div.eh-bookbar > a.eh-btn",
+                "boundingRect": {
+                  "top": 743,
+                  "bottom": 811,
+                  "left": 152,
+                  "right": 391,
+                  "width": 239,
+                  "height": 68
+                },
+                "snippet": "<a class=\"eh-btn eh-btn--primary\" href=\"https://book.elivationhealth.com/\" data-eh-book=\"\">",
+                "nodeLabel": "Book Recovery · from $245",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.color",
+              "wcag2aa",
+              "wcag143",
+              "TTv5",
+              "TT13.c",
+              "EN-301-549",
+              "EN-9.1.4.3",
+              "ACT",
+              "RGAAv4",
+              "RGAA-3.2.1"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "page": "relief",
+    "url": "http://127.0.0.1:9413/treatments/relief/",
+    "scores": {
+      "performance": 95,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "errors": null,
+    "failed": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-A",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,0,SECTION,0,DIV,0,DIV,4,DIV,0,A",
+                "selector": "div.wp-block-group > div.wp-block-group > div.eh-actions > a.eh-btn",
+                "boundingRect": {
+                  "top": 552,
+                  "bottom": 603,
+                  "left": 21,
+                  "right": 167,
+                  "width": 146,
+                  "height": 51
+                },
+                "snippet": "<a class=\"eh-btn eh-btn--primary\" href=\"https://book.elivationhealth.com/\" data-eh-book=\"\">",
+                "nodeLabel": "Book a visit",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-P",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,2,SECTION,0,DIV,0,DIV,0,DIV,0,P",
+                "selector": "div.wp-block-group > div.wp-block-group > div.wp-block-group > p.eh-eyebrow",
+                "boundingRect": {
+                  "top": 2087,
+                  "bottom": 2105,
+                  "left": 21,
+                  "right": 318,
+                  "width": 297,
+                  "height": 19
+                },
+                "snippet": "<p class=\"eh-eyebrow wp-block-paragraph\">",
+                "nodeLabel": "RELIEF DRIPS",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #c44020, background color: #f5ede0, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-2-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,2,SECTION",
+                      "selector": "body.wp-singular > div.wp-site-blocks > main#main > section#drips",
+                      "boundingRect": {
+                        "top": 2023,
+                        "bottom": 4059,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 2036
+                      },
+                      "snippet": "<section id=\"drips\" class=\"wp-block-group eh-scope eh-section eh-section--sunken is-layout-flow wp-bl…\">",
+                      "nodeLabel": "RELIEF DRIPS\n\nCompare Relief options.\n\nYour price includes the nurse visit, hea…"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-3-P",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,7,SECTION,0,DIV,0,DIV,0,P",
+                "selector": "section#areas > div.wp-block-group > div.wp-block-group > p.eh-eyebrow",
+                "boundingRect": {
+                  "top": 7779,
+                  "bottom": 7797,
+                  "left": 21,
+                  "right": 391,
+                  "width": 371,
+                  "height": 19
+                },
+                "snippet": "<p class=\"eh-eyebrow wp-block-paragraph\">",
+                "nodeLabel": "WHERE WE GO",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #c44020, background color: #f5ede0, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-4-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,7,SECTION",
+                      "selector": "body.wp-singular > div.wp-site-blocks > main#main > section#areas",
+                      "boundingRect": {
+                        "top": 7715,
+                        "bottom": 8342,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 627
+                      },
+                      "snippet": "<section id=\"areas\" class=\"wp-block-group eh-scope eh-section eh-section--sunken eh-section--tight is…\">",
+                      "nodeLabel": "WHERE WE GO\n\nOrange County and parts of Los Angeles.\n\nNeed a visit today? Call …"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-5-A",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,7,SECTION,0,DIV,0,DIV,3,DIV,0,DIV,0,A",
+                "selector": "div.wp-block-group > div.wp-block-buttons > div.wp-block-button > a.wp-block-button__link",
+                "boundingRect": {
+                  "top": 7984,
+                  "bottom": 8035,
+                  "left": 21,
+                  "right": 167,
+                  "width": 146,
+                  "height": 51
+                },
+                "snippet": "<a class=\"wp-block-button__link wp-element-button\" href=\"https://book.elivationhealth.com/\">",
+                "nodeLabel": "Book a visit",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-6-A",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,8,DIV,1,A",
+                "selector": "div.wp-site-blocks > main#main > div.eh-bookbar > a.eh-btn",
+                "boundingRect": {
+                  "top": 760,
+                  "bottom": 811,
+                  "left": 152,
+                  "right": 391,
+                  "width": 239,
+                  "height": 51
+                },
+                "snippet": "<a class=\"eh-btn eh-btn--primary\" href=\"https://book.elivationhealth.com/\" data-eh-book=\"\">",
+                "nodeLabel": "Book Relief · from $185",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.color",
+              "wcag2aa",
+              "wcag143",
+              "TTv5",
+              "TT13.c",
+              "EN-301-549",
+              "EN-9.1.4.3",
+              "ACT",
+              "RGAAv4",
+              "RGAA-3.2.1"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "page": "rejuvenation",
+    "url": "http://127.0.0.1:9413/treatments/rejuvenation/",
+    "scores": {
+      "performance": 87,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "errors": null,
+    "failed": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.14/color-contrast).",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-A",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,0,SECTION,0,DIV,0,DIV,4,DIV,0,A",
+                "selector": "div.wp-block-group > div.wp-block-group > div.eh-actions > a.eh-btn",
+                "boundingRect": {
+                  "top": 464,
+                  "bottom": 515,
+                  "left": 21,
+                  "right": 167,
+                  "width": 146,
+                  "height": 51
+                },
+                "snippet": "<a class=\"eh-btn eh-btn--primary\" href=\"https://book.elivationhealth.com/\" data-eh-book=\"\">",
+                "nodeLabel": "Book a visit",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-P",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,2,SECTION,0,DIV,0,DIV,0,DIV,0,P",
+                "selector": "div.wp-block-group > div.wp-block-group > div.wp-block-group > p.eh-eyebrow",
+                "boundingRect": {
+                  "top": 2075,
+                  "bottom": 2093,
+                  "left": 21,
+                  "right": 391,
+                  "width": 371,
+                  "height": 19
+                },
+                "snippet": "<p class=\"eh-eyebrow wp-block-paragraph\">",
+                "nodeLabel": "REJUVENATION DRIPS",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #c44020, background color: #f5ede0, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-2-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,2,SECTION",
+                      "selector": "body.wp-singular > div.wp-site-blocks > main#main > section#drips",
+                      "boundingRect": {
+                        "top": 2011,
+                        "bottom": 3843,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 1833
+                      },
+                      "snippet": "<section id=\"drips\" class=\"wp-block-group eh-scope eh-section eh-section--sunken is-layout-flow wp-bl…\">",
+                      "nodeLabel": "REJUVENATION DRIPS\n\nCompare Rejuvenation options.\n\nYour price includes the nurs…"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-3-P",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,7,SECTION,0,DIV,0,DIV,0,P",
+                "selector": "section#areas > div.wp-block-group > div.wp-block-group > p.eh-eyebrow",
+                "boundingRect": {
+                  "top": 7530,
+                  "bottom": 7548,
+                  "left": 21,
+                  "right": 391,
+                  "width": 371,
+                  "height": 19
+                },
+                "snippet": "<p class=\"eh-eyebrow wp-block-paragraph\">",
+                "nodeLabel": "WHERE WE GO",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #c44020, background color: #f5ede0, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-4-SECTION",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,7,SECTION",
+                      "selector": "body.wp-singular > div.wp-site-blocks > main#main > section#areas",
+                      "boundingRect": {
+                        "top": 7466,
+                        "bottom": 8093,
+                        "left": 0,
+                        "right": 412,
+                        "width": 412,
+                        "height": 627
+                      },
+                      "snippet": "<section id=\"areas\" class=\"wp-block-group eh-scope eh-section eh-section--sunken eh-section--tight is…\">",
+                      "nodeLabel": "WHERE WE GO\n\nOrange County and parts of Los Angeles.\n\nNeed a visit today? Call …"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-5-A",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,7,SECTION,0,DIV,0,DIV,3,DIV,0,DIV,0,A",
+                "selector": "div.wp-block-group > div.wp-block-buttons > div.wp-block-button > a.wp-block-button__link",
+                "boundingRect": {
+                  "top": 7735,
+                  "bottom": 7786,
+                  "left": 21,
+                  "right": 167,
+                  "width": 146,
+                  "height": 51
+                },
+                "snippet": "<a class=\"wp-block-button__link wp-element-button\" href=\"https://book.elivationhealth.com/\">",
+                "nodeLabel": "Book a visit",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-6-A",
+                "path": "1,HTML,1,BODY,1,DIV,1,MAIN,8,DIV,1,A",
+                "selector": "div.wp-site-blocks > main#main > div.eh-bookbar > a.eh-btn",
+                "boundingRect": {
+                  "top": 743,
+                  "bottom": 811,
+                  "left": 152,
+                  "right": 391,
+                  "width": 239,
+                  "height": 68
+                },
+                "snippet": "<a class=\"eh-btn eh-btn--primary\" href=\"https://book.elivationhealth.com/\" data-eh-book=\"\">",
+                "nodeLabel": "Book Rejuvenation · from $239",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #ffffff, background color: #e2532e, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.color",
+              "wcag2aa",
+              "wcag143",
+              "TTv5",
+              "TT13.c",
+              "EN-301-549",
+              "EN-9.1.4.3",
+              "ACT",
+              "RGAAv4",
+              "RGAA-3.2.1"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

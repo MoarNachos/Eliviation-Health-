@@ -69,3 +69,15 @@ Removed from use after the drinks/bar audit: `team-2` (drinkware on the table), 
 ## Palette
 
 Navy + sky, taken from the official logo, with coral kept for primary buttons (see `design_handoff_homepage/BRAND_GUIDE.md`). Every color in the theme comes from `tokens/colors.css`. To change it: edit that file, run `npm run tokens`, done.
+
+## Drip section copy — medical director review
+
+TODO(client): Review the new hook, 2–3 sentence description and every “Good for” chip for each of the 17 drip sections in `inc/treatments.php` (`elivation_drip_details`). Prices, durations and booking IDs are unchanged, but remain subject to the existing T1/T5 review.
+
+| Category | New copy requiring approval |
+|---|---|
+| Recovery | Myers' Cocktail; Defense; Hangover Remedy; Performance; Max Defense; Build-a-Bag |
+| Relief | Basic Drip; Lactated Ringer's; Nausea; Migraine Relief; Cold & Flu; Food Poisoning |
+| Rejuvenation | Premenstrual Tension; Radiance; NAD+ 250mg; The Elivation; NAD+ 500mg |
+
+TODO(client): Confirm that using general home-care, chair and setup photographs alongside drip descriptions does not imply that a pictured client received that particular formula or experienced a particular outcome. There are not yet enough distinct treatment-specific photos; replacements can use the per-drip `photo` field. Photos repeat across categories, but no two drips within a category share a source photo.

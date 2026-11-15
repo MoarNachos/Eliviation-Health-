@@ -1566,6 +1566,8 @@ body {
 	color: var(--text-muted);
 }
 
+.eh-crumbs li { display: inline-flex; align-items: center; min-height: 48px; }
+
 .eh-crumbs li + li::before {
 	content: "/";
 	margin-right: 8px;
@@ -2143,7 +2145,7 @@ body {
 
 /* Accessible interaction areas, including small text links. */
 .eh-nav__links a, .eh-footer a, .eh-card__link,
-.eh-more a, .eh-breadcrumb a, .eh-review cite a, .eh-clinicians__quote a,
+.eh-more a, .eh-crumbs a, .eh-review cite a, .eh-clinicians__quote a,
 .eh-goodfor__quote a, .eh-faq__intro a, .eh-section__head a,
 .eh-tx-hero p a, .eh-lede a, .eh-hero__caption a {
 	min-height: 48px; min-width: 48px; display: inline-flex; align-items: center;
@@ -2167,3 +2169,28 @@ body {
 	.eh-scope .eh-hero__lede { color: var(--white); }
 	.eh-hero__photo::after { background: linear-gradient(90deg, color-mix(in srgb, var(--navy-900) 72%, transparent) 0%, var(--eh-scrim-35) 45%, transparent 65%), linear-gradient(180deg, var(--eh-scrim-78), var(--eh-scrim-50) 70%, var(--eh-scrim-35)); }
 }
+
+/* Anchored drip stories. Each page uses a distinct source photo per drip. */
+.eh-drip-detail { padding: clamp(48px, 6vw, 88px) var(--eh-margin); scroll-margin-top: 96px; }
+.eh-drip-detail:nth-child(even) { background: var(--surface-sunken); }
+.eh-drip-detail__layout { display: grid; gap: 32px; align-items: center; }
+.eh-scope .eh-drip-detail__photo { height: 340px; margin: 0; overflow: hidden; border-radius: 28px; background: var(--sand-200); }
+.eh-drip-detail__photo img { width: 100%; height: 100%; object-fit: cover; }
+.eh-drip-detail__photo[data-photo="home-recovery"] img { object-position: 50% 28%; }
+.eh-drip-detail__photo[data-photo="nurse-home-vitals-1"] img { object-position: 50% 44%; }
+.eh-drip-detail__body { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.eh-scope .eh-drip-detail__description { font-size: 18px; line-height: 1.65; max-width: 58ch; }
+.eh-drip-detail__meta { display: flex; align-items: baseline; flex-wrap: wrap; gap: 20px; color: var(--text-trust); }
+.eh-drip-detail__meta strong { font: 700 32px/1.2 var(--font-display); }
+.eh-drip-detail__meta span { font-size: 16px; }
+.eh-scope .eh-drip-detail__label { font: 600 14px/1.5 var(--font-body); margin: 0 0 10px; }
+.eh-scope .eh-drip-detail__chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+.eh-drip-detail__chips li { border-radius: var(--radius-pill); background: var(--navy-50); color: var(--navy-700); padding: 8px 14px; font: 500 14px/1.4 var(--font-body); }
+.eh-drip-detail__body .eh-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.eh-drip-detail__back { display: inline-flex; align-items: center; min-height: 48px; padding: 8px 0; color: var(--navy-700); text-underline-offset: 4px; }
+@media (min-width: 900px) {
+	.eh-drip-detail__layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; }
+	.eh-scope .eh-drip-detail__photo { height: 480px; }
+	.eh-drip-detail:nth-child(even) .eh-drip-detail__photo { order: 2; }
+}
+@media (max-width: 479px) { .eh-scope .eh-drip-detail__photo { height: 280px; } .eh-drip-detail__body .eh-actions { align-items: stretch; flex-direction: column; } }

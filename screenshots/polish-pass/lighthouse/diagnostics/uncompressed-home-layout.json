@@ -1,0 +1,14 @@
+[
+  {
+    "page": "home",
+    "url": "http://127.0.0.1:9410/",
+    "scores": {
+      "performance": 88,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "errors": null,
+    "failed": []
+  }
+]
