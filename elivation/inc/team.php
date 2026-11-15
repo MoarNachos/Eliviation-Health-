@@ -138,7 +138,7 @@ function elivation_profile_url( $id ) {
 function elivation_profile( $id, $person, $variant = 'full', $heading = 'h3' ) {
 	$lines = 'summary' === $variant && ! empty( $person['summary'] ) ? $person['summary'] : $person['bio'];
 	$html  = '<article class="eh-profile eh-profile--' . esc_attr( $variant ) . '" id="' . esc_attr( $id ) . '">';
-	$html .= '<figure class="eh-profile__photo"><img src="' . esc_url( get_theme_file_uri( $person['photo'] ) ) . '" width="' . (int) $person['size'][0] . '" height="' . (int) $person['size'][1] . '" loading="lazy" alt="' . esc_attr( $person['alt'] ) . '"></figure>';
+	$html .= '<figure class="eh-profile__photo">' . elivation_photo_image( 'portrait-' . $id, $person['alt'], '(min-width: 900px) 280px, 240px' ) . '</figure>';
 	$html .= '<div class="eh-profile__body">';
 	$html .= '<' . $heading . ' class="eh-profile__name">' . esc_html( $person['name'] ) . '</' . $heading . '>';
 	$html .= '<p class="eh-profile__role">' . esc_html( $person['role'] ) . '</p>';

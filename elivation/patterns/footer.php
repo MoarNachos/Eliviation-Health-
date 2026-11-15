@@ -8,7 +8,7 @@
  *
  * TODO(client): Careers and Terms pages do not exist yet. Privacy links to the existing notice (elivation_privacy_url()).
  * TODO(client): have the medical disclaimer line reviewed.
- * TODO(client): swap the PNG logo (assets/images/logo-white.png) for an SVG when supplied.
+ * TODO(client): swap the PNG logo (assets/images/logo-white.webp) for an SVG when supplied.
  *
  * @package elivation
  */
@@ -19,11 +19,11 @@
 	<div class="eh-container eh-stack-48">
 		<div class="eh-footer__grid">
 			<div class="eh-footer__brand">
-				<img class="eh-logo__img eh-logo__img--footer" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/logo-white.png' ) ); ?>" alt="Elivation Health" width="407" height="103" loading="lazy">
+				<img class="eh-logo__img eh-logo__img--footer" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/logo-white.webp' ) ); ?>" alt="Elivation Health" width="407" height="103" loading="lazy">
 				<span>Mobile IV hydration at home, at work and at events.</span>
 				<div class="eh-footer__badges" aria-label="Practice badges">
-					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hipaa-silver.png' ) ); ?>" alt="HIPAA compliant" width="141" height="130" loading="lazy">
-					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/doctor-owned-silver.png' ) ); ?>" alt="Doctor owned and operated" width="130" height="123" loading="lazy">
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hipaa-silver.webp' ) ); ?>" alt="HIPAA compliant" width="141" height="130" loading="lazy">
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/doctor-owned-silver.webp' ) ); ?>" alt="Doctor owned and operated" width="130" height="123" loading="lazy">
 				</div>
 			</div>
 			<nav class="eh-footer__col" aria-label="Treatments">

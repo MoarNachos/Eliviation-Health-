@@ -262,6 +262,24 @@ function elivation_photo_srcset( $name ) {
 }
 
 /**
+ * Responsive markup for photos outside core/image blocks (profiles and drip details).
+ * Uses real generated widths, including portraits smaller than 800px; never advertises upscaled resolution.
+ */
+function elivation_photo_image( $name, $alt = '', $sizes = '(min-width: 1024px) 50vw, 100vw', $hero = false ) {
+	$manifest = elivation_photo_manifest();
+	if ( empty( $manifest[ $name ]['sizes'] ) ) {
+		return '';
+	}
+	$largest = end( $manifest[ $name ]['sizes'] );
+	return sprintf(
+		'<img src="%s" srcset="%s" sizes="%s" width="%d" height="%d" alt="%s" loading="%s" decoding="async"%s>',
+		esc_url( elivation_photo_url( $name ) ), esc_attr( elivation_photo_srcset( $name ) ), esc_attr( $sizes ),
+		(int) $largest['width'], (int) $largest['height'], esc_attr( $alt ? $alt : elivation_photo_alt( $name ) ),
+		$hero ? 'eager' : 'lazy', $hero ? ' fetchpriority="high"' : ''
+	);
+}
+
+/**
  * sizes attribute for a photo, chosen from the image block's class name.
  *
  * @param string $class_name Class attribute of the image block.
