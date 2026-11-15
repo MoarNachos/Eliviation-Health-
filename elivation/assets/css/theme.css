@@ -1291,18 +1291,28 @@ header.wp-block-template-part {
 	margin-top: 8px;
 }
 
-.eh-footer__socials a {
+.eh-footer__col .eh-footer__socials a {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 44px;
-	padding: 6px 12px;
-	border: 1px solid var(--navy-500);
-	border-radius: 999px;
-	font-size: 13px;
+	flex: 0 0 48px;
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	border-radius: 50%;
+	background: #20aadd;
+	color: #fff;
+	transition: background 160ms ease;
 }
 
-.eh-footer__socials a:hover { border-color: currentColor; }
+.eh-footer__socials svg {
+	width: 22px;
+	height: 22px;
+	fill: currentColor;
+}
+
+.eh-footer__col .eh-footer__socials a:hover { background: #1688b3; }
+.eh-footer__socials a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
 
 .eh-footer__col {
 	display: flex;
