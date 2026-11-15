@@ -19,13 +19,12 @@ function elivation_visit_video( $supporting = false ) {
     <source src="<?php echo esc_url( elivation_visit_video_url( 'home-visit-720.webm' ) ); ?>" type="video/webm">
     <source src="<?php echo esc_url( elivation_visit_video_url( 'home-visit-720.mp4' ) ); ?>" type="video/mp4">
     <track kind="captions" src="<?php echo esc_url( elivation_visit_video_url( 'home-visit.en.vtt' ) ); ?>" srclang="en" label="English">
-    <p><a href="<?php echo esc_url( elivation_visit_video_url( 'home-visit-720.mp4' ) ); ?>">Watch the home-visit video</a> or read the transcript below.</p>
+    <p><a href="<?php echo esc_url( elivation_visit_video_url( 'home-visit-720.mp4' ) ); ?>">Watch the home-visit video</a>.</p>
    </video>
    <button class="eh-visit-film__play" type="button" aria-label="Play home-visit video with sound" aria-controls="<?php echo esc_attr( $id ); ?>" hidden><svg viewBox="0 0 32 32" aria-hidden="true" width="32" height="32"><path fill="currentColor" d="M11 6v20l16-10z"/></svg></button>
   </div>
   <figcaption id="<?php echo esc_attr( $id ); ?>-caption">A look inside an Elivation home visit. Captions are included in the video.</figcaption>
   <p class="eh-visit-film__status" role="status" data-video-status></p>
-  <details class="eh-visit-film__transcript"><summary>Read the video transcript</summary><div><?php echo wp_kses_post( file_get_contents( __DIR__ . '/../content/home-visit-transcript.html' ) ); ?></div></details>
  </figure>
  <?php return ob_get_clean();
 }
