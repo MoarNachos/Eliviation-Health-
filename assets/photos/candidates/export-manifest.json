@@ -1,0 +1,47 @@
+[
+  {
+    "filename": "nurse-at-home/nurse-home-vitals-1.jpg",
+    "original_path": "/Users/bestomerwill/Documents/Elivation Health/Elivation/20250819_195637.jpg",
+    "dimensions": [
+      1500,
+      2000
+    ],
+    "quality": 80
+  },
+  {
+    "filename": "relief/relaxed-home-iv-detail-1.jpg",
+    "original_path": "/Users/bestomerwill/Documents/Elivation Health/Elivation/DSC_1818.jpg",
+    "dimensions": [
+      2000,
+      1333
+    ],
+    "quality": 80
+  },
+  {
+    "filename": "events/branded-tent-lawn-wide-1.jpg",
+    "original_path": "/Users/bestomerwill/Documents/Elivation Health/Elivation/20251110_093003.jpg",
+    "dimensions": [
+      2000,
+      1500
+    ],
+    "quality": 80
+  },
+  {
+    "filename": "events/branded-event-table-wide-2.jpg",
+    "original_path": "/Users/bestomerwill/Documents/Elivation Health/Elivation/20260302_091709.jpg",
+    "dimensions": [
+      2000,
+      1500
+    ],
+    "quality": 80
+  },
+  {
+    "filename": "events/branded-tent-care-wide-3.jpg",
+    "original_path": "/Users/bestomerwill/Documents/Elivation Health/Elivation/20251110_120200.jpg",
+    "dimensions": [
+      2000,
+      1500
+    ],
+    "quality": 80
+  }
+]
