@@ -26,14 +26,14 @@ $elivation_treatments = array(
 	array(
 		'key'   => 'relief',
 		'title' => 'Relief',
-		'photo' => 'relaxed-home-iv-detail-1',
+		'photo' => 'home-relief',
 		'text'  => 'When nausea, a migraine, or a stomach bug makes it hard to go out, a nurse can assess you at home.',
 		'drips' => array( 'Cold &amp; Flu', 'Migraine Relief', 'Nausea', 'Basic Drip', 'Lactated Ringer\'s' ),
 	),
 	array(
 		'key'   => 'rejuvenation',
 		'title' => 'Rejuvenation',
-		'photo' => 'home-visit-couch-1-16x10',
+		'photo' => 'home-rejuvenation',
 		'text'  => 'Compare vitamin infusions and longer NAD+ visits. See what’s in each option and how much time to set aside.',
 		'drips' => array( 'NAD+ 250mg', 'NAD+ 500mg', 'Radiance', 'The Elivation' ),
 	),
